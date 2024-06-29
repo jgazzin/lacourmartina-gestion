@@ -1,0 +1,91 @@
+
+.tabla .encabezado,
+.tabla .contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+    text-align: center;
+}
+.encabezado p{
+    background-color: var(--color-destaque);
+    padding: 8px;
+    text-transform: uppercase;
+    color: var(--color-negativo);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contenido p{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.card_proyecto:last-of-type{
+    margin-bottom: 2rem;
+    border: none;
+}
+
+
+@media (max-width: 576px) {
+    .tabla{
+        display: flex;
+        gap: 1rem;
+    }
+    .tabla .encabezado,
+    .tabla .contenido{
+        grid-template-columns: 1fr;
+        text-align: left;
+        width: 50%;
+        gap: 4px;
+    }
+
+}
+
+/* cards proyectos */
+.proyectos_propios{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.card {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    border-bottom: 1px solid var(--color-complemento);
+    padding: 8px 0;
+    gap: 16px;
+}
+
+.card_left,
+.card_right{
+    font-weight: bold;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+@media (max-width: 576px) {
+    .card{
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    } 
+    .card_centro{
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+}
+
+.hitos .item{
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.item p{
+    text-align: left;
+}
+main{
+    padding-bottom: 2rem;
+}

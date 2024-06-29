@@ -1,0 +1,131 @@
+:root {
+  --color-ppal:  #F5AC0D;
+  --color-complemento: #69686A;
+  --color-destaque: #72D1EC;
+  --color-gris: rgb(66, 65, 67);
+  --color-negativo: #f3f3f3;
+  --color-texto: #1a1a1a;
+
+
+  --nav-h:80px;
+  --shadow: 2px 2px 5px rgb(66, 65, 67);
+}
+  
+  
+/* globales */
+html {
+    font-family: "Nunito", sans-serif;
+    color: var(--color-texto);
+}
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+    font-size: 28px;
+    text-transform: capitalize;
+}
+h2 {
+  font-size: 24px;
+  text-transform: capitalize;
+}
+h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+a {
+  color: inherit;
+  font-size: 14px;
+}
+p{
+  font-size: 14px;
+}
+
+img {
+  width: 100%;
+}
+
+input{
+  width: 100%;
+}
+
+section{
+  padding: 1rem 0;
+}
+
+.hidden{
+  display: none;
+}
+
+/* utilitarios */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+    .container{
+      width: 100%;
+      padding: 0 16px;
+    }
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.primary{
+  background-color: var(--color-ppal);
+  border: 1px solid var(--color-ppal);
+  color: var(--color-negativo);
+}
+
+.eliminar {
+  background-color: transparent;
+  border: 2px solid tomato;
+  color: tomato;
+}
+.editar{
+  background-color: transparent;
+  border: 2px solid var(--color-destaque);
+  color: var(--color-destaque);
+}
+.guardar{
+  background-color: transparent;
+  border: 2px solid green;
+  color: green;
+}
+.btn:hover {
+  box-shadow: var(--shadow);
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+  padding: 1rem 0;
+  text-transform: uppercase;
+}
+.m-top{
+  margin-top: var(--nav-h);
+}
+
+.headline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headline>i{
+  cursor: pointer;
+}
