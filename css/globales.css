@@ -7,7 +7,7 @@
   --color-texto: #1a1a1a;
 
 
-  --nav-h:80px;
+  --nav-h:400px;
   --shadow: 2px 2px 5px rgb(66, 65, 67);
 }
   
@@ -114,12 +114,12 @@ section{
   align-items: center;
   justify-content: start;
   gap: 1rem;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   text-transform: uppercase;
 }
-.m-top{
+/* .m-top{
   margin-top: var(--nav-h);
-}
+} */
 
 .headline {
   display: flex;
@@ -128,4 +128,19 @@ section{
 }
 .headline>i{
   cursor: pointer;
+}
+
+
+.verMas:hover{
+  box-shadow: var(--shadow);
+}
+
+.tag{
+  padding: 4px 8px;
+  background-color: var(--color-destaque);
+  color: var(--color-negativo);
+  font-weight: bold;
+  text-align: center;
+  border-radius: 4px;
+  text-transform: uppercase;
 }

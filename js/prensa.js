@@ -2,14 +2,8 @@ const notas = [
     {
         fecha: '6/27/2024',
         medio: 'Cadena 3 Rosario',
-        titulo: '',
-        enlace: ''
-    },
-    {
-        fecha: '6/26/2024',
-        medio: 'FM 88.3 Frecuencia Urbana Roca',
-        titulo: '',
-        enlace: ''
+        titulo: 'Lacour: "Respetemos los símbolos patrios"',
+        enlace: 'https://youtu.be/Dgjhed29zMo '
     },
     {
         fecha: '6/25/2024',

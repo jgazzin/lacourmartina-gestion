@@ -26,7 +26,7 @@ function imprimirHitos() {
         const item = document.createElement('DIV')
         item.classList.add('item')
         item.innerHTML =`
-            <i class="fa-solid fa-flag fa-lg verMas"></i>
+            <i class="fa-solid fa-flag fa-lg"></i>
             <p>${hit}</p>
         `;
         console.log(item);
