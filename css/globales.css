@@ -137,7 +137,7 @@ section{
 
 .tag{
   padding: 4px 8px;
-  background-color: var(--color-destaque);
+  background-color: var(--color-ppal);
   color: var(--color-negativo);
   font-weight: bold;
   text-align: center;

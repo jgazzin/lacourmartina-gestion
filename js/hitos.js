@@ -29,8 +29,8 @@ function imprimirHitos() {
             <i class="fa-solid fa-flag fa-lg"></i>
             <p>${hit}</p>
         `;
-        console.log(item);
-        console.log(hit);
+        // console.log(item);
+        // console.log(hit);
         contenedorHitos.appendChild(item)
     })
 }

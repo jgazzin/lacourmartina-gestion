@@ -10,14 +10,14 @@ const proyectosPropios = [
         numero: 'PC772/24',
         fecha: '19/06/2024',
         area: 'Educación - Cultura - Soberanía',
-        tema: 'promesa bandera',
+        tema: 'nuestras banderas',
         resumen: 'Su enérgico repudio a la realización de cualquier acto de Promesa de Lealtad a una bandera distinta de la Bandera Nacional en las escuelas'
     },
     {
         numero: 'PC771/24',
         fecha: '19/06/2024',
         area: 'Educación - Cultura - Soberanía',
-        tema: 'promesa bandera',
+        tema: 'nuestras banderas',
         resumen: 'Al Poder Ejecutivo, Ministerio de Educación y Derechos Humanos, que prohíba la celebración de cualquier acto de promesa a banderas distintas de la Bandera Argentina'
     },
     {
@@ -59,7 +59,7 @@ const proyectosPropios = [
         numero: 'PL695/24',
         fecha: '06/06/2024',
         area: 'Cultura - Educación - Seguridad Interior',
-        tema: 'banderas oficiales',
+        tema: 'nuestras banderas',
         resumen: '"Nuestras Banderas". Establece que las únicas y exclusivas banderas que están autorizadas a ser exhibidas y flamear en todos los edificios públicos de la Provincia de Río Negro son las banderas nacional y provincial, y la bandera municipal en caso de existir'
     },
     {
@@ -108,14 +108,14 @@ const proyectosPropios = [
         numero: 'PC244/24',
         fecha: '12/03/2024',
         area: 'Seguridad',
-        tema: 'rcuidar a Roca',
+        tema: 'cuidar a Roca',
         resumen: 'Al Ministerio de Seguridad y Justicia, la necesidad de realizar las gestiones necesarias con la Municipalidad de la ciudad de San Carlos de Bariloche y su Centro de Monitoreo, para la protección del monumento de Julio Argentino Roca ubicado en el Centro Cívico de esa ciudad'
     },
     {
         numero: 'PD230/24',
         fecha: '08/03/2024',
         area: 'Seguridad',
-        tema: 'rcuidar a roca',
+        tema: 'cuidar a roca',
         resumen: 'Su enérgico repudio a los hechos de vandalismo ocurridos el 7 de marzo de 2024 sobre el monumento de Julio Argentino Roca en el Centro Cívico de la ciudad de San Carlos de Bariloche'
     },
     {
@@ -148,35 +148,51 @@ const proyectosPropios = [
     }
 ];
 
-document.addEventListener('DOMContentLoaded', imprimirProyectos)
+document.addEventListener('DOMContentLoaded', ()=>{
+    imprimirProyectos(proyectosPropios)
+})
 
+let temaProyectos = document.querySelector('#temas');
+temaProyectos.addEventListener('change', ()=>{
+    if(temaProyectos.value === '') {
+        imprimirProyectos(proyectosPropios)
+        console.log(proyectosPropios);
+
+    } else{
+        const proyectosFiltrados = proyectosPropios.filter(proy => proy.tema === temaProyectos.value)
+        console.log(proyectosFiltrados);
+        imprimirProyectos(proyectosFiltrados)
+
+    }
+})
 
 // FUNCIONES
-function imprimirProyectos() {
+function imprimirProyectos(listado) {
     const contenedorProyectos = document.querySelector('.proyectos_propios')
-    console.log(contenedorProyectos);
-    proyectosPropios.forEach(proyecto =>{
+    contenedorProyectos.innerHTML = '';
+    listado.forEach(proyecto =>{
         const card = document.createElement('div')
         card.classList.add('card')
         card.innerHTML= `
         <div class="card_left">
             <a href="${proyecto.enlace}">
             <p class="numero">${proyecto.numero}</p></a>
-            <p class="tag">${proyecto.tema}</p>
-
+            <p class="fecha">${proyecto.fecha}</p>
         </div>
         <div class="card_centro">
             <p class="resumen">${proyecto.resumen}</p>
         </div>
         <div class="card_right">
-            <p class="fecha">${proyecto.fecha}</p>
             <p class="area">${proyecto.area}</p>
-
+            <p class="tag">${proyecto.tema}</p>
         </div>
         `;
         contenedorProyectos.appendChild(card)
 
     })
+    const countProyectos = listado.length;
+    document.querySelector('#countProyectos').textContent = countProyectos;
+
 }
 
-//             <a href="${proyecto.enlace}" class="btn editar">Ver</a>
+// <a href="${proyecto.enlace}" class="btn editar">Ver</a>

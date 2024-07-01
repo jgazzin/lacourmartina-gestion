@@ -51,24 +51,40 @@ header .header h2{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 8px 0;
+    font-weight: bold;
 }
 
 .encabezado{
     text-transform: uppercase;
-    font-weight: bold;
     border: 2px solid var(--color-negativo);
+    border-radius: 4px;
+}
+
+.search_nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.temas{
+    width: 45%;
+}
+
+#temas option {
+    text-transform: uppercase;
+}
+
+.temas select{
+    width: 100%;
+    padding: 4px;
+    border: 1px solid var(--color-complemento);
     border-radius: 4px;
 }
 
 
 @media (max-width: 576px) {
-    .tabla{
-
-    }
-
-
-    .resumen{
-
+    header{
+        padding-top: 1rem;
     }
 
 }
+
