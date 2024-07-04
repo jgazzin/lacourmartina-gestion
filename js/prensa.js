@@ -84,6 +84,13 @@ const notas = [
         enlace: 'https://canal7jacobacci.com.ar/dura-respuesta-del-pro-a-ibarrolaza-mckidd-y-dominguez-no-van-a-trabajar-a-las-comisiones-no-leen-los-proyectos/ '
     },
     {
+        fecha: '25/06/2024',
+        medio: 'Radio Rivadavia BRC',
+        tema: 'reiterancia delictiva',
+        titulo: 'Entrevista sobre el proyecto de ley presentado para incluir al Código Procesal Penal la figura de Reiterancia',
+        enlace: 'https://facebook.com/100089872827598/videos/1117414732699723/'
+    },
+    {
         fecha: '24/06/2024',
         medio: 'Diario La Palabra',
         tema: 'nuestras banderas',
@@ -151,7 +158,7 @@ const notas = [
         medio: 'Radio Rivadavia BRC',
         tema: 'nuestras banderas',
         titulo: 'Entrevista en "Nada es para siempre"',
-        enlace: 'www.facebook.com/share/v/vNBtWD2ejNVG8quz/?mibextid=oFDknk'
+        enlace: 'https://facebook.com/100089872827598/videos/1101516237576166/'
     },
     {
         fecha: '11/06/2024',
@@ -217,14 +224,14 @@ const notas = [
         enlace: 'https://www.vivoinformado.com.ar/2024/05/la-legisladora-martina-lacour-critica.html'
     },
     {
-        fecha: '521/05/2024',
+        fecha: '21/05/2024',
         medio: 'Noticias Río Negro ',
         tema: 'bloque pro',
         titulo: '"La falta de principios tarde o temprano se paga"',
         enlace: 'https://noticiasrionegro.com.ar/contenido/75992/la-falta-de-principios-tarde-o-temprano-se-paga '
     },
     {
-        fecha: '520/05/2024',
+        fecha: '20/05/2024',
         medio: 'Canal 7 Jacobacci',
         tema: 'bloque pro',
         titulo: 'Legisladora Martina Lacour, sobre las elecciones del PRO en Río Negro',
@@ -245,7 +252,7 @@ const notas = [
         enlace: 'https://www.youtube.com/watch?v=cTvtkdO7vEI '
     },
     {
-        fecha: '507/05/2024',
+        fecha: '07/05/2024',
         medio: 'El Cordillerano',
         tema: 'usurpaciones de tierras',
         titulo: 'El camino que desembocó en que dos hectáreas de la zona del lago Mascardi volvieran a Parques Nacionales',
@@ -264,6 +271,13 @@ const notas = [
         tema: 'no más cautivos IPROSS',
         titulo: 'Entrevista: "Libre elección del IPROSS"',
         enlace: 'https://www.youtube.com/watch?v=zZMzrx4eIDo'
+    },
+    {
+        fecha: '24/04/2024',
+        medio: 'Radio Rivadavia BRC',
+        tema: 'no más cautivos IPROSS',
+        titulo: 'Entrevista: proyecto de ley con el que impulsan la libre elección de obra social para estatales de Río Negro.',
+        enlace: 'https://facebook.com/100089872827598/videos/437341258987568/'
     },
     {
         fecha: '23/04/2024',
