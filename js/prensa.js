@@ -1,5 +1,19 @@
 const notas = [
     {
+        fecha: '04/07/2024',
+        medio: 'Bariloche Opina',
+        tema: 'responsabilidad fiscal',
+        titulo: 'Nuevas medidas fiscales: Los tickets de consumo deberán detallar los impuestos',
+        enlace: 'https://www.barilocheopina.com/noticias/2024/07/04/74606-nuevas-medidas-fiscales-los-tickets-de-consumo-deberan-detallar-los-impuestos'
+    },
+    {
+        fecha: '03/07/2024',
+        medio: 'Vivo Informado',
+        tema: 'no más cautivos IPROSS',
+        titulo: 'Reacciones de Lacour @lacourmartina: Falta de prestadores en El Bolsón de la obra social Ipross',
+        enlace: 'https://www.vivoinformado.com.ar/2024/07/reacciones-de-lacour-lacourmartina.html?m=1'
+    },
+    {
         fecha: '27/06/2024',
         medio: 'Cadena 3 Rosario',
         tema: 'nuestras banderas',
