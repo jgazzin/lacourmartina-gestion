@@ -1,5 +1,19 @@
 const notas = [
     {
+        fecha: '14/6/07/2024',
+        medio: 'El Cordillerano',
+        tema: 'nuestras banderas',
+        titulo: 'El líder de la agrupación Patoruzú considera “aberrante” que en las escuelas se presente la bandera mapuche',
+        enlace: 'https://www.elcordillerano.com.ar/noticias/2024/07/16/193096-el-lider-de-la-agrupacion-patoruzu-considera-aberrante-que-en-las-escuelas-se-presente-la-bandera-mapuche'
+    },   
+    {
+        fecha: '14/07/2024',
+        medio: 'Diario Río Negro',
+        tema: 'fin a sumarios policías',
+        titulo: 'Hay más de 800 sumarios abiertos a policías de Río Negro por las protestas de 2023',
+        enlace: 'https://www.rionegro.com.ar/politica/hay-mas-de-800-sumarios-abiertos-a-policias-de-rio-negro-por-las-protestas-de-2023-3690478/'
+    },   
+    {
         fecha: '04/07/2024',
         medio: 'Bariloche Opina',
         tema: 'responsabilidad fiscal',
