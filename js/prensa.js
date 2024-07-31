@@ -1,6 +1,27 @@
 const notas = [
     {
-        fecha: '14/6/07/2024',
+        fecha: '30/07/2024',
+        medio: 'Bariloche Opina',
+        tema: 'Cuidado Medioambiente',
+        titulo: 'Vertedero: proponen el tratamiento de los residuos con tecnología avanzada',
+        enlace: 'https://www.barilocheopina.com/noticias/2024/07/30/75112-vertedero-proponen-el-tratamiento-de-los-residuos-con-tecnologia-avanzada'
+    },   
+    {
+        fecha: '30/07/2024',
+        medio: 'Radio Rivadavia BRC',
+        tema: 'Información pública',
+        titulo: 'Entrevista: avances de los últimos proyectos presentados, remediación del vertedero y la propuesta alcanzada por parte del CPC -Convocatoria a la Participación Ciudadana',
+        enlace: 'https://www.facebook.com/watch/?mibextid=oFDknk&v=1238801677498292&rdid=F6I9PmPQPyS6UQi3'
+    },   
+    {
+        fecha: '18/07/2024',
+        medio: 'Bariloche 2000',
+        tema: 'Actos públicos',
+        titulo: 'El intendente Cortés participó del acto provincial de entrega de escrituras, personerías, aportes y becas deportivas',
+        enlace: 'https://www.bariloche2000.com/noticias/leer/el-intendente-cortes-participo-del-acto-provincial-de-entrega-de-escrituras-personerias-aportes-y-becas-deportivas/154645'
+    },   
+    {
+        fecha: '6/07/2024',
         medio: 'El Cordillerano',
         tema: 'nuestras banderas',
         titulo: 'El líder de la agrupación Patoruzú considera “aberrante” que en las escuelas se presente la bandera mapuche',

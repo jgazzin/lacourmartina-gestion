@@ -1,5 +1,13 @@
 const proyectosPropios = [
     {
+        numero: 'PL869/2024',
+        fecha: '10/07/2024',
+        area: 'Seguridad - Justicia',
+        tema: 'Información pública',
+        enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=869&a=2024',
+        resumen: 'Información pública: Sustituye los artículos 2º y 18 de la ley A nº 2938 -Procedimiento Administrativo de la Provincia de Río Negro'
+    },
+    {
         numero: 'PL773/24',
         fecha: '19/06/2024',
         area: 'Seguridad - Justicia',
@@ -106,8 +114,8 @@ const proyectosPropios = [
     {
         numero: 'PL357/24',
         fecha: '05/04/2024',
-        area: 'Información pública',
-        tema: 'gasto público',
+        area: 'Administración - Estado',
+        tema: 'Información pública',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=357&a=2024',
         resumen: 'Incorpora el artículo 99 "Título IX-Acceso Público Permanente" y modifica el inciso c- del artículo 85 de la ley H nº 3186 de Administración Financiera y Control Interno del Sector Público Provincial'
     },
@@ -139,7 +147,7 @@ const proyectosPropios = [
         numero: 'PL211/24',
         fecha: '06/03/2024',
         area: 'Justicia',
-        tema: 'acceso a información',
+        tema: 'Información pública',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=211&a=2024',
         resumen: 'Garantiza a los ciudadanos que acudan a las Comisarías de la Policía de la Provincia de Río Negro, el debido acceso a la información atinente a sus derechos y garantías'
     },
@@ -147,7 +155,7 @@ const proyectosPropios = [
         numero: 'PL196/24',
         fecha: '06/03/2024',
         area: 'Medio Ambiente',
-        tema: 'reducción de plásticos',
+        tema: 'Cuidado Medioambiente',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=196&a=2024',
         resumen: 'Ley de Reducción de Plásticos de único uso'
     },
