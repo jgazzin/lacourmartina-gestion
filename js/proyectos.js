@@ -1,8 +1,16 @@
 const proyectosPropios = [
     {
+        numero: 'PL950/2024',
+        fecha: '01/08/2024',
+        area: 'Administración - Estadoa',
+        tema: 'Información pública',
+        enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=950&a=2024',
+        resumen: 'Garantizar el libre acceso a las respuestas de los pedidos de informe, colaborando con la buscada “despapelización” y con la transformación digital y la simplificación de trámites.'
+    },
+    {
         numero: 'PL869/2024',
         fecha: '10/07/2024',
-        area: 'Seguridad - Justicia',
+        area: 'Administración - Estado',
         tema: 'Información pública',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=869&a=2024',
         resumen: 'Información pública: Sustituye los artículos 2º y 18 de la ley A nº 2938 -Procedimiento Administrativo de la Provincia de Río Negro'
