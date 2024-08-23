@@ -122,6 +122,7 @@ function eliminarAlert(e) {
 
 function enviar() {
     form.classList.add('enviando')
+    form.submit()
 
     verificado = {
         nombre: '',
