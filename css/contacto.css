@@ -1,0 +1,117 @@
+/* contacto */
+.contactForm {
+    background-image: url(../img/sesion.jpg);
+    background-position: top right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 2rem;
+  }
+
+  .contactForm .medio-container {
+    width: 50%;
+    height: 100%;
+    background-color: #f5ac0dc4;
+
+  }
+
+  @media (max-width: 576px) {
+    .contactForm .medio-container{
+      width: 100%;
+    }
+  }
+
+  .contactForm .form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 3rem 2rem;
+    color: var(--color-negativo);
+  }
+  .contactForm .form legend{
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .contactForm .form .item {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 16px;
+  }
+  .contactForm .form input,
+  .contactForm .form textarea {
+    padding: 6px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color-negativo);
+    width: 100%;
+    margin: 16px 0;
+  }
+  .contactForm .form input:-webkit-autofill,
+.contactForm .form textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset; 
+  /* Cambia el fondo a transparente */
+  -webkit-text-fill-color: var(--color-negativo); 
+  /* Cambia el color del texto si es necesario */
+  transition: background-color 5000s ease-in-out 0s; 
+  /* Evita que el fondo vuelva a aparecer */
+}
+
+.contactForm .form textarea::-webkit-scrollbar {
+  width: 4px; 
+  /* Ancho de la barra de desplazamiento */
+}
+
+  .contactForm .form .input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contactForm .form input,
+  .contactForm .form textarea{
+    color: var(--color-negativo);
+  }
+
+  .contactForm .form input:focus,
+  .contactForm .form textarea:focus{
+    outline: none;
+    background-color: transparent;
+    font-family: "Nunito", sans-serif;
+    color: var(--color-negativo);
+  }
+
+  .contactForm .form input::placeholder,
+  .contactForm .form textarea::placeholder{
+    color: var(--color-negativo);
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 12px;
+  }
+  .contactForm .form .btn{
+    margin: 2rem auto 0;
+    max-width: 200px;
+    background-color: transparent;
+    border-color: var(--color-negativo);
+    color: var(--color-negativo);
+  }
+
+  /* eventos */
+  .success{
+    color: rgb(0, 71, 0);
+  }
+  .error{
+    color: rgb(112, 0, 0);
+  }
+
+  .enviando{
+    opacity: 0;
+    transform: translateX(100%);
+    transition: 1.5s all ease-in-out;
+
+  }
+
+ 

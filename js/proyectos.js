@@ -204,35 +204,108 @@ temaProyectos.addEventListener('change', ()=>{
 })
 
 // FUNCIONES
+const contenedorProyectos = document.querySelector('.proyectos_propios')
+
 function imprimirProyectos(listado) {
-    const contenedorProyectos = document.querySelector('.proyectos_propios')
     contenedorProyectos.innerHTML = '';
+
+    let i=0
     listado.forEach(proyecto =>{
+        while (i<10) {
+            const card = document.createElement('div')
+            card.classList.add('card')
+            card.innerHTML= `
+            <div class="card_left">
+                <div class="link-row">
+                    <p class="numero">${proyecto.numero}</p>
+                    <a href="${proyecto.enlace}">
+                    <i class="fa-solid fa-arrow-up-right-from-square fa-lg"></i></a>
+                </div>
+                <p class="fecha">${proyecto.fecha}</p>
+            </div>
+            <div class="card_centro">
+                <p class="resumen">${proyecto.resumen}</p>
+            </div>
+            <div class="card_right">
+                <p class="area">${proyecto.area}</p>
+                <p class="tag">${proyecto.tema}</p>
+            </div>
+            `;
+            i++
+            contenedorProyectos.appendChild(card)
+        }
+
+    })
+    const mostrarMas = document.createElement('p')
+    mostrarMas.textContent = 'Mostrar más'
+    mostrarMas.classList.add('ancor')
+    contenedorProyectos.appendChild(mostrarMas)
+
+    mostrarMas.addEventListener('click', ()=>{
+        mostrarMas.remove()
+        mostrarMasProyectos(listado)
+    })
+
+    const countProyectos = listado.length;
+    document.querySelector('#countProyectos').textContent = countProyectos;
+}
+
+function mostrarMasProyectos(listado){
+
+    let i=10   
+    while (i< listado.length) {
+                    
         const card = document.createElement('div')
         card.classList.add('card')
         card.innerHTML= `
         <div class="card_left">
             <div class="link-row">
-                <p class="numero">${proyecto.numero}</p>
-                <a href="${proyecto.enlace}">
+                <p class="numero">${listado[i].numero}</p>
+                <a href="${listado[i].enlace}">
                 <i class="fa-solid fa-arrow-up-right-from-square fa-lg"></i></a>
             </div>
-            <p class="fecha">${proyecto.fecha}</p>
+            <p class="fecha">${listado[i].fecha}</p>
         </div>
         <div class="card_centro">
-            <p class="resumen">${proyecto.resumen}</p>
+            <p class="resumen">${listado[i].resumen}</p>
         </div>
         <div class="card_right">
-            <p class="area">${proyecto.area}</p>
-            <p class="tag">${proyecto.tema}</p>
+            <p class="area">${listado[i].area}</p>
+            <p class="tag">${listado[i].tema}</p>
         </div>
         `;
+        i++
         contenedorProyectos.appendChild(card)
+    }
+    const mostrarMenos = document.createElement('p')
+    mostrarMenos.textContent = 'Mostrar menos'
+    mostrarMenos.classList.add('ancor')
+    contenedorProyectos.appendChild(mostrarMenos)
 
+    mostrarMenos.addEventListener('click', ()=>{
+        mostrarMenos.remove()
+        mostrarMenosProyectos(listado)
     })
-    const countProyectos = listado.length;
-    document.querySelector('#countProyectos').textContent = countProyectos;
+}
 
+function mostrarMenosProyectos(listado){
+    let i = listado.length
+
+    while( i >= 10){
+        contenedorProyectos.lastChild.remove()
+        i--
+    }
+    
+    const mostrarMas = document.createElement('p')
+    mostrarMas.textContent = 'Mostrar más'
+    mostrarMas.classList.add('ancor')
+    contenedorProyectos.appendChild(mostrarMas)
+    contenedorProyectos.scrollIntoView({ behavior: 'smooth' });
+
+    mostrarMas.addEventListener('click', ()=>{
+        mostrarMas.remove()
+        mostrarMasProyectos(listado)
+    })
 }
 
 // <a href="${proyecto.enlace}" class="btn editar">Ver</a>

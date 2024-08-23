@@ -26,7 +26,7 @@
     <header id="inicio">
         <div class="container header">
             <h2>Lacour<span> Martina</span></h2>
-            <i class="fa-solid fa-right-to-bracket fa-xl"></i>
+            <!-- <i class="fa-solid fa-right-to-bracket fa-xl"></i> -->
         </div>
 
         <div class="container cuadro_resumen">
@@ -59,74 +59,169 @@
                 </div>      
         </div>
     </header>
-    <main class="container">
-        <div class="titulo m-top">
-            <i class="fa-solid fa-landmark fa-xl"></i>
-            <h3>informe de 6 meses de gestión</h3>
-        </div>
-
-        <div class="search_nav">
-            <div class="anclas">
-                <a href="#proyectos">Proyectos propios</a>
-                <a href="#hitos">Hitos relevantes</a>
-                <a href="#prensa">En medios</a>
+    <main>
+        <section class="container">
+            <div class="titulo m-top">
+                <i class="fa-solid fa-landmark fa-xl"></i>
+                <h3>trabajo legislativo</h3>
             </div>
-            <div class="temas">
-                <select name="tema" id="temas">
-                    <option value="" selected>todos</option>
-                    <option value="nuestras banderas">nuestras banderas</option>
-                    <option value="reiterancia delictiva">reiterancia delictiva</option>
-                    <option value="bloque pro">bloque pro</option>
-                    <option value="peajes río negro">peajes río negro</option>
-                    <option value="usurpaciones de tierras">usurpaciones de tierras</option>
-                    <option value="no más cautivos IPROSS">no más cautivos IPROSS</option>
-                    <option value="incendios forestales">incendios forestales</option>
-                    <option value="yo no paro">yo no paro</option>
-                    <option value="responsabilidad fiscal">responsabilidad fiscal</option>
-                    <option value="paso cardenal samoré">paso cardenal samoré</option>
-                </select>
-
+    
+            <div class="anclas_nav">
+                <div class="anclas">
+                    <a href="#proyectos">Proyectos propios</a>
+                    <a href="#hitos">Hitos relevantes</a>
+                    <a href="#prensa">En medios</a>
+                    <a href="#form">Contacto</a>
+                </div>
+                <i class="fa-solid fa-magnifying-glass fa-lg"></i>
             </div>
-        </div>
-
-        <div class="headline" id="proyectos">
-            <div class="titulo">
-                <i class="fa-solid fa-sheet-plastic fa-lg"></i>
-                <h3>Proyectos propios</h3>
+            
+            <div class="search_nav">
+                <div class="temas">
+                    <select name="tema" id="temas">
+                        <option value="" selected>todos</option>
+                        <option value="nuestras banderas">nuestras banderas</option>
+                        <option value="reiterancia delictiva">reiterancia delictiva</option>
+                        <option value="bloque pro">bloque pro</option>
+                        <option value="peajes río negro">peajes río negro</option>
+                        <option value="usurpaciones de tierras">usurpaciones de tierras</option>
+                        <option value="no más cautivos IPROSS">no más cautivos IPROSS</option>
+                        <option value="incendios forestales">incendios forestales</option>
+                        <option value="yo no paro">yo no paro</option>
+                        <option value="responsabilidad fiscal">responsabilidad fiscal</option>
+                        <option value="paso cardenal samoré">paso cardenal samoré</option>
+                    </select>
+                </div>
             </div>
-            <i class="fa-solid fa-circle-up fa-2xl verMas"></i>
-        </div>
 
-        <div class="proyectos_propios">
+        </section>
 
-            <script src="js/proyectos.js"></script>
-        </div>
+        <!-- ** PROYECTOS -->
+        <section  class="container">
 
-        <div class="headline" id="hitos">
-            <div class="titulo">
-                <i class="fa-solid fa-location-pin fa-lg"></i>
-                <h3>Hitos relevantes</h3>
+            <div class="headline" id="proyectos">
+                <div class="titulo">
+                    <i class="fa-solid fa-sheet-plastic fa-lg"></i>
+                    <h3>Proyectos propios</h3>
+                </div>
+                <i class="fa-solid fa-circle-up fa-2xl verMas"></i>
             </div>
-            <i class="fa-solid fa-circle-up fa-2xl verMas"></i>
-        </div>
-
-        <div class="hitos">
-
-            <script src="js/hitos.js"></script>
-        </div>
-
-        <div class="headline" id="prensa">
-            <div class="titulo">
-                <i class="fa-solid fa-newspaper fa-lg"></i>
-                <h3>Notas en medios</h3>
+    
+            <div class="proyectos_propios">
+                <script src="js/proyectos.js"></script>
             </div>
-            <i class="fa-solid fa-circle-up fa-2xl verMas"></i>
-        </div>
+        </section>
 
-        <div class="prensa">
-            <script src="js/prensa.js"></script>
-        </div>
+        <!-- ** HITOS -->
+        <section class="container">
+            <div class="headline" id="hitos">
+                <div class="titulo">
+                    <i class="fa-solid fa-location-pin fa-lg"></i>
+                    <h3>Hitos relevantes</h3>
+                </div>
+                <i class="fa-solid fa-circle-up fa-2xl verMas"></i>
+            </div>
+    
+            <div class="hitos">
+                <script src="js/hitos.js"></script>
+            </div>
+        </section>
 
+        <!-- ** PRENSA -->
+        <section class="container">
+            <div class="headline" id="prensa">
+                <div class="titulo">
+                    <i class="fa-solid fa-newspaper fa-lg"></i>
+                    <h3>Notas en medios</h3>
+                </div>
+                <i class="fa-solid fa-circle-up fa-2xl verMas"></i>
+            </div>
+    
+            <div class="prensa">
+                <script src="js/prensa.js"></script>
+            </div>
+        </section>
+
+        <!-- ** CONTACTO -->
+        <section class="contactForm" id="form">
+            <div class="container">
+                    <div class="medio-container">
+                        <form action="https://formsubmit.co/j.gazzin@gmail.com" method="POST" class="form" novalidate>
+                            <legend>contacto</legend>
+                            <div class="item">
+                                <div class="input">
+                                    <input type="text" name="nombre" id="name" placeholder="Nombre">
+                                </div>
+                            </div>
+    
+                            <div class="item">
+                                <div class="input">
+                                    <input type="text" name="ciudad" id="ciudad" placeholder="ciudad">
+                                </div>
+                            </div>
+    
+                            <div class="item">
+                                <div class="input">
+                                    <input type="email" name="email" id="email" placeholder="e-mail">
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="input">
+                                    <textarea name="mensaje" id="mensaje" placeholder="mensaje" rows="5" maxlength="800"></textarea>
+                                </div>
+                            </div>
+    
+                            <button class="btn primary" disabled>enviar</button>
+
+                            <input type="hidden" name="_next" value="#form">
+                            <input type="hidden" name="_captcha" value="false">
+                        </form>   
+                    </div>
+                </div>
+        </section>
+    
+        <!-- ** FAQS ITEMS -->
+        <section>
+            <div class="container faqs">
+                <div class="titulo">
+                    <i class="fa-solid fa-right-long fa-xl"></i>
+                    <h2>Sobre mí</h2>
+                </div>
+                <div class="preguntas-contenedor">
+                    <div class="item">
+                        <div class="pregunta">
+                            <h4>¿pregunta uno?</h4>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                        <div class="respuesta hidden">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga consequatur voluptas temporibus impedit voluptates iusto, pariatur nostrum veritatis adipisci quo.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pregunta">
+                            <h4>¿pregunta uno?</h4>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                        <div class="respuesta hidden">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga consequatur voluptas temporibus impedit voluptates iusto, pariatur nostrum veritatis adipisci quo.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pregunta">
+                            <h4>¿pregunta uno?</h4>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                        <div class="respuesta hidden">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga consequatur voluptas temporibus impedit voluptates iusto, pariatur nostrum veritatis adipisci quo.</p>
+                        </div>
+                    </div>
+    
+                </div>
+     
+            </div>
+    
+        </section>
 
     </main>
 
@@ -154,6 +249,23 @@
             <p class="copy">&copy;<span class="date"></span> · JGDisenio</span></p>
         </div>
     </footer>
+
+    <!-- <div class="chatbot">
+        <i class="fa-solid fa-comments fa-2xl"></i>
+    </div> -->
+
+    <!-- 
+    enviar mails con formsubmit
+    <form action="https://formsubmit.co/your@email.com" method="POST">
+    https://formsubmit.co/
+        
+    * redireccionar automaticamnet
+    <input type="hidden" name="_next" value="http:// dir a donde volver">
+    * quitar captcha
+    <input type="hidden" name="_captcha" value="false">
+    
+    <input type="hidden" name="_template" value="table">
+    -->
     <script src="js/app.js"></script>
 </body>
 

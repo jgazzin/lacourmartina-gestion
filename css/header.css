@@ -59,13 +59,24 @@ header .header h2{
     border: 2px solid var(--color-negativo);
     border-radius: 4px;
 }
-
+.anclas_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.anclas_nav i{
+    cursor: pointer;
+}
+.anclas_nav i:hover{
+    text-shadow: var(--shadow);
+}
 .search_nav{
     display: flex;
     justify-content: space-between;
 }
 
 .temas{
+    margin-top: 2rem;
     width: 45%;
 }
 
