@@ -376,45 +376,110 @@ document.addEventListener('DOMContentLoaded', ()=>{
     imprimirPrensa(notas)})
 
 let temaPrensa = document.querySelector('#temas');
-console.log(temaPrensa.value);
+
 temaPrensa.addEventListener('change', ()=>{
     if(temaProyectos.value===''){
         imprimirPrensa(notas)
     } else {
         const notasFiltradas = notas.filter(note => note.tema === temaPrensa.value)
         imprimirPrensa(notasFiltradas)
-
     }
 
 })
 
 // FUNCIONES
+const contenedorPrensa = document.querySelector('.prensa')
+
 function imprimirPrensa(listado) {
-    const contenedorPrensa = document.querySelector('.prensa')
     contenedorPrensa.innerHTML= '';
 
-    listado.forEach(nota =>{
+    let i=0
+    while (i<6) {
         const card = document.createElement('div')
         card.classList.add('card')
         card.innerHTML= `
         <div class="card_left">
-            <p>${nota.fecha}</p>
-            <p>${nota.medio}</p>
+            <p>${listado[i].fecha}</p>
+            <p class="estado">${listado[i].medio}</p>
         </div>
         <div class="card_centro">
             <p class="title">
-            <a href="${nota.enlace}">
-            ${nota.titulo}</a></p>
+            <a href="${listado[i].enlace}">
+            ${listado[i].titulo}</a></p>
         </div>
         <div class="card_right">
-            <p class="tag">${nota.tema}</p>
+            <p class="tag">${listado[i].tema}</p>
         </div>
         `;
+        i++
         contenedorPrensa.appendChild(card)
+    }
 
+    const mostrarMasPrensa = document.createElement('p')
+    mostrarMasPrensa.textContent = 'Mostrar más'
+    mostrarMasPrensa.classList.add('ancor')
+    contenedorPrensa.appendChild(mostrarMasPrensa)
+    mostrarMasPrensa.addEventListener('click', ()=>{
+        mostrarMasPrensa.remove()
+        MasPrensa(listado)
     })
+
     const countPrensa = listado.length;
     document.querySelector('#countPrensa').textContent = countPrensa;
 }
 
-//<a href="${nota.enlace}" class="btn editar">Ver</a>
+function MasPrensa(listado){
+    console.log('imprimir mas prensa');
+    
+    let i=6   
+    while (i< listado.length) {
+                    
+        const card = document.createElement('div')
+        card.classList.add('card')
+        card.innerHTML= `
+        <div class="card_left">
+            <p>${listado[i].fecha}</p>
+            <p class="estado">${listado[i].medio}</p>
+        </div>
+        <div class="card_centro">
+            <p class="title">
+            <a href="${listado[i].enlace}">
+            ${listado[i].titulo}</a></p>
+        </div>
+        <div class="card_right">
+            <p class="tag">${listado[i].tema}</p>
+        </div>
+        `;
+        i++
+        contenedorPrensa.appendChild(card)
+    }
+    const mostrarMenosPrensa = document.createElement('p')
+    mostrarMenosPrensa.textContent = 'Mostrar menos'
+    mostrarMenosPrensa.classList.add('ancor')
+    contenedorPrensa.appendChild(mostrarMenosPrensa)
+
+    mostrarMenosPrensa.addEventListener('click', ()=>{
+        mostrarMenosPrensa.remove()
+        MenosPrensa(listado)
+    })
+}
+
+function MenosPrensa(listado){
+    let i = listado.length
+
+    while( i > 6){
+        contenedorPrensa.lastChild.remove()
+        i--
+    }
+    
+    const mostrarMasPrensa = document.createElement('p')
+    mostrarMasPrensa.textContent = 'Mostrar más'
+    mostrarMasPrensa.classList.add('ancor')
+    contenedorPrensa.appendChild(mostrarMasPrensa)
+    contenedorPrensa.scrollIntoView({ behavior: 'smooth' });
+
+    mostrarMasPrensa.addEventListener('click', ()=>{
+        mostrarMasPrensa.remove()
+        MasPrensa(listado)
+    })
+}

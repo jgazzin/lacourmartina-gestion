@@ -1,8 +1,18 @@
 const proyectosPropios = [
     {
+        numero: 'PL1042/2024',
+        fecha: '14-08-2024',
+        estado: 'presentado',
+        area: 'Asuntos económicos',
+        tema: 'Regularización de activos',
+        enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=1042&a=2024',
+        resumen: 'Se adhiere al Régimen de Regularización de Activos no registrados, establecido en el Título II de la ley nacional nº 27743. Busca mejorar la base tributaria y potenciar la reactivación económica.'
+    },
+    {
         numero: 'PL950/2024',
         fecha: '01/08/2024',
-        area: 'Administración - Estadoa',
+        estado: 'presentado',
+        area: 'Administración - Estado',
         tema: 'Información pública',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=950&a=2024',
         resumen: 'Garantizar el libre acceso a las respuestas de los pedidos de informe, colaborando con la buscada “despapelización” y con la transformación digital y la simplificación de trámites.'
@@ -10,6 +20,7 @@ const proyectosPropios = [
     {
         numero: 'PL869/2024',
         fecha: '10/07/2024',
+        estado: 'presentado',
         area: 'Administración - Estado',
         tema: 'Información pública',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=869&a=2024',
@@ -18,6 +29,7 @@ const proyectosPropios = [
     {
         numero: 'PL773/24',
         fecha: '19/06/2024',
+        estado: 'presentado',
         area: 'Seguridad - Justicia',
         tema: 'reiterancia delictiva',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=773&a=2024',
@@ -26,6 +38,7 @@ const proyectosPropios = [
     {
         numero: 'PC772/24',
         fecha: '19/06/2024',
+        estado: 'presentado',
         area: 'Educación - Cultura - Soberanía',
         tema: 'nuestras banderas',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=772&a=2024',
@@ -34,6 +47,7 @@ const proyectosPropios = [
     {
         numero: 'PC771/24',
         fecha: '19/06/2024',
+        estado: 'presentado',
         area: 'Educación - Cultura - Soberanía',
         tema: 'nuestras banderas',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=771&a=2024',
@@ -42,6 +56,7 @@ const proyectosPropios = [
     {
         numero: 'PC758/24',
         fecha: '18/06/2024',
+        estado: 'presentado',
         area: 'Educación - Obras públicas',
         tema: 'escuelas públicas',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=758&a=2024',
@@ -50,6 +65,7 @@ const proyectosPropios = [
     {
         numero: 'PC757/24',
         fecha: '18/06/2024',
+        estado: 'presentado',
         area: 'Seguridad',
         tema: 'fin a sumarios policías',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=757&a=2024',
@@ -58,6 +74,7 @@ const proyectosPropios = [
     {
         numero: 'PI753/24',
         fecha: '18/06/2024',
+        estado: 'presentado',
         area: 'Educación - Obras públicas',
         tema: 'escuelas públicas',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=753&a=2024',
@@ -66,6 +83,7 @@ const proyectosPropios = [
     {
         numero: 'PI752/24',
         fecha: '18/06/2024',
+        estado: 'presentado',
         area: 'Educación - Obras públicas',
         tema: 'escuelas públicas',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=752&a=2024',
@@ -74,6 +92,7 @@ const proyectosPropios = [
     {
         numero: 'PI751/24',
         fecha: '18/06/2024',
+        estado: 'presentado',
         area: 'Economía - Finanzas',
         tema: 'gasto público',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=751&a=2024',
@@ -82,6 +101,7 @@ const proyectosPropios = [
     {
         numero: 'PL695/24',
         fecha: '06/06/2024',
+        estado: 'presentado',
         area: 'Cultura - Educación - Seguridad Interior',
         tema: 'nuestras banderas',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=695&a=2024',
@@ -90,6 +110,7 @@ const proyectosPropios = [
     {
         numero: 'PI451/24',
         fecha: '23/04/2024',
+        estado: 'presentado',
         area: 'Medio Ambiente',
         tema: 'contaminación lago',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=451&a=2024',
@@ -98,6 +119,7 @@ const proyectosPropios = [
     {
         numero: 'PI449/24',
         fecha: '23/04/2024',
+        estado: 'presentado',
         area: 'Educación - Obras públicas',
         tema: 'escuela oeste bariloche',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=449&a=2024',
@@ -106,6 +128,7 @@ const proyectosPropios = [
     {
         numero: 'PL447/24',
         fecha: '23/04/2024',
+        estado: 'presentado',
         area: 'Salud',
         tema: 'no más cautivos IPROSS',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=447&a=2024',
@@ -114,6 +137,7 @@ const proyectosPropios = [
     {
         numero: 'PC446/24',
         fecha: '23/04/2024',
+        estado: 'presentado',
         area: 'Economía - Agro',
         tema: 'protección agro',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=446&a=2024',
@@ -122,6 +146,7 @@ const proyectosPropios = [
     {
         numero: 'PL357/24',
         fecha: '05/04/2024',
+        estado: 'presentado',
         area: 'Administración - Estado',
         tema: 'Información pública',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=357&a=2024',
@@ -130,6 +155,7 @@ const proyectosPropios = [
     {
         numero: 'PC356/24',
         fecha: '05/04/2024',
+        estado: 'presentado',
         area: 'Educación',
         tema: 'escuela oeste bariloche',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=356&a=2024',
@@ -138,6 +164,7 @@ const proyectosPropios = [
     {
         numero: 'PC244/24',
         fecha: '12/03/2024',
+        estado: 'presentado',
         area: 'Seguridad',
         tema: 'cuidar a Roca',
         enlace:'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=244&a=2024',
@@ -146,6 +173,7 @@ const proyectosPropios = [
     {
         numero: 'PD230/24',
         fecha: '08/03/2024',
+        estado: 'presentado',
         area: 'Seguridad',
         tema: 'cuidar a roca',
         enlace:'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=230&a=2024',
@@ -154,6 +182,7 @@ const proyectosPropios = [
     {
         numero: 'PL211/24',
         fecha: '06/03/2024',
+        estado: 'presentado',
         area: 'Justicia',
         tema: 'Información pública',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=211&a=2024',
@@ -162,6 +191,7 @@ const proyectosPropios = [
     {
         numero: 'PL196/24',
         fecha: '06/03/2024',
+        estado: 'presentado',
         area: 'Medio Ambiente',
         tema: 'Cuidado Medioambiente',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=196&a=2024',
@@ -170,6 +200,7 @@ const proyectosPropios = [
     {
         numero: 'PL115/24',
         fecha: '19/02/2024',
+        estado: 'presentado',
         area: 'Economía - Defensa del Consumidor',
         tema: 'responsabilidad fiscal',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=115&a=2024',
@@ -178,6 +209,7 @@ const proyectosPropios = [
     {
         numero: 'PC72/24',
         fecha: '07/02/2024',
+        estado: 'presentado',
         area: 'Relaciones Internacionales',
         tema: 'paso cardenal samoré',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=72&a=2024',
@@ -210,32 +242,31 @@ function imprimirProyectos(listado) {
     contenedorProyectos.innerHTML = '';
 
     let i=0
-    listado.forEach(proyecto =>{
-        while (i<10) {
-            const card = document.createElement('div')
-            card.classList.add('card')
-            card.innerHTML= `
-            <div class="card_left">
-                <div class="link-row">
-                    <p class="numero">${proyecto.numero}</p>
-                    <a href="${proyecto.enlace}">
-                    <i class="fa-solid fa-arrow-up-right-from-square fa-lg"></i></a>
-                </div>
-                <p class="fecha">${proyecto.fecha}</p>
+    while (i<6) {
+        const card = document.createElement('div')
+        card.classList.add('card')
+        card.innerHTML= `
+        <div class="card_left">
+            <div class="link-row">
+                <p class="numero">${listado[i].numero}</p>
+                <a href="${listado[i].enlace}">
+                <i class="fa-solid fa-arrow-up-right-from-square fa-lg"></i></a>
             </div>
-            <div class="card_centro">
-                <p class="resumen">${proyecto.resumen}</p>
-            </div>
-            <div class="card_right">
-                <p class="area">${proyecto.area}</p>
-                <p class="tag">${proyecto.tema}</p>
-            </div>
-            `;
-            i++
-            contenedorProyectos.appendChild(card)
-        }
+            <p class="fecha">${listado[i].fecha}</p>
+            <p class="estado">${listado[i].estado}</p>
+        </div>
+        <div class="card_centro">
+            <p class="resumen">${listado[i].resumen}</p>
+        </div>
+        <div class="card_right">
+            <p class="area">${listado[i].area}</p>
+            <p class="tag">${listado[i].tema}</p>
+        </div>
+        `;
+        i++
+        contenedorProyectos.appendChild(card)
+    }
 
-    })
     const mostrarMas = document.createElement('p')
     mostrarMas.textContent = 'Mostrar más'
     mostrarMas.classList.add('ancor')
@@ -252,7 +283,7 @@ function imprimirProyectos(listado) {
 
 function mostrarMasProyectos(listado){
 
-    let i=10   
+    let i=6   
     while (i< listado.length) {
                     
         const card = document.createElement('div')
@@ -265,6 +296,7 @@ function mostrarMasProyectos(listado){
                 <i class="fa-solid fa-arrow-up-right-from-square fa-lg"></i></a>
             </div>
             <p class="fecha">${listado[i].fecha}</p>
+            <p class="estado">${listado[i].estado}</p>
         </div>
         <div class="card_centro">
             <p class="resumen">${listado[i].resumen}</p>
@@ -291,7 +323,7 @@ function mostrarMasProyectos(listado){
 function mostrarMenosProyectos(listado){
     let i = listado.length
 
-    while( i >= 10){
+    while( i > 6){
         contenedorProyectos.lastChild.remove()
         i--
     }

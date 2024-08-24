@@ -1,4 +1,6 @@
 const hitos = [
+    'Rechazo absoluto a fraude electoral y auto-proclamación de Maduro como Presidente de Venezuela.',
+    'Votamos de forma afirmativa todos sus términos al Régimen de Incentivo para Grandes Inversiones -RIGI-, creado por la ley Bases.',
     'Comunicación al Ministerio de Educación para solicitar se prohíba la realización de promesas de lealtad a banderas diferentes de la argentina',
     'Solicitamos establecer a la educación obligatoria como servicio estratégico esencial',
     'Ley "Nuestras Banderas" para que sólo se exhiban las banderas oficiales (nacional, provincial y municipal) en los edificios públicos provinciales',
@@ -17,20 +19,117 @@ const hitos = [
 ];
 
 document.addEventListener('DOMContentLoaded', imprimirHitos)
+const contenedorHitos = document.querySelector('.hitos')
+let slider = document.querySelector('.ultimos_hitos');
 
 function imprimirHitos() {
-    const contenedorHitos = document.querySelector('.hitos')
-    
-    let i = 0;
-    hitos.forEach(hit =>{
+    let index = 0
+    setInterval(() => {
+       
+        const div = document.createElement('div')
+        div.classList.add('item')
+        div.setAttribute('id', index)
+        div.innerHTML = `
+        <p><i>Últimas noticias:</i></p>
+        <h3>${hitos[index]}</h3>
+        `;
+        slider.appendChild(div) 
+        index++
+        if(index === 3){
+            index =0
+        }
+        setTimeout(() => {
+            div.classList.add('sacar') 
+            setTimeout(() => {
+                div.remove()
+            }, 1500);
+        }, 3500);
+
+    }, 5000);
+
+
+    let i = 3;
+    while (i < 9 ) {
         const item = document.createElement('DIV')
         item.classList.add('item')
         item.innerHTML =`
             <i class="fa-solid fa-flag fa-lg"></i>
-            <p>${hit}</p>
+            <p>${hitos[i]}</p>
         `;
-        // console.log(item);
-        // console.log(hit);
+
         contenedorHitos.appendChild(item)
+        i++
+    }
+    const mostrarMas = document.createElement('p')
+    mostrarMas.textContent = 'Mostrar más'
+    mostrarMas.classList.add('ancor')
+    contenedorHitos.appendChild(mostrarMas)
+
+    mostrarMas.addEventListener('click', ()=>{
+        mostrarMas.remove()
+        masHitos()
     })
+
+}
+
+function masHitos() {
+    let i= 9
+    while (i<hitos.length){
+        const item = document.createElement('DIV')
+        item.classList.add('item')
+        item.innerHTML =`
+            <i class="fa-solid fa-flag fa-lg"></i>
+            <p>${hitos[i]}</p>
+        `;
+
+        contenedorHitos.appendChild(item)
+        i++
+    }
+    const mostrarMenos = document.createElement('p')
+    mostrarMenos.textContent = 'Mostrar menos'
+    mostrarMenos.classList.add('ancor')
+    contenedorHitos.appendChild(mostrarMenos)
+
+    mostrarMenos.addEventListener('click', ()=>{
+        mostrarMenos.remove()
+        menosHitos()
+    })
+}
+
+function menosHitos(){
+    let i = hitos.length
+
+    while( i > 9){
+        contenedorHitos.lastChild.remove()
+        i--
+    }
+
+    const mostrarMas = document.createElement('p')
+    mostrarMas.textContent = 'Mostrar más'
+    mostrarMas.classList.add('ancor')
+    contenedorHitos.appendChild(mostrarMas)
+    contenedorHitos.scrollIntoView({ behavior: 'smooth' });
+
+    mostrarMas.addEventListener('click', ()=>{
+        mostrarMas.remove()
+        masHitos()
+    })
+}
+
+
+function slides(sliderInd) {
+
+    let contador = 1;
+    let tamanio = sliderInd.clientHeight;
+
+    slider.style.transform = 'translateY(' + (- tamanio * contador) +'px)';
+    slider.style.transition = 'transform 1s';
+    contador++;
+    if (contador === sliderInd.length) {
+        contador = 0;
+        setTimeout(() => {
+            slider.style.transform = 'translateY(0px)';
+            slider.style.transition = 'transform 0s';
+        }, 2000);
+    }
 }

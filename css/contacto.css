@@ -1,6 +1,6 @@
 /* contacto */
 .contactForm {
-    background-image: url(../img/sesion.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(/img/sesion.jpg);
     background-position: top right;
     background-size: cover;
     background-repeat: no-repeat;
@@ -10,7 +10,7 @@
   .contactForm .medio-container {
     width: 50%;
     height: 100%;
-    background-color: #f5ac0dc4;
+    background-color: #f5ac0db9;
 
   }
 

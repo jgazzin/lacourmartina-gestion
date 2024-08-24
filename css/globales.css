@@ -7,7 +7,7 @@
   --color-texto: #1a1a1a;
 
 
-  --nav-h:400px;
+  --nav-h:440px;
   --shadow: 2px 2px 5px rgb(66, 65, 67);
 }
   
@@ -143,6 +143,15 @@ input{
 .tag{
   padding: 4px 8px;
   background-color: var(--color-ppal);
+  color: var(--color-negativo);
+  font-weight: bold;
+  text-align: center;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.estado{
+  padding: 4px 8px;
+  background-color: var(--color-complemento);
   color: var(--color-negativo);
   font-weight: bold;
   text-align: center;

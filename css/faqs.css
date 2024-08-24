@@ -39,6 +39,10 @@
   padding: 4px 8px;
 }
 
+.faqs .social i:hover{
+  text-shadow: var(--shadow);
+}
+
 @media (max-width: 768px) {
   .faqs {
     flex-direction: column;
