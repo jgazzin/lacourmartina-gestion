@@ -86,7 +86,7 @@
 
   .contactForm .form input::placeholder,
   .contactForm .form textarea::placeholder{
-    color: var(--color-negativo);
+    color:  #e9e9e9b4;
     text-transform: uppercase;
     font-style: italic;
     font-size: 12px;

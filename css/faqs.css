@@ -38,6 +38,9 @@
   border-radius: 1rem;
   padding: 4px 8px;
 }
+.faqs .respuesta p{
+  margin-bottom: 16px;
+}
 
 .faqs .social i:hover{
   text-shadow: var(--shadow);
