@@ -49,7 +49,7 @@ function imprimirHitos() {
 
 
     let i = 3;
-    while (i < 9 ) {
+    while (i < 10 ) {
         const item = document.createElement('DIV')
         item.classList.add('item')
         item.innerHTML =`
@@ -73,7 +73,7 @@ function imprimirHitos() {
 }
 
 function masHitos() {
-    let i= 9
+    let i= 10
     while (i<hitos.length){
         const item = document.createElement('DIV')
         item.classList.add('item')
@@ -99,7 +99,7 @@ function masHitos() {
 function menosHitos(){
     let i = hitos.length
 
-    while( i > 9){
+    while( i > 10){
         contenedorHitos.lastChild.remove()
         i--
     }

@@ -2,16 +2,25 @@ const proyectosPropios = [
     {
         numero: 'PL1042/2024',
         fecha: '14-08-2024',
-        estado: 'presentado',
-        area: 'Asuntos económicos',
+        estado: 'ingresado',
+        area: 'Obras públicas',
         tema: 'Regularización de activos',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=1042&a=2024',
-        resumen: 'Se adhiere al Régimen de Regularización de Activos no registrados, establecido en el Título II de la ley nacional nº 27743. Busca mejorar la base tributaria y potenciar la reactivación económica.'
+        resumen: 'Se adhiere al Régimen de blanqueo de Activos no registrados, establecido en el Título II de la ley nacional nº 27743. Busca mejorar la base tributaria y potenciar la reactivación económica.'
+    },
+    {
+        numero: 'PI996/2024',
+        fecha: ' 08-08-2024',
+        estado: 'ingresado',
+        area: 'Asuntos económicos',
+        tema: 'gasoducto patagónico',
+        enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=996&a=2024',
+        resumen: 'Al Poder Ejecutivo, referido a las obras de ampliación de la capacidad de transporte del Gasoducto Patagónico.'
     },
     {
         numero: 'PL950/2024',
         fecha: '01/08/2024',
-        estado: 'presentado',
+        estado: 'ingresado',
         area: 'Administración - Estado',
         tema: 'Información pública',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=950&a=2024',
@@ -20,25 +29,25 @@ const proyectosPropios = [
     {
         numero: 'PL869/2024',
         fecha: '10/07/2024',
-        estado: 'presentado',
+        estado: 'ingresado',
         area: 'Administración - Estado',
         tema: 'Información pública',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=869&a=2024',
-        resumen: 'Información pública: Sustituye los artículos 2º y 18 de la ley A nº 2938 -Procedimiento Administrativo de la Provincia de Río Negro'
+        resumen: 'Sustituye los artículos 2º y 18 de la ley A nº 2938 -Procedimiento Administrativo de Río Negro. En concordancia con la Ley Bases, adecua el procedimiento adminstrativo, evitando la sobregarga burocrática, e implementa el "silencio positivo", que permite obtener resultados efectivos de los trámites frente a la pasividad del Estado.'
     },
     {
         numero: 'PL773/24',
         fecha: '19/06/2024',
-        estado: 'presentado',
+        estado: 'ingresado',
         area: 'Seguridad - Justicia',
         tema: 'reiterancia delictiva',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=773&a=2024',
-        resumen: 'Reiterancia Delictiva. Incorpora artículos a la ley P nº 5020 -Código Procesal Penal'
+        resumen: 'Incorpora los conceptos de "reiterancia delictiva" y "peligrosidad procesal" a la ley P nº 5020 -Código Procesal Penal, '
     },
     {
         numero: 'PC772/24',
         fecha: '19/06/2024',
-        estado: 'presentado',
+        estado: 'ingresado',
         area: 'Educación - Cultura - Soberanía',
         tema: 'nuestras banderas',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=772&a=2024',
@@ -47,7 +56,7 @@ const proyectosPropios = [
     {
         numero: 'PC771/24',
         fecha: '19/06/2024',
-        estado: 'presentado',
+        estado: 'ingresado',
         area: 'Educación - Cultura - Soberanía',
         tema: 'nuestras banderas',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=771&a=2024',
@@ -56,7 +65,7 @@ const proyectosPropios = [
     {
         numero: 'PC758/24',
         fecha: '18/06/2024',
-        estado: 'presentado',
+        estado: 'ingresado',
         area: 'Educación - Obras públicas',
         tema: 'escuelas públicas',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=758&a=2024',
@@ -65,7 +74,7 @@ const proyectosPropios = [
     {
         numero: 'PC757/24',
         fecha: '18/06/2024',
-        estado: 'presentado',
+        estado: 'ingresado',
         area: 'Seguridad',
         tema: 'fin a sumarios policías',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=757&a=2024',
@@ -74,7 +83,7 @@ const proyectosPropios = [
     {
         numero: 'PI753/24',
         fecha: '18/06/2024',
-        estado: 'presentado',
+        estado: 'tratado',
         area: 'Educación - Obras públicas',
         tema: 'escuelas públicas',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=753&a=2024',
@@ -83,7 +92,7 @@ const proyectosPropios = [
     {
         numero: 'PI752/24',
         fecha: '18/06/2024',
-        estado: 'presentado',
+        estado: 'tratado',
         area: 'Educación - Obras públicas',
         tema: 'escuelas públicas',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=752&a=2024',
@@ -92,7 +101,7 @@ const proyectosPropios = [
     {
         numero: 'PI751/24',
         fecha: '18/06/2024',
-        estado: 'presentado',
+        estado: 'ingresado',
         area: 'Economía - Finanzas',
         tema: 'gasto público',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=751&a=2024',
@@ -101,7 +110,7 @@ const proyectosPropios = [
     {
         numero: 'PL695/24',
         fecha: '06/06/2024',
-        estado: 'presentado',
+        estado: 'ingresado',
         area: 'Cultura - Educación - Seguridad Interior',
         tema: 'nuestras banderas',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=695&a=2024',
@@ -110,7 +119,7 @@ const proyectosPropios = [
     {
         numero: 'PI451/24',
         fecha: '23/04/2024',
-        estado: 'presentado',
+        estado: 'tratado',
         area: 'Medio Ambiente',
         tema: 'contaminación lago',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=451&a=2024',
@@ -119,7 +128,7 @@ const proyectosPropios = [
     {
         numero: 'PI449/24',
         fecha: '23/04/2024',
-        estado: 'presentado',
+        estado: 'tratado',
         area: 'Educación - Obras públicas',
         tema: 'escuela oeste bariloche',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=449&a=2024',
@@ -128,7 +137,7 @@ const proyectosPropios = [
     {
         numero: 'PL447/24',
         fecha: '23/04/2024',
-        estado: 'presentado',
+        estado: 'ingresado',
         area: 'Salud',
         tema: 'no más cautivos IPROSS',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=447&a=2024',
@@ -137,7 +146,7 @@ const proyectosPropios = [
     {
         numero: 'PC446/24',
         fecha: '23/04/2024',
-        estado: 'presentado',
+        estado: 'ingresado',
         area: 'Economía - Agro',
         tema: 'protección agro',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=446&a=2024',
@@ -146,7 +155,7 @@ const proyectosPropios = [
     {
         numero: 'PL357/24',
         fecha: '05/04/2024',
-        estado: 'presentado',
+        estado: 'ingresado',
         area: 'Administración - Estado',
         tema: 'Información pública',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=357&a=2024',
@@ -155,7 +164,7 @@ const proyectosPropios = [
     {
         numero: 'PC356/24',
         fecha: '05/04/2024',
-        estado: 'presentado',
+        estado: 'ingresado',
         area: 'Educación',
         tema: 'escuela oeste bariloche',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=356&a=2024',
@@ -164,16 +173,16 @@ const proyectosPropios = [
     {
         numero: 'PC244/24',
         fecha: '12/03/2024',
-        estado: 'presentado',
+        estado: 'aprobado',
         area: 'Seguridad',
-        tema: 'cuidar a Roca',
+        tema: 'cuidar a roca',
         enlace:'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=244&a=2024',
         resumen: 'Al Ministerio de Seguridad y Justicia, la necesidad de realizar las gestiones necesarias con la Municipalidad de la ciudad de San Carlos de Bariloche y su Centro de Monitoreo, para la protección del monumento de Julio Argentino Roca ubicado en el Centro Cívico de esa ciudad'
     },
     {
         numero: 'PD230/24',
         fecha: '08/03/2024',
-        estado: 'presentado',
+        estado: 'ingresado',
         area: 'Seguridad',
         tema: 'cuidar a roca',
         enlace:'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=230&a=2024',
@@ -182,7 +191,7 @@ const proyectosPropios = [
     {
         numero: 'PL211/24',
         fecha: '06/03/2024',
-        estado: 'presentado',
+        estado: 'ingresado',
         area: 'Justicia',
         tema: 'Información pública',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=211&a=2024',
@@ -191,7 +200,7 @@ const proyectosPropios = [
     {
         numero: 'PL196/24',
         fecha: '06/03/2024',
-        estado: 'presentado',
+        estado: 'ingresado',
         area: 'Medio Ambiente',
         tema: 'Cuidado Medioambiente',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=196&a=2024',
@@ -200,7 +209,7 @@ const proyectosPropios = [
     {
         numero: 'PL115/24',
         fecha: '19/02/2024',
-        estado: 'presentado',
+        estado: 'ingresado',
         area: 'Economía - Defensa del Consumidor',
         tema: 'responsabilidad fiscal',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=115&a=2024',
@@ -209,7 +218,7 @@ const proyectosPropios = [
     {
         numero: 'PC72/24',
         fecha: '07/02/2024',
-        estado: 'presentado',
+        estado: 'aprobado',
         area: 'Relaciones Internacionales',
         tema: 'paso cardenal samoré',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=72&a=2024',
@@ -242,7 +251,26 @@ function imprimirProyectos(listado) {
     contenedorProyectos.innerHTML = '';
 
     let i=0
-    while (i<6) {
+    while (i<8) {
+        let color = ''
+        switch (listado[i].estado) {
+            case 'tratado':
+                color = 'tratado'
+                
+                break;
+            case 'aprobado':
+                color = 'aprobado'
+                break;
+            case 'rechazado':
+                color = 'rechazado'
+                break;
+            case 'ingresado':
+                color = 'ingresado'
+                break;
+            default:
+                break;
+        }
+
         const card = document.createElement('div')
         card.classList.add('card')
         card.innerHTML= `
@@ -253,7 +281,7 @@ function imprimirProyectos(listado) {
                 <i class="fa-solid fa-arrow-up-right-from-square fa-lg"></i></a>
             </div>
             <p class="fecha">${listado[i].fecha}</p>
-            <p class="estado">${listado[i].estado}</p>
+            <p class="estado ${color}">${listado[i].estado}</p>
         </div>
         <div class="card_centro">
             <p class="resumen">${listado[i].resumen}</p>
@@ -263,6 +291,7 @@ function imprimirProyectos(listado) {
             <p class="tag">${listado[i].tema}</p>
         </div>
         `;
+
         i++
         contenedorProyectos.appendChild(card)
     }
@@ -283,8 +312,26 @@ function imprimirProyectos(listado) {
 
 function mostrarMasProyectos(listado){
 
-    let i=6   
+    let i=8   
     while (i< listado.length) {
+        let color = ''
+        switch (listado[i].estado) {
+            case 'tratado':
+                color = 'tratado'
+                
+                break;
+            case 'aprobado':
+                color = 'aprobado'
+                break;
+            case 'rechazado':
+                color = 'rechazado'
+                break;
+            case 'ingresado':
+                color = 'ingresado'
+                break;
+            default:
+                break;
+        }
                     
         const card = document.createElement('div')
         card.classList.add('card')
@@ -296,7 +343,7 @@ function mostrarMasProyectos(listado){
                 <i class="fa-solid fa-arrow-up-right-from-square fa-lg"></i></a>
             </div>
             <p class="fecha">${listado[i].fecha}</p>
-            <p class="estado">${listado[i].estado}</p>
+            <p class="estado ${color}">${listado[i].estado}</p>
         </div>
         <div class="card_centro">
             <p class="resumen">${listado[i].resumen}</p>
@@ -306,6 +353,7 @@ function mostrarMasProyectos(listado){
             <p class="tag">${listado[i].tema}</p>
         </div>
         `;
+ 
         i++
         contenedorProyectos.appendChild(card)
     }
@@ -323,7 +371,7 @@ function mostrarMasProyectos(listado){
 function mostrarMenosProyectos(listado){
     let i = listado.length
 
-    while( i > 6){
+    while( i > 8){
         contenedorProyectos.lastChild.remove()
         i--
     }
@@ -340,4 +388,16 @@ function mostrarMenosProyectos(listado){
     })
 }
 
-// <a href="${proyecto.enlace}" class="btn editar">Ver</a>
+// completa el select del filtro
+const temasProyectos = proyectosPropios.map(proy=> proy.tema)
+function completarTemas() {
+    const temas = [...new Set(temasProyectos)]
+    const select = document.querySelector('#temas')
+    temas.forEach(element => {
+        const op = document.createElement('option')
+        op.setAttribute('value', element)
+        op.textContent = element.toUpperCase()
+        select.appendChild(op)
+    });
+       
+} completarTemas()

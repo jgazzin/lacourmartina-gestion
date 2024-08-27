@@ -394,13 +394,13 @@ function imprimirPrensa(listado) {
     contenedorPrensa.innerHTML= '';
 
     let i=0
-    while (i<6) {
+    while (i<8) {
         const card = document.createElement('div')
         card.classList.add('card')
         card.innerHTML= `
         <div class="card_left">
             <p>${listado[i].fecha}</p>
-            <p class="estado">${listado[i].medio}</p>
+            <p class="estado ingresado">${listado[i].medio}</p>
         </div>
         <div class="card_centro">
             <p class="title">
@@ -431,7 +431,7 @@ function imprimirPrensa(listado) {
 function MasPrensa(listado){
     console.log('imprimir mas prensa');
     
-    let i=6   
+    let i=8   
     while (i< listado.length) {
                     
         const card = document.createElement('div')
@@ -439,7 +439,7 @@ function MasPrensa(listado){
         card.innerHTML= `
         <div class="card_left">
             <p>${listado[i].fecha}</p>
-            <p class="estado">${listado[i].medio}</p>
+            <p class="estado ingresado">${listado[i].medio}</p>
         </div>
         <div class="card_centro">
             <p class="title">
@@ -467,7 +467,7 @@ function MasPrensa(listado){
 function MenosPrensa(listado){
     let i = listado.length
 
-    while( i > 6){
+    while( i > 8){
         contenedorPrensa.lastChild.remove()
         i--
     }
