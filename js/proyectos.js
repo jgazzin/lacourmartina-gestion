@@ -273,6 +273,7 @@ function imprimirProyectos(listado) {
 
         const card = document.createElement('div')
         card.classList.add('card')
+        card.setAttribute('id', listado[i].numero)
         card.innerHTML= `
         <div class="card_left">
             <div class="link-row">
@@ -310,6 +311,12 @@ function imprimirProyectos(listado) {
     document.querySelector('#countProyectos').textContent = countProyectos;
 }
 
+function mostrarTodo(){
+    const mostrarMas = contenedorProyectos.querySelector('.ancor')
+    mostrarMas.remove()
+    mostrarMasProyectos(proyectosPropios)
+}
+
 function mostrarMasProyectos(listado){
 
     let i=8   
@@ -335,6 +342,7 @@ function mostrarMasProyectos(listado){
                     
         const card = document.createElement('div')
         card.classList.add('card')
+        card.setAttribute('id', listado[i].numero)
         card.innerHTML= `
         <div class="card_left">
             <div class="link-row">

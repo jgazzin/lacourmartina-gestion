@@ -19,15 +19,46 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/ico-pro.png" type="image/png">
-   
+
 </head>
 
 <body>
     <header id="inicio">
-        <div class="container header">
-            <h2>Lacour<span> Martina</span></h2>
-            <!-- <i class="fa-solid fa-right-to-bracket fa-xl"></i> -->
+        <div class="container">
+            <div class="header" id="nav">
+                <h2>Lacour<span> Martina</span></h2>
+                <!-- <i class="fa-solid fa-right-to-bracket fa-xl"></i> -->
+
+                <!-- MENU -->
+                <nav class="nav-links">
+                    <div class="nav-item">
+                        <a href="#proyectos">Proyectos propios</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#noticias">Últimas noticias</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#prensa">En medios</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#form">contacto</a>
+                    </div>
+                    <!-- <div class="nav-item">
+                        <a href="#chatbot">chat asistente</a>
+                    </div> -->
+                </nav>
+
+                <div class="menu">
+                    <a href="#nav" class="nav-ham">
+                        <i class="fa-solid fa-bars fa-2xl"></i>
+                    </a>
+                    <a href="#" class="nav-close">
+                        <i class="fa-solid fa-xmark fa-2xl"></i>
+                    </a>
+                </div>
+            </div>
         </div>
+
 
         <div class="container cuadro_resumen">
             <div>
@@ -35,7 +66,7 @@
                     <p>legisladora rio negro</p>
                     <p>Bloque PRO Unión Republicana</p>
                 </div>
-                
+
                 <div class="tabla">
                     <div class="encabezado">
                         <p>sesiones</p>
@@ -56,7 +87,8 @@
                         <p id="countPrensa"></p>
                     </div>
 
-                </div>      
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -65,17 +97,16 @@
                 <i class="fa-solid fa-landmark fa-xl"></i>
                 <h3>trabajo legislativo</h3>
             </div>
-    
-            <div class="anclas_nav">
+
+            <!-- <div class="anclas_nav">
                 <div class="anclas">
                     <a href="#proyectos">Proyectos propios</a>
                     <a href="#noticias">Últimas noticias</a>
                     <a href="#prensa">En medios</a>
                     <a href="#form">Contacto</a>
                 </div>
-                <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-            </div>
-            
+            </div> -->
+
             <div class="search_nav">
                 <div class="temas">
                     <select name="tema" id="temas">
@@ -83,12 +114,59 @@
                         <!-- desde js proyectos -->
                     </select>
                 </div>
+                <i class="fa-solid fa-magnifying-glass fa-lg"></i>
             </div>
 
         </section>
 
         <!-- ** PROYECTOS -->
-        <section  class="container">
+        <section class="container">
+            <!-- DESTACADOS -->
+            <div class="tarjetas">
+                <div class="cards">
+
+                    <div class="flip-card">
+                        <div class="flip-card__inner">
+                            <div class="flip-card__front" id="flip_1">
+                                <!-- <img src="build/img/img.png" alt="cualquier imagen"> -->
+                                <h3>libre elección de O.S.</h3>
+                            </div>
+                            <div class="flip-card__back">
+                                <p>Libre elección de Obras Sociales para empleados públicos. Modifica la ley K nº 2753 -Instituto Provincial del Seguro de Salud -IProSS</p>
+                                <a onclick="mostrarTodo()" href="#PL447/24" class="btn">ver +</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flip-card">
+                        <div class="flip-card__inner">
+                            <div class="flip-card__front" id="flip_2">
+                                <!-- <img src="build/img/img.png" alt="cualquier imagen"> -->
+                                <h3>Ley de Reiterancia</h3>
+                            </div>
+                            <div class="flip-card__back">
+                                <p>Incorpora los conceptos de "reiterancia delictiva" y "peligrosidad procesal" a la ley P nº 5020 -Código Procesal Penal</p>
+                                <a onclick="mostrarTodo()" href="#PL773/24" class="btn">ver +</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flip-card">
+                        <div class="flip-card__inner">
+                            <div class="flip-card__front" id="flip_3">
+                                <!-- <img src="build/img/img.png" alt="cualquier imagen"> -->
+                                <h3>Reducción de plásticos</h3>
+                            </div>
+                            <div class="flip-card__back">
+                                <p>Ley de Reducción de Plásticos de único uso</p>
+                                <a onclick="mostrarTodo()" href="#PL196/24" class="btn">ver +</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
 
             <div class="headline" id="proyectos">
                 <div class="titulo">
@@ -97,7 +175,7 @@
                 </div>
                 <i class="fa-solid fa-circle-up fa-2xl verMas"></i>
             </div>
-    
+
             <div class="proyectos_propios">
                 <script src="js/proyectos.js"></script>
             </div>
@@ -109,7 +187,7 @@
                 <div class="medio-container">
                     <div class="ultimos_hitos">
                         <!-- desde JS hitos -->
-                    </div>   
+                    </div>
                 </div>
             </div>
         </section>
@@ -123,7 +201,7 @@
                 </div>
                 <i class="fa-solid fa-circle-up fa-2xl verMas"></i>
             </div>
-    
+
             <div class="hitos">
                 <script src="js/hitos.js"></script>
             </div>
@@ -146,7 +224,7 @@
                 </div>
                 <i class="fa-solid fa-circle-up fa-2xl verMas"></i>
             </div>
-    
+
             <div class="prensa">
                 <script src="js/prensa.js"></script>
             </div>
@@ -155,44 +233,46 @@
         <!-- ** CONTACTO -->
         <section class="contactForm" id="form">
             <div class="container">
-                    <div class="medio-container">
-                        <form action="https://formsubmit.co/j.gazzin@gmail.com" method="POST" class="form" novalidate>
-                            <legend>contacto</legend>
-                            <div class="item">
-                                <div class="input">
-                                    <input type="text" name="nombre" id="name" placeholder="Nombre">
-                                </div>
+                <div class="medio-container">
+                    <form action="https://formsubmit.co/j.gazzin@gmail.com" method="POST" class="form" novalidate>
+                        <legend>contacto</legend>
+                        <div class="item">
+                            <div class="input">
+                                <input type="text" name="nombre" id="name" placeholder="Nombre">
                             </div>
-    
-                            <div class="item">
-                                <div class="input">
-                                    <input type="text" name="ciudad" id="ciudad" placeholder="ciudad">
-                                </div>
-                            </div>
-    
-                            <div class="item">
-                                <div class="input">
-                                    <input type="email" name="email" id="email" placeholder="e-mail">
-                                </div>
-                            </div>
+                        </div>
 
-                            <div class="item">
-                                <div class="input">
-                                    <textarea name="mensaje" id="mensaje" placeholder="mensaje&#10;¿Qué temas te preocupan en la provincia?&#10;¿Qué problemas debemos atender?" rows="5" maxlength="800"></textarea>
-                                </div>
+                        <div class="item">
+                            <div class="input">
+                                <input type="text" name="ciudad" id="ciudad" placeholder="ciudad">
                             </div>
-    
-                            <button type="submit" class="btn primary" disabled>enviar</button>
+                        </div>
 
-                            <!-- formsubmit -->
-                            <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_next" value="https://lacourmartina.vercel.app/">
-                            <input type="hidden" name="_subject" value="Nuevo mensaje desde web//lacourmartina.ar">
-                        </form>   
-                    </div>
+                        <div class="item">
+                            <div class="input">
+                                <input type="email" name="email" id="email" placeholder="e-mail">
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="input">
+                                <textarea name="mensaje" id="mensaje"
+                                    placeholder="mensaje&#10;¿Qué temas te preocupan en la provincia?&#10;¿Qué problemas debemos atender?"
+                                    rows="5" maxlength="800"></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn primary" disabled>enviar</button>
+
+                        <!-- formsubmit -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://lacourmartina.vercel.app/">
+                        <input type="hidden" name="_subject" value="Nuevo mensaje desde web//lacourmartina.ar">
+                    </form>
                 </div>
+            </div>
         </section>
-    
+
         <!-- ** FAQS ITEMS -->
         <section>
             <div class="container faqs">
@@ -207,8 +287,10 @@
                             <i class="fa-solid fa-angle-down"></i>
                         </div>
                         <div class="respuesta hidden">
-                            <p>Soy Martina Lacour, empresaria y madre orgullosa. Vivo en Bariloche hace quince años, lugar que elegí para tener mi familia y ver crecer a mi hijo.</p>
-                            <p><b>Enfrento los desafíos de nuestra provincia con un enfoque renovado, profesional y comprometido.</b></p>
+                            <p>Soy Martina Lacour, empresaria y madre orgullosa. Vivo en Bariloche hace quince años,
+                                lugar que elegí para tener mi familia y ver crecer a mi hijo.</p>
+                            <p><b>Enfrento los desafíos de nuestra provincia con un enfoque renovado, profesional y
+                                    comprometido.</b></p>
                         </div>
                     </div>
                     <div class="item">
@@ -217,8 +299,13 @@
                             <i class="fa-solid fa-angle-down"></i>
                         </div>
                         <div class="respuesta hidden">
-                            <p>Apoyo la libertad y todo lo que contribuya al desarrollo individual de cada ciudadano. Creo firmemente que la base de todo progreso es la educación, y que el respeto por las ideas republicanas, la ley y la democracia son fundamentales para construir una sociedad más justa y equitativa.</p>
-                            <p><b>Río Negro necesita un verdadero cambio que permita a sus ciudadanos vivir y trabajar con libertad, sin incertidumbre y sin tener que lidiar diariamente con un sistema saturado de regulaciones y burocracia que limitan nuestro desarrollo.</b></p>
+                            <p>Apoyo la libertad y todo lo que contribuya al desarrollo individual de cada ciudadano.
+                                Creo firmemente que la base de todo progreso es la educación, y que el respeto por las
+                                ideas republicanas, la ley y la democracia son fundamentales para construir una sociedad
+                                más justa y equitativa.</p>
+                            <p><b>Río Negro necesita un verdadero cambio que permita a sus ciudadanos vivir y trabajar
+                                    con libertad, sin incertidumbre y sin tener que lidiar diariamente con un sistema
+                                    saturado de regulaciones y burocracia que limitan nuestro desarrollo.</b></p>
                         </div>
                     </div>
                     <div class="item">
@@ -227,7 +314,9 @@
                             <i class="fa-solid fa-angle-down"></i>
                         </div>
                         <div class="respuesta hidden">
-                            <p>Estudié Licenciatura en Análisis de Sistemas en la Facultad de Ingeniería (UBA). Además soy Idónea matriculada en Turismo y Experta Universitaria en Técnica Legislativa (UTN). </p>
+                            <p>Estudié Licenciatura en Análisis de Sistemas en la Facultad de Ingeniería (UBA). Además
+                                soy Idónea matriculada en Turismo y Experta Universitaria en Técnica Legislativa (UTN).
+                            </p>
                         </div>
                     </div>
                     <div class="item">
@@ -236,9 +325,14 @@
                             <i class="fa-solid fa-angle-down"></i>
                         </div>
                         <div class="respuesta hidden">
-                            <p>Mi trayectoria profesional y personal me ha llevado a comprender la importancia de la participación activa en la política, lo que me motivó a ingresar al ámbito legislativo a través del PRO.</p>
-                            <p><b>Estoy convencida de que es necesario dejar atrás la catarsis en las redes sociales y comprometernos con acciones concretas que transformen nuestra realidad.</b></p>
-                            <p>Actualmente, tengo el honor de representar a los ciudadanos de Río Negro en la Legislatura, formando parte del bloque Pro Unión Republicana como legisladora por el Circuito Andino. </p>
+                            <p>Mi trayectoria profesional y personal me ha llevado a comprender la importancia de la
+                                participación activa en la política, lo que me motivó a ingresar al ámbito legislativo a
+                                través del PRO.</p>
+                            <p><b>Estoy convencida de que es necesario dejar atrás la catarsis en las redes sociales y
+                                    comprometernos con acciones concretas que transformen nuestra realidad.</b></p>
+                            <p>Actualmente, tengo el honor de representar a los ciudadanos de Río Negro en la
+                                Legislatura, formando parte del bloque Pro Unión Republicana como legisladora por el
+                                Circuito Andino. </p>
                         </div>
                     </div>
                     <div class="item">
@@ -247,22 +341,23 @@
                             <i class="fa-solid fa-angle-down"></i>
                         </div>
                         <div class="respuesta hidden">
-                            <p>Te invito a acompañarme en este camino hacia un futuro donde cada esfuerzo valga la pena y donde juntos podamos construir la provincia que todos merecemos.</p>
+                            <p>Te invito a acompañarme en este camino hacia un futuro donde cada esfuerzo valga la pena
+                                y donde juntos podamos construir la provincia que todos merecemos.</p>
                             <div class="social" style="margin-top: 1.5rem;">
                                 <a href="https://www.facebook.com/lacourmartina">
-                                <i class="fa-brands fa-facebook fa-2xl"></i></a>
+                                    <i class="fa-brands fa-facebook fa-2xl"></i></a>
                                 <a href="https://www.instagram.com/lacourmartina">
-                                <i class="fa-brands fa-square-instagram fa-2xl"></i></a>
+                                    <i class="fa-brands fa-square-instagram fa-2xl"></i></a>
                                 <a href="https://www.x.com/lacourmartina">
-                                <i class="fa-brands fa-twitter fa-2xl"></i></a>
+                                    <i class="fa-brands fa-twitter fa-2xl"></i></a>
                             </div>
                         </div>
                     </div>
-    
+
                 </div>
-     
+
             </div>
-    
+
         </section>
 
     </main>
@@ -272,12 +367,13 @@
             <h2>Lacour<span> Martina</span></h2>
             <div class="social">
                 <a href="https://www.facebook.com/lacourmartina">
-                <i class="fa-brands fa-facebook fa-2xl"></i></a>
+                    <i class="fa-brands fa-facebook fa-2xl"></i></a>
                 <a href="https://www.instagram.com/lacourmartina">
-                <i class="fa-brands fa-square-instagram fa-2xl"></i></a>
+                    <i class="fa-brands fa-square-instagram fa-2xl"></i></a>
                 <a href="https://www.x.com/lacourmartina">
-                <i class="fa-brands fa-twitter fa-2xl"></i></a>
-                <a href="https://www.linkedin.com/in/martina-valeria-lacour-594ab257/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                    <i class="fa-brands fa-twitter fa-2xl"></i></a>
+                <a href="https://www.linkedin.com/in/martina-valeria-lacour-594ab257/"><i
+                        class="fa-brands fa-linkedin fa-2xl"></i></a>
             </div>
         </div>
 

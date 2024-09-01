@@ -60,23 +60,28 @@
 .chat-ask,
 .chat-footer {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 8px;
 
+}
+.chat-response{
+    justify-content: start;
+}
+.chat-ask{
+    justify-content: end;
 }
 
 .chat-ask p{
     padding: 8px;
     background-color: var(--color-complemento);
     color: #fff;
-    border-radius: 8px;
+    border-radius: 8px 8px 0 8px;
 }
 .chat-response p{
     padding: 8px;
     background-color: rgb(163, 163, 163);
     color: #fff;
-    border-radius: 8px;
+    border-radius: 8px 8px 8px 0;
 }
 
 .chat-footer{
