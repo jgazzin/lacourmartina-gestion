@@ -396,21 +396,35 @@ function imprimirPrensa(listado) {
     let i=0
     while (i<8) {
         const card = document.createElement('div')
-        card.classList.add('card')
+        card.classList.add('registro')
         card.innerHTML= `
-        <div class="card_left">
-            <p>${listado[i].fecha}</p>
-            <p class="estado ingresado">${listado[i].medio}</p>
+        <div class="data">
+            <p class="area">${listado[i].fecha}</p>
+            <p class="tema">${listado[i].tema}</p>
         </div>
-        <div class="card_centro">
-            <p class="title">
-            <a href="${listado[i].enlace}">
-            ${listado[i].titulo}</a></p>
-        </div>
-        <div class="card_right">
-            <p class="tag">${listado[i].tema}</p>
+        <div class="data">
+            <div class="tags">
+                <p class="numero">${listado[i].medio}  <a href="${listado[i].enlace}"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+            </div>
+            <div class="resumen">
+                <p>${listado[i].titulo}</p> 
+            </div>
         </div>
         `;
+        // card.innerHTML= `
+        // <div class="card_left">
+        //     <p>${listado[i].fecha}</p>
+        //     <p class="estado ingresado">${listado[i].medio}</p>
+        // </div>
+        // <div class="card_centro">
+        //     <p class="title">
+        //     <a href="${listado[i].enlace}">
+        //     ${listado[i].titulo}</a></p>
+        // </div>
+        // <div class="card_right">
+        //     <p class="tag">${listado[i].tema}</p>
+        // </div>
+        // `;
         i++
         contenedorPrensa.appendChild(card)
     }
@@ -435,19 +449,19 @@ function MasPrensa(listado){
     while (i< listado.length) {
                     
         const card = document.createElement('div')
-        card.classList.add('card')
+        card.classList.add('registro')
         card.innerHTML= `
-        <div class="card_left">
-            <p>${listado[i].fecha}</p>
-            <p class="estado ingresado">${listado[i].medio}</p>
+        <div class="data">
+            <p class="area">${listado[i].fecha}</p>
+            <p class="tema">${listado[i].tema}</p>
         </div>
-        <div class="card_centro">
-            <p class="title">
-            <a href="${listado[i].enlace}">
-            ${listado[i].titulo}</a></p>
-        </div>
-        <div class="card_right">
-            <p class="tag">${listado[i].tema}</p>
+        <div class="data">
+            <div class="tags">
+                <p class="numero">${listado[i].medio}  <a href="${listado[i].enlace}"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+            </div>
+            <div class="resumen">
+                <p>${listado[i].titulo}</p> 
+            </div>
         </div>
         `;
         i++

@@ -161,14 +161,14 @@ input{
 }
 
 .rechazado{
-  background-color: tomato;
+  color: tomato;
 }
 .aprobado{
-  background-color: #27a700;
+  color: #27a700;
 }
 .tratado{
-  background-color: rgb(0, 128, 202);
+  color: rgb(42, 147, 165);
 }
 .ingresado{
-  background-color: var(--color-complemento);
+  color: var(--color-complemento);
 }

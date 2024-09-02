@@ -21,7 +21,7 @@ const proyectosPropios = [
         numero: 'PL950/2024',
         fecha: '01/08/2024',
         estado: 'ingresado',
-        area: 'Administración - Estado',
+        area: 'Administración-Estado',
         tema: 'Información pública',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=950&a=2024',
         resumen: 'Garantizar el libre acceso a las respuestas de los pedidos de informe, colaborando con la buscada “despapelización” y con la transformación digital y la simplificación de trámites.'
@@ -30,7 +30,7 @@ const proyectosPropios = [
         numero: 'PL869/2024',
         fecha: '10/07/2024',
         estado: 'ingresado',
-        area: 'Administración - Estado',
+        area: 'Administración-Estado',
         tema: 'Información pública',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=869&a=2024',
         resumen: 'Sustituye los artículos 2º y 18 de la ley A nº 2938 -Procedimiento Administrativo de Río Negro. En concordancia con la Ley Bases, adecua el procedimiento adminstrativo, evitando la sobregarga burocrática, e implementa el "silencio positivo", que permite obtener resultados efectivos de los trámites frente a la pasividad del Estado.'
@@ -48,7 +48,7 @@ const proyectosPropios = [
         numero: 'PC772/24',
         fecha: '19/06/2024',
         estado: 'ingresado',
-        area: 'Educación - Cultura - Soberanía',
+        area: 'Educación-Cultura-Soberanía',
         tema: 'nuestras banderas',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=772&a=2024',
         resumen: 'Su enérgico repudio a la realización de cualquier acto de Promesa de Lealtad a una bandera distinta de la Bandera Nacional en las escuelas'
@@ -57,7 +57,7 @@ const proyectosPropios = [
         numero: 'PC771/24',
         fecha: '19/06/2024',
         estado: 'ingresado',
-        area: 'Educación - Cultura - Soberanía',
+        area: 'Educación-Cultura-Soberanía',
         tema: 'nuestras banderas',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=771&a=2024',
         resumen: 'Al Poder Ejecutivo, Ministerio de Educación y Derechos Humanos, que prohíba la celebración de cualquier acto de promesa a banderas distintas de la Bandera Argentina'
@@ -66,7 +66,7 @@ const proyectosPropios = [
         numero: 'PC758/24',
         fecha: '18/06/2024',
         estado: 'ingresado',
-        area: 'Educación - Obras públicas',
+        area: 'Educación-Obras públicas',
         tema: 'escuelas públicas',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=758&a=2024',
         resumen: 'Al Poder Ejecutivo y al Ministerio de Educación y Derechos Humanos, que realicen con urgencia las tareas de mantenimiento necesarias para poner en funcionamiento las calderas de la Escuela Secundaria Río Negro -ESRN- nº 46 de San Carlos de Bariloche; y al Ministerio de Obras y Servicios Públicos, que inicie las obras de ampliación y refacción de los sanitarios de ese establecimiento'
@@ -84,7 +84,7 @@ const proyectosPropios = [
         numero: 'PI753/24',
         fecha: '18/06/2024',
         estado: 'tratado',
-        area: 'Educación - Obras públicas',
+        area: 'Educación-Obras públicas',
         tema: 'escuelas públicas',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=753&a=2024',
         resumen: 'Al Poder Ejecutivo, Ministerio de Educación y Derechos Humanos, referido a la reparación de la caldera de la Escuela Secundaria Río Negro -ESRN- nº 46 de la ciudad de San Carlos de Bariloche'
@@ -93,7 +93,7 @@ const proyectosPropios = [
         numero: 'PI752/24',
         fecha: '18/06/2024',
         estado: 'tratado',
-        area: 'Educación - Obras públicas',
+        area: 'Educación-Obras públicas',
         tema: 'escuelas públicas',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=752&a=2024',
         resumen: 'Al Poder Ejecutivo, Ministerio de Obras y Servicios Públicos, referido a la licitación para la refacción y ampliación de los sanitarios de la Escuela Secundaria Río Negro -ESRN- nº 46 de la ciudad de San Carlos de Bariloche'
@@ -102,7 +102,7 @@ const proyectosPropios = [
         numero: 'PI751/24',
         fecha: '18/06/2024',
         estado: 'ingresado',
-        area: 'Economía - Finanzas',
+        area: 'Economía-Finanzas',
         tema: 'gasto público',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=751&a=2024',
         resumen: 'Al Poder Ejecutivo, referido a los bienes muebles de la provincia, compras efectuadas durante el período 2020-2024 y contrataciones realizadas, entre otros'
@@ -111,7 +111,7 @@ const proyectosPropios = [
         numero: 'PL695/24',
         fecha: '06/06/2024',
         estado: 'ingresado',
-        area: 'Cultura - Educación - Seguridad Interior',
+        area: 'Cultura-Educación-Seguridad Interior',
         tema: 'nuestras banderas',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=695&a=2024',
         resumen: '"Nuestras Banderas". Establece que las únicas y exclusivas banderas que están autorizadas a ser exhibidas y flamear en todos los edificios públicos de la Provincia de Río Negro son las banderas nacional y provincial, y la bandera municipal en caso de existir'
@@ -129,7 +129,7 @@ const proyectosPropios = [
         numero: 'PI449/24',
         fecha: '23/04/2024',
         estado: 'tratado',
-        area: 'Educación - Obras públicas',
+        area: 'Educación-Obras públicas',
         tema: 'escuela oeste bariloche',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=449&a=2024',
         resumen: 'Al Poder Ejecutivo, Ministerio de Educación y Derechos Humanos, referido a los fondos de la partida asignada en el Presupuesto 2023 destinada a la creación de una Escuela Secundaria Río Negro -ESRN- en el predio de la Escuela Primaria nº 48 de la ciudad de San Carlos de Bariloche'
@@ -156,7 +156,7 @@ const proyectosPropios = [
         numero: 'PL357/24',
         fecha: '05/04/2024',
         estado: 'ingresado',
-        area: 'Administración - Estado',
+        area: 'Administración-Estado',
         tema: 'Información pública',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=357&a=2024',
         resumen: 'Incorpora el artículo 99 "Título IX-Acceso Público Permanente" y modifica el inciso c- del artículo 85 de la ley H nº 3186 de Administración Financiera y Control Interno del Sector Público Provincial'
@@ -210,7 +210,7 @@ const proyectosPropios = [
         numero: 'PL115/24',
         fecha: '19/02/2024',
         estado: 'ingresado',
-        area: 'Economía - Defensa del Consumidor',
+        area: 'Economía-Defensa del Consumidor',
         tema: 'responsabilidad fiscal',
         enlace: 'https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=115&a=2024',
         resumen: 'Transparencia Fiscal al Consumidor. Establece la obligatoriedad de indicar dentro de las facturas o tickets de compra que recibe el consumidor, los impuestos provinciales incluidos en ellos. En el caso excepcional de imposibilidad de desglose, se indicará el porcentaje aproximado de incidencia sobre el precio final'
@@ -238,7 +238,7 @@ temaProyectos.addEventListener('change', ()=>{
 
     } else{
         const proyectosFiltrados = proyectosPropios.filter(proy => proy.tema === temaProyectos.value)
-        console.log(proyectosFiltrados);
+        //console.log(proyectosFiltrados);
         imprimirProyectos(proyectosFiltrados)
 
     }
@@ -272,24 +272,22 @@ function imprimirProyectos(listado) {
         }
 
         const card = document.createElement('div')
-        card.classList.add('card')
+        card.classList.add('registro')
         card.setAttribute('id', listado[i].numero)
         card.innerHTML= `
-        <div class="card_left">
-            <div class="link-row">
-                <p class="numero">${listado[i].numero}</p>
-                <a href="${listado[i].enlace}">
-                <i class="fa-solid fa-arrow-up-right-from-square fa-lg"></i></a>
-            </div>
-            <p class="fecha">${listado[i].fecha}</p>
-            <p class="estado ${color}">${listado[i].estado}</p>
-        </div>
-        <div class="card_centro">
-            <p class="resumen">${listado[i].resumen}</p>
-        </div>
-        <div class="card_right">
+        <div class="data">
             <p class="area">${listado[i].area}</p>
-            <p class="tag">${listado[i].tema}</p>
+            <p class="tema">${listado[i].tema}</p>
+        </div>
+        <div class="data">
+            <div class="tags">
+                <p class="numero">${listado[i].numero}  <a href="${listado[i].enlace}"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+                <p class="fecha">${listado[i].fecha}</p>
+                <p class="avance ${color}">${listado[i].estado}</p>
+            </div>
+            <div class="resumen">
+                <p>${listado[i].resumen}</p>  
+            </div>
         </div>
         `;
 
@@ -312,6 +310,7 @@ function imprimirProyectos(listado) {
 }
 
 function mostrarTodo(){
+    imprimirProyectos(proyectosPropios)
     const mostrarMas = contenedorProyectos.querySelector('.ancor')
     mostrarMas.remove()
     mostrarMasProyectos(proyectosPropios)
@@ -341,26 +340,40 @@ function mostrarMasProyectos(listado){
         }
                     
         const card = document.createElement('div')
-        card.classList.add('card')
+        card.classList.add('registro')
         card.setAttribute('id', listado[i].numero)
         card.innerHTML= `
-        <div class="card_left">
-            <div class="link-row">
-                <p class="numero">${listado[i].numero}</p>
-                <a href="${listado[i].enlace}">
-                <i class="fa-solid fa-arrow-up-right-from-square fa-lg"></i></a>
-            </div>
-            <p class="fecha">${listado[i].fecha}</p>
-            <p class="estado ${color}">${listado[i].estado}</p>
-        </div>
-        <div class="card_centro">
-            <p class="resumen">${listado[i].resumen}</p>
-        </div>
-        <div class="card_right">
+        <div class="data">
             <p class="area">${listado[i].area}</p>
-            <p class="tag">${listado[i].tema}</p>
+            <p class="tema">${listado[i].tema}</p>
+        </div>
+        <div class="data">
+            <div class="tags">
+                <p class="numero">${listado[i].numero}  <a href="${listado[i].enlace}"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+                <p class="fecha">${listado[i].fecha}</p>
+                <p class="avance ${color}">${listado[i].estado}</p>
+            </div>
+            <div class="resumen">
+                <p>${listado[i].resumen}</p>  
+            </div>
         </div>
         `;
+    //     <div class="card_left">
+    //     <div class="link-row">
+    //         <p class="numero">${listado[i].numero}</p>
+    //         <a href="${listado[i].enlace}">
+    //         <i class="fa-solid fa-arrow-up-right-from-square fa-lg"></i></a>
+    //     </div>
+    //     <p class="fecha">${listado[i].fecha}</p>
+    //     <p class="estado ${color}">${listado[i].estado}</p>
+    // </div>
+    // <div class="card_centro">
+    //     <p class="resumen">${listado[i].resumen}</p>
+    // </div>
+    // <div class="card_right">
+    //     <p class="area">${listado[i].area}</p>
+    //     <p class="tag">${listado[i].tema}</p>
+    // </div>
  
         i++
         contenedorProyectos.appendChild(card)

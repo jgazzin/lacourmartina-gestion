@@ -40,10 +40,10 @@
   }
   .cards .flip-card .flip-card__back {
     box-sizing: border-box;
-    padding: 2rem;
+    padding: 5rem 2rem 4rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
   }
   .cards .flip-card .flip-card__front {
@@ -93,6 +93,7 @@
     }
     .cards .flip-card{
       width: 100%;
+      height: 360px;
     }
   }
 
