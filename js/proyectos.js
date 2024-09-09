@@ -8,18 +8,18 @@ const proyectosPropios = [
     enlace:
       "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=1042&a=2024",
     resumen:
-      "Al Poder Ejecutivo, que arbitre los medios necesarios para que la Agencia de Recaudación Tributaria derogue todo régimen de retención del Impuesto sobre los Ingresos Brutos que resulte aplicable a los pagos realizados a los contribuyentes del mismo por parte de los sistemas de administración de tarjetas de crédito, de compra y/o pago y/o débito, y/o de servicios electrónicos de pagos y/o cobranzas por cuenta y orden de terceros, desde el 1 de septiembre de 2024.",
+      "Al Poder Ejecutivo, que arbitre los medios necesarios para que la Agencia de Recaudación Tributaria derogue todo régimen de retención del Impuesto sobre los Ingresos Brutos que resulte aplicable a los pagos realizados a los contribuyentes por parte de los sistemas de administración de tarjetas de crédito, de compra y/o pago y/o débito, y/o de servicios electrónicos de pagos y/o cobranzas por cuenta y orden de terceros, desde el 1 de septiembre de 2024.",
   },
   {
     numero: "PL1042/2024",
     fecha: "14-08-2024",
-    estado: "ingresado",
-    area: "Obras públicas",
-    tema: "Regularización de activos",
+    estado: "aprobado",
+    area: "Asuntos económicos",
+    tema: "blanqueo de activos",
     enlace:
       "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=1042&a=2024",
     resumen:
-      "Se adhiere al Régimen de blanqueo de Activos no registrados, establecido en el Título II de la ley nacional nº 27743. Busca mejorar la base tributaria y potenciar la reactivación económica.",
+      "Se adhiere al Régimen de regularización de Activos no registrados, establecido en el Título II de la ley nacional nº 27743. Busca mejorar la base tributaria y potenciar la reactivación económica. El proyecto que finalmente fue aprobado pertenece al PE, es similar en el objetivo y no requirió debate en segunda vuelta.",
   },
   {
     numero: "PI996/2024",
