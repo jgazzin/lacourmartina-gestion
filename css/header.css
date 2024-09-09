@@ -48,6 +48,7 @@
     font-weight: bold;
     color: var(--color-negativo);
     text-decoration: none;
+    font-size: 12px;
   }
   .nav-item:hover a {
     text-shadow: var(--shadow);
@@ -106,7 +107,8 @@ header{
     color: var(--color-negativo);
 }
 header .header h2{
-    color: var(--color-ppal);
+    color: #FCD901;
+    font-size: 20px;
 }
 .header span{
     font-weight: 400;
