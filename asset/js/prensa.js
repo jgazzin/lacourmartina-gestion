@@ -1,5 +1,23 @@
 const notas = [
   {
+    fecha: "10/09/2024",
+    medio: "Bariloche Opina",
+    tema: "gasoducto patagónico",
+    titulo:
+      "Exigen la habilitación de nuevas conexiones de gas en Bariloche y otras localidades",
+    enlace:
+      "https://www.barilocheopina.com/noticias/2024/09/10/75939-exigen-la-habilitacion-de-nuevas-conexiones-de-gas-en-bariloche-y-otras-localidades",
+  },
+  {
+    fecha: "10/09/2024",
+    medio: "Económicas Bariloche",
+    tema: "gasoducto patagónico",
+    titulo:
+      "Pablo Chamatrópulos: 'Depende de Camuzzi la restitución del servicio de gas'",
+    enlace:
+      "https://www.economicasbariloche.com.ar/noticias/2024/09/10/15519-pablo-chamatropulos-depende-de-camuzzi-la-restitucion-del-servicio-de-gas",
+  },
+  {
     fecha: "05/09/2024",
     medio: "Noticias Río Negro",
     tema: "reforma CCC",
@@ -533,7 +551,7 @@ function imprimirPrensa(listado) {
     while (i<8) {
         const card = document.createElement('div')
         card.classList.add('registro')
-        card.innerHTML= `
+        card.innerHTML = `
         <div class="data">
             <p class="area">${listado[i].fecha}</p>
             <p class="tema">${listado[i].tema}</p>
@@ -543,7 +561,7 @@ function imprimirPrensa(listado) {
                 <p class="numero">${listado[i].medio}  <a href="${listado[i].enlace}"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
             </div>
             <div class="resumen">
-                <p>${listado[i].titulo}</p> 
+                <p>${listado[i].titulo}</p>
             </div>
         </div>
         `;
