@@ -1,7 +1,8 @@
 const hitos = [
+    'Rechazamos la incorporación de la "perpectiva de género" en la reforma del Código Civil y Comercial.',
     'Se aprobó la adhesión de Río Negro al régimen de Regularización de activos',
     'Nos aprobaron la propuesta de eliminación de retenciones de IIBB en cobros electrónicos',
-    'Conseguimos dictament positivo para tratar la Ley de Educación como servicio esencial y estratégico',
+    'Conseguimos dictamen positivo para tratar la Ley de Educación como servicio esencial y estratégico',
     'Rechazo absoluto a fraude electoral y auto-proclamación de Maduro como Presidente de Venezuela.',
     'Votamos de forma afirmativa todos sus términos al Régimen de Incentivo para Grandes Inversiones -RIGI-, creado por la ley Bases.',
     'Comunicación al Ministerio de Educación para solicitar se prohíba la realización de promesas de lealtad a banderas diferentes de la argentina',
