@@ -1,11 +1,4 @@
-document.querySelectorAll('.verMas').forEach(i =>{
-    i.addEventListener('click', (e)=>{
-        const seccionVer = e.target.parentElement.nextElementSibling;
-        seccionVer.classList.toggle('hidden')
-        e.target.classList.toggle('fa-circle-down')
-        e.target.classList.toggle('fa-circle-up')
-    })
-})
+
 
 //date
 const fechaActual = new Date();
@@ -26,8 +19,8 @@ tarjetas.forEach(card =>{
 
     })
     card.querySelector(".card__btn").addEventListener("touchstart", () => {
-      card.querySelector(".card__detalles").classList.remove("hidden");
-      card.classList.remove("card__imagen");
+      card.querySelector(".card__detalles").classList.toggle("hidden");
+      card.classList.toggle("card__imagen");
     });
     card.querySelector(".card__btn").addEventListener("touchend", () => {
       card.querySelector(".card__detalles").classList.add("hidden");
