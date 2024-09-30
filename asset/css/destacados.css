@@ -31,10 +31,10 @@
 }
 
 .card__imagen:nth-child(1) {
-  background-image: url(/asset/img/ipross.jpg);
+  background-image: url(/asset/img/reiterancia.jpeg);
 }
 .card__imagen:nth-child(2) {
-  background-image: url(/asset/img/reiterancia.jpeg);
+  background-image: url(/asset/img/ipross.jpg);
 }
 .card__imagen:nth-child(3) {
   background-image: url(/asset/img/plasticos.jpeg);
@@ -46,10 +46,10 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
 }
-.card__imagen:nth-child(2)::before {
-  background-color: rgba(0, 0, 0, 0.1);
+.card__imagen:nth-child(1)::before {
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .card__numero {
@@ -83,7 +83,7 @@
   font-size: 14px;
 }
 .card__detalles .texto{
-  font-size: 14px;
+  font-size: 16px;
   font-style: italic;
   margin-left: 2rem;
   font-weight: lighter;

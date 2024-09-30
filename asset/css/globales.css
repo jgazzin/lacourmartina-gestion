@@ -130,7 +130,6 @@ input{
   gap: 1rem;
   padding: 1.5rem 0;
   text-transform: uppercase;
-  padding-top: 2rem;
 }
 .titulo i{
   color: var(--color-ppal);
