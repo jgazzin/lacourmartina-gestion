@@ -257,7 +257,7 @@ const proyectosPropios = [
     fecha: "06/03/2024",
     estado: "ingresado",
     area: "Medio Ambiente",
-    tema: "Cuidado Medioambiente",
+    tema: "reducción de plásticos",
     enlace:
       "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=196&a=2024",
     resumen: "Ley de Reducción de Plásticos de único uso",
@@ -285,55 +285,63 @@ const proyectosPropios = [
   },
 ];
 
-document.addEventListener('DOMContentLoaded', ()=>{
-    imprimirProyectos(proyectosPropios)
-})
+const destacados = proyectosPropios.filter(
+  (proyecto) =>
+    proyecto.tema.includes("reiterancia") ||
+    proyecto.tema.includes("cautivos") ||
+    proyecto.resumen.includes("Plásticos")
+);
 
-let temaProyectos = document.querySelector('#temas');
-temaProyectos.addEventListener('change', ()=>{
-    if(temaProyectos.value === '') {
-        imprimirProyectos(proyectosPropios)
-        console.log(proyectosPropios);
+document.addEventListener("DOMContentLoaded", () => {
+  imprimirProyectos(proyectosPropios);
+  imprimirDestacados();
+});
 
-    } else{
-        const proyectosFiltrados = proyectosPropios.filter(proy => proy.tema === temaProyectos.value)
-        //console.log(proyectosFiltrados);
-        imprimirProyectos(proyectosFiltrados)
-
-    }
-})
+let temaProyectos = document.querySelector("#temas");
+temaProyectos.addEventListener("change", () => {
+  if (temaProyectos.value === "") {
+    imprimirProyectos(proyectosPropios);
+    console.log(proyectosPropios);
+  } else {
+    const proyectosFiltrados = proyectosPropios.filter(
+      (proy) => proy.tema === temaProyectos.value
+    );
+    //console.log(proyectosFiltrados);
+    imprimirProyectos(proyectosFiltrados);
+  }
+});
 
 // FUNCIONES
-const contenedorProyectos = document.querySelector('.proyectos_propios')
+const contenedorProyectos = document.querySelector(".proyectos_propios");
 
 function imprimirProyectos(listado) {
-    contenedorProyectos.innerHTML = '';
+  contenedorProyectos.innerHTML = "";
 
-    let i=0
-    while (i<8) {
-        let color = ''
-        switch (listado[i].estado) {
-            case 'tratado':
-                color = 'tratado'
-                
-                break;
-            case 'aprobado':
-                color = 'aprobado'
-                break;
-            case 'rechazado':
-                color = 'rechazado'
-                break;
-            case 'ingresado':
-                color = 'ingresado'
-                break;
-            default:
-                break;
-        }
+  let i = 0;
+  while (i < 8) {
+    let color = "";
+    switch (listado[i].estado) {
+      case "tratado":
+        color = "tratado";
 
-        const card = document.createElement('div')
-        card.classList.add('registro')
-        card.setAttribute('id', listado[i].numero)
-        card.innerHTML= `
+        break;
+      case "aprobado":
+        color = "aprobado";
+        break;
+      case "rechazado":
+        color = "rechazado";
+        break;
+      case "ingresado":
+        color = "ingresado";
+        break;
+      default:
+        break;
+    }
+
+    const card = document.createElement("div");
+    card.classList.add("registro");
+    card.setAttribute("id", listado[i].numero);
+    card.innerHTML = `
         <div class="data">
             <p class="area">${listado[i].area}</p>
             <p class="tema">${listado[i].tema}</p>
@@ -350,58 +358,57 @@ function imprimirProyectos(listado) {
         </div>
         `;
 
-        i++
-        contenedorProyectos.appendChild(card)
+    i++;
+    contenedorProyectos.appendChild(card);
+  }
+
+  const mostrarMas = document.createElement("p");
+  mostrarMas.textContent = "Mostrar más";
+  mostrarMas.classList.add("ancor");
+  contenedorProyectos.appendChild(mostrarMas);
+
+  mostrarMas.addEventListener("click", () => {
+    mostrarMas.remove();
+    mostrarMasProyectos(listado);
+  });
+
+  const countProyectos = listado.length;
+  document.querySelector("#countProyectos").textContent = countProyectos;
+}
+
+function mostrarTodo() {
+  imprimirProyectos(proyectosPropios);
+  const mostrarMas = contenedorProyectos.querySelector(".ancor");
+  mostrarMas.remove();
+  mostrarMasProyectos(proyectosPropios);
+}
+
+function mostrarMasProyectos(listado) {
+  let i = 8;
+  while (i < listado.length) {
+    let color = "";
+    switch (listado[i].estado) {
+      case "tratado":
+        color = "tratado";
+
+        break;
+      case "aprobado":
+        color = "aprobado";
+        break;
+      case "rechazado":
+        color = "rechazado";
+        break;
+      case "ingresado":
+        color = "ingresado";
+        break;
+      default:
+        break;
     }
 
-    const mostrarMas = document.createElement('p')
-    mostrarMas.textContent = 'Mostrar más'
-    mostrarMas.classList.add('ancor')
-    contenedorProyectos.appendChild(mostrarMas)
-
-    mostrarMas.addEventListener('click', ()=>{
-        mostrarMas.remove()
-        mostrarMasProyectos(listado)
-    })
-
-    const countProyectos = listado.length;
-    document.querySelector('#countProyectos').textContent = countProyectos;
-}
-
-function mostrarTodo(){
-    imprimirProyectos(proyectosPropios)
-    const mostrarMas = contenedorProyectos.querySelector('.ancor')
-    mostrarMas.remove()
-    mostrarMasProyectos(proyectosPropios)
-}
-
-function mostrarMasProyectos(listado){
-
-    let i=8   
-    while (i< listado.length) {
-        let color = ''
-        switch (listado[i].estado) {
-            case 'tratado':
-                color = 'tratado'
-                
-                break;
-            case 'aprobado':
-                color = 'aprobado'
-                break;
-            case 'rechazado':
-                color = 'rechazado'
-                break;
-            case 'ingresado':
-                color = 'ingresado'
-                break;
-            default:
-                break;
-        }
-                    
-        const card = document.createElement('div')
-        card.classList.add('registro')
-        card.setAttribute('id', listado[i].numero)
-        card.innerHTML= `
+    const card = document.createElement("div");
+    card.classList.add("registro");
+    card.setAttribute("id", listado[i].numero);
+    card.innerHTML = `
         <div class="data">
             <p class="area">${listado[i].area}</p>
             <p class="tema">${listado[i].tema}</p>
@@ -417,67 +424,68 @@ function mostrarMasProyectos(listado){
             </div>
         </div>
         `;
-    //     <div class="card_left">
-    //     <div class="link-row">
-    //         <p class="numero">${listado[i].numero}</p>
-    //         <a href="${listado[i].enlace}">
-    //         <i class="fa-solid fa-arrow-up-right-from-square fa-lg"></i></a>
-    //     </div>
-    //     <p class="fecha">${listado[i].fecha}</p>
-    //     <p class="estado ${color}">${listado[i].estado}</p>
-    // </div>
-    // <div class="card_centro">
-    //     <p class="resumen">${listado[i].resumen}</p>
-    // </div>
-    // <div class="card_right">
-    //     <p class="area">${listado[i].area}</p>
-    //     <p class="tag">${listado[i].tema}</p>
-    // </div>
- 
-        i++
-        contenedorProyectos.appendChild(card)
-    }
-    const mostrarMenos = document.createElement('p')
-    mostrarMenos.textContent = 'Mostrar menos'
-    mostrarMenos.classList.add('ancor')
-    contenedorProyectos.appendChild(mostrarMenos)
 
-    mostrarMenos.addEventListener('click', ()=>{
-        mostrarMenos.remove()
-        mostrarMenosProyectos(listado)
-    })
+    i++;
+    contenedorProyectos.appendChild(card);
+  }
+  const mostrarMenos = document.createElement("p");
+  mostrarMenos.textContent = "Mostrar menos";
+  mostrarMenos.classList.add("ancor");
+  contenedorProyectos.appendChild(mostrarMenos);
+
+  mostrarMenos.addEventListener("click", () => {
+    mostrarMenos.remove();
+    mostrarMenosProyectos(listado);
+  });
 }
 
-function mostrarMenosProyectos(listado){
-    let i = listado.length
+function mostrarMenosProyectos(listado) {
+  let i = listado.length;
 
-    while( i > 8){
-        contenedorProyectos.lastChild.remove()
-        i--
-    }
-    
-    const mostrarMas = document.createElement('p')
-    mostrarMas.textContent = 'Mostrar más'
-    mostrarMas.classList.add('ancor')
-    contenedorProyectos.appendChild(mostrarMas)
-    contenedorProyectos.scrollIntoView({ behavior: 'smooth' });
+  while (i > 8) {
+    contenedorProyectos.lastChild.remove();
+    i--;
+  }
 
-    mostrarMas.addEventListener('click', ()=>{
-        mostrarMas.remove()
-        mostrarMasProyectos(listado)
-    })
+  const mostrarMas = document.createElement("p");
+  mostrarMas.textContent = "Mostrar más";
+  mostrarMas.classList.add("ancor");
+  contenedorProyectos.appendChild(mostrarMas);
+  contenedorProyectos.scrollIntoView({ behavior: "smooth" });
+
+  mostrarMas.addEventListener("click", () => {
+    mostrarMas.remove();
+    mostrarMasProyectos(listado);
+  });
 }
 
 // completa el select del filtro
-const temasProyectos = proyectosPropios.map(proy=> proy.tema)
+const temasProyectos = proyectosPropios.map((proy) => proy.tema);
 function completarTemas() {
-    const temas = [...new Set(temasProyectos)]
-    const select = document.querySelector('#temas')
-    temas.forEach(element => {
-        const op = document.createElement('option')
-        op.setAttribute('value', element)
-        op.textContent = element.toUpperCase()
-        select.appendChild(op)
-    });
-       
-} completarTemas()
+  const temas = [...new Set(temasProyectos)];
+  const select = document.querySelector("#temas");
+  temas.forEach((element) => {
+    const op = document.createElement("option");
+    op.setAttribute("value", element);
+    op.textContent = element.toUpperCase();
+    select.appendChild(op);
+  });
+}
+completarTemas();
+
+function imprimirDestacados() {
+  for (let i = 0; i < destacados.length; i++) {
+    document.querySelector(`#card_${i + 1} .card__numero`).innerText =
+      destacados[i].numero;
+    document.querySelector(`#card_${i + 1} .card__titulo`).innerText =
+      destacados[i].tema;
+    document.querySelector(`#card_${i + 1} .area`).innerText =
+      destacados[i].area;
+    document.querySelector(`#card_${i + 1} .fecha`).innerText =
+      destacados[i].fecha;
+    document.querySelector(`#card_${i + 1} .texto`).innerText =
+      destacados[i].resumen;
+    document.querySelector(`#card_${i + 1} .estado`).innerText =
+      destacados[i].estado;
+  }
+}
