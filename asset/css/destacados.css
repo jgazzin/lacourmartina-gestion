@@ -1,103 +1,119 @@
-/* destacados */
-.tarjetas {
-    margin: 1.5rem 0;
-  }
+/* -----  DESTACADOS -------------------*/
+.destacados {
+  height: 480px;
+  width: 100%;
+  margin: 2rem 0;
+
+  display: flex;
   
-  .cards {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin: 1rem 0;
-  }
-  .cards .flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 300px;
-    perspective: 500px; /*efecto 3d*/
-    /*a más chico el número + perspectiva*/
-  }
-  .cards .flip-card .flip-card__inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s ease-in-out;
-    transform-style: preserve-3d;
-  }
-  .cards .flip-card:hover .flip-card__inner {
-    transform: rotateY(180deg);
-  }
-  .cards .flip-card .flip-card__front,
-  .cards .flip-card .flip-card__back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden; /* oculta la parte de atrás de la tarjeta*/
-  }
-  .cards .flip-card .flip-card__front img {
-    width: 100%;
-    height: 100%;
-  }
-  .cards .flip-card .flip-card__back {
-    box-sizing: border-box;
-    padding: 5rem 2rem 4rem;
-    display: flex;
+}
+
+/* CARD */
+.destacados__card {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+  gap: 1rem;
+  padding: 2rem;
+  text-align: end;
+  position: relative;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  width: 33%;
+  flex: 1;
+}
+.destacados__card > * {
+  z-index: 1;
+}
+
+.card__imagen:nth-child(1) {
+  background-image: url(/asset/img/ipross.jpg);
+}
+.card__imagen:nth-child(2) {
+  background-image: url(/asset/img/reiterancia.jpeg);
+}
+.card__imagen:nth-child(3) {
+  background-image: url(/asset/img/plasticos.jpeg);
+}
+.card__imagen::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.card__imagen:nth-child(2)::before {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card__numero {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--color-ppal);
+}
+.card__titulo {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--color-ppal);
+  margin-bottom: 1rem;
+}
+
+.card__detalles {
+  color: var(--color-complementario);
+}
+.card__detalles >*:not(.texto){
+  font-weight: bold;
+  color: var(--color-complementario);
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: end;
+  margin: 0.5rem 0;
+  padding: 0;
+}
+.card__detalles .estado{
+  color: grey;
+  font-size: 14px;
+}
+.card__detalles .texto{
+  font-size: 14px;
+  font-style: italic;
+  margin-left: 2rem;
+  font-weight: lighter;
+}
+
+.card__btn {
+  width: 9rem;
+  height: 2.5rem;
+  display: grid;
+  place-content: center;
+  border: 2px solid white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+}
+
+.card__btn:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .destacados {
+    height: unset;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
   }
-  .cards .flip-card .flip-card__front {
-    background-color: var(--color-pppal);
-    color: var(--color-negativo);
-    display: grid;
-    place-content: end;
-    text-align: left;
-    padding: 1rem;
-
-  }
-  
-  .cards .flip-card .flip-card__back {
-    background-color: var(--color-ppal);
-    color: var(--color-negativo);
-    transform: rotateY(180deg);
-  }
-  .cards .flip-card .flip-card__back .btn{
-    background-color: transparent;
-    border: 2px solid var(--color-negativo);
-    color: var(--color-negativo);
-  }
-  .cards .flip-card .flip-card__back .btn:hover{
-    box-shadow: none;
+  .destacados__card{
+    min-height: 480px;
+    width: 100%;
   }
 
-  #flip_1{
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(/asset/img/ipross.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-  #flip_2{
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(/asset/img/reiterancia.jpeg);
-    background-size: cover;
-    background-position: center;
-  }
-  #flip_3{
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(/asset/img/plasticos.jpeg);
-    background-size: cover;
-    background-position: center;
-  }
-  
-  @media (max-width: 576px) {
-    .cards {
-      flex-direction: column;
-      align-items: center;
-    }
-    .cards .flip-card{
-      width: 100%;
-      height: 360px;
-    }
-  }
-
-  .tarjetas .btn {
-    background-color: transparent;
-    border: 1px solid var(--color-complementario);
-  }
+}

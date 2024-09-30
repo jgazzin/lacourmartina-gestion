@@ -75,7 +75,6 @@ main{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 400px;
     margin-top: 2rem;
 }
 .noticias .container{
@@ -87,7 +86,7 @@ main{
     background-color: #f5ac0da4;
   }
 .noticias .ultimos_hitos{
-    height: 400px;
+    height: 480px;
 }
 .noticias .ultimos_hitos .item{
     display: flex;

@@ -12,6 +12,28 @@ const fechaActual = new Date();
 const añoActual = fechaActual.getFullYear();
 document.querySelector('.date').textContent = añoActual;
 
+// DESTACADOS
+const tarjetas = document.querySelectorAll(".destacados__card");
+tarjetas.forEach(card =>{
+    card.querySelector('.card__btn').addEventListener('mouseover', ()=>{
+        card.querySelector('.card__detalles').classList.remove('hidden')
+        card.classList.remove('card__imagen')
+
+    })
+    card.querySelector('.card__btn').addEventListener('mouseout', ()=>{
+        card.querySelector('.card__detalles').classList.add('hidden')
+        card.classList.add('card__imagen')
+
+    })
+    card.querySelector(".card__btn").addEventListener("touchstart", () => {
+      card.querySelector(".card__detalles").classList.remove("hidden");
+      card.classList.remove("card__imagen");
+    });
+    card.querySelector(".card__btn").addEventListener("touchend", () => {
+      card.querySelector(".card__detalles").classList.add("hidden");
+      card.classList.add("card__imagen");
+    });
+})
 
 // ** CONTACTO 
 const form = document.querySelector('.contactForm .form');
