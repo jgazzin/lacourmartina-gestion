@@ -21,19 +21,19 @@ document.querySelector(".menu").addEventListener("click", () => {
 // DESTACADOS
 const tarjetas = document.querySelectorAll(".destacados__card");
 tarjetas.forEach((card) => {
-  card.querySelector(".card__btn").addEventListener("mouseover", () => {
+  card.addEventListener("mouseover", () => {
     card.querySelector(".card__detalles").classList.remove("hidden");
     card.classList.remove("card__imagen");
   });
-  card.querySelector(".card__btn").addEventListener("mouseout", () => {
+  card.addEventListener("mouseout", () => {
     card.querySelector(".card__detalles").classList.add("hidden");
     card.classList.add("card__imagen");
   });
-  card.querySelector(".card__btn").addEventListener("touchstart", () => {
+  card.addEventListener("touchstart", () => {
     card.querySelector(".card__detalles").classList.toggle("hidden");
     card.classList.toggle("card__imagen");
   });
-  card.querySelector(".card__btn").addEventListener("touchend", () => {
+  card.addEventListener("touchend", () => {
     card.querySelector(".card__detalles").classList.add("hidden");
     card.classList.add("card__imagen");
   });

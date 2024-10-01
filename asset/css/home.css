@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
+main {
+  padding-bottom: 2rem;
+}
 /* cards proyectos */
 .card:last-of-type {
   border: none;
@@ -41,18 +44,26 @@ html {
 }
 
 .hitos .item {
-  margin: 1rem;
-  display: flex;
+  padding: 1rem 0;
+ display: grid;
+ grid-template-columns: 1fr 11fr;
   align-items: center;
-  gap: 16px;
+  justify-content: start;
 }
 .item p {
   text-align: left;
-}
-main {
-  padding-bottom: 2rem;
+  font-size: 14px;
 }
 
+
+.item .dot{
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--color-ppal);
+  position: relative;
+}
 
 .link-row {
   display: flex;
