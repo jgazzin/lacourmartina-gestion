@@ -1,5 +1,38 @@
 const proyectosPropios = [
   {
+    numero: "PC1419/2024",
+    fecha: "16-10-2024",
+    estado: "ingresado",
+    area: "Seguridad  y Justicia",
+    tema: "datos genéticos",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=1419&a=2024",
+    resumen:
+      "Al Poder Ejecutivo, Ministerio de Seguridad y Justicia, que vería con agrado suscriba un convenio con el Registro Nacional de Datos Genéticos, para posibilitar su utilización por parte del fuero y los ministerios públicos provinciales.",
+  },
+  {
+    numero: "PI1389/2024",
+    fecha: "10-10-2024",
+    estado: "ingresado",
+    area: "Salud",
+    tema: "medicina de emergencia",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=1389&a=2024",
+    resumen:
+      "Al Poder Ejecutivo, Ministerio de Salud, referido al Sistema Integral de Atención Rionegrina de Medicina de Emergencias -SIARME-.",
+  },
+  {
+    numero: "PC1208/2024",
+    fecha: "12-09-2024",
+    estado: "ingresado",
+    area: "Asuntos económicos",
+    tema: "eliminación de tasas",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=1208&a=2024",
+    resumen:
+      "Al Poder Ejecutivo, que arbitre los medios necesarios para que el Ministerio de Hacienda, a través de la Agencia de Recaudación Tributaria, derogue todo régimen de percepción de tributos o tasas provinciales que se apliquen y/o trasladen con la facturación realizada por bienes o servicios, y sea ajeno a la naturaleza de los mismos.",
+  },
+  {
     numero: "PC1131/2024",
     fecha: "28-08-2024",
     estado: "aprobado",

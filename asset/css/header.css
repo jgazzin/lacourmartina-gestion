@@ -223,10 +223,16 @@ header>*{
 }
 .cita h3 {
   font-size: 3rem;
-  font-family: "Times New Roman", Times, serif;
+  font-family: cursive;
+}
+.cita h3:first-of-type{
+  text-align: left;
+}
+.cita h3:last-of-type{
+  text-align: right;
 }
 .cita p {
-  font-family: "Times New Roman", Times, serif;
+  font-family: cursive;
   font-size: 26px;
   font-style: italic;
   letter-spacing: 2px;
