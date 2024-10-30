@@ -1,5 +1,49 @@
 const proyectosPropios = [
   {
+    numero: "PI1449/2024",
+    fecha: "21-10-2024",
+    estado: "ingresado",
+    area: "Asuntos económicos",
+    tema: "Recaudación Tributaria",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=1449&a=2024",
+    resumen:
+      'Al Poder Ejecutivo, Ministerio de Hacienda y Agencia de Recaudación Tributaria, referido a la recaudación de los ejercicios fiscales 2019, 2020, 2021, 2022 y 2023, ejecutada en conceptos de los Impuestos Sobre los Ingresos Brutos, Automotores, Inmobiliario y Sellos; y el total recaudado en las diferentes jurisdicciones municipales de la provincia.',
+  },
+  {
+    numero: "PL1448/2024",
+    fecha: "18-10-2024",
+    estado: "ingresado",
+    area: "Educación y Cultura",
+    tema: "hallazgo del Helvecia II",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=1448&a=2024",
+    resumen:
+      'Se declara "Sitio Histórico Provincial", "Patrimonio Histórico Provincial y de interés científico cultural, al lugar Lago Nahuel Huapi donde se halla el naufragio del vapor Helvecia II en los términos de la ley F nº 3656 de Protección y Conservación del Patrimonio Cultural de la Provincia de Río Negro.',
+  },
+  {
+    numero: "PD1446/2024",
+    fecha: "18-10-2024",
+    estado: "ingresado",
+    area: "Educación y Cultura",
+    tema: "hallazgo del Helvecia II",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=1446&a=2024",
+    resumen:
+      "De interés histórico, cultural, social, educativo, científico y turístico al sitio donde se produjo el hallazgo del vapor Helvecia II en aguas del lago Nahuel Huapi.",
+  },
+  {
+    numero: "PL1444/2024",
+    fecha: "18-10-2024",
+    estado: "ingresado",
+    area: "Educación y Cultura",
+    tema: "Nuestra historia",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=1444&a=2024",
+    resumen:
+      "Se declara en la Provincia de Río Negro, el año 2025 como '210 Años del Congreso de los Pueblos Libres'. Declara el año 2026 como '210 Años de Nuestra Indepenencia'. Se incorpora durante el año 2025 la leyenda '2025-210 Años del Congreso de los Pueblos Libre' en los medios digitales de los Poderes Ejecutivo y Legislativo.",
+  },
+  {
     numero: "PC1419/2024",
     fecha: "16-10-2024",
     estado: "ingresado",

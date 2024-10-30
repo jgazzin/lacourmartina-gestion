@@ -19,24 +19,21 @@ document.querySelector(".menu").addEventListener("click", () => {
 });
 
 // DESTACADOS
-const tarjetas = document.querySelectorAll(".destacados__card");
-tarjetas.forEach((card) => {
-  card.addEventListener("mouseover", () => {
-    card.querySelector(".card__detalles").classList.remove("hidden");
-    card.classList.remove("card__imagen");
-  });
-  card.addEventListener("mouseout", () => {
-    card.querySelector(".card__detalles").classList.add("hidden");
-    card.classList.add("card__imagen");
-  });
-  card.addEventListener("touchstart", () => {
-    card.querySelector(".card__detalles").classList.toggle("hidden");
-    card.classList.toggle("card__imagen");
-  });
-  card.addEventListener("touchend", () => {
-    card.querySelector(".card__detalles").classList.add("hidden");
-    card.classList.add("card__imagen");
-  });
+const destacados_card = document.querySelectorAll(".destacados__card");
+
+destacados_card.forEach(card=> {
+  card.addEventListener("click", () => {
+    card.classList.toggle('card__imagen');
+    card.querySelector('.card__detalles').classList.toggle('hidden');
+
+    destacados_card.forEach(destacado => {
+      if(destacado !== card) {
+        destacado.classList.add('card__imagen');
+        destacado.querySelector('.card__detalles').classList.add('hidden');
+      } 
+    })
+  })
+ 
 });
 
 // ** CONTACTO
