@@ -1,5 +1,38 @@
 const proyectosPropios = [
   {
+    numero: "PL1526/2024",
+    fecha: "29-10-2024",
+    estado: "ingresado",
+    area: "Administración-Estado",
+    tema: "cargos públicos no heredarios",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=1526&a=2024",
+    resumen:
+      'Se prohíbe la designación preferencial en cargos y empleos públicos a integrantes del grupo familiar primario de los trabajadores activos o activos fallecidos, dentro de todos los organismos que integran la Administración Pública Provincial.',
+  },
+  {
+    numero: "PL1525/2024",
+    fecha: "29-10-2024",
+    estado: "ingresado",
+    area: "cultura, turismo y educación",
+    tema: "Pilcaniyeu Viejo",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=1525&a=2024",
+    resumen:
+      'Declara Sitio Histórico Provincial, en los términos de la ley F nº 3656 de Protección y Conservación del Patrimonio Cultural de la Provincia de Río Negro, el paraje "Pilcaniyeu Viejo", y Monumentos Históricos Provinciales a los edificios del correo y del galpón de esquila y enfardado de lana, ubicados en el predio del Centro Educativo Rural -CER-.',
+  },
+  {
+    numero: "PD1524/2024",
+    fecha: "29-10-2024",
+    estado: "aprobado",
+    area: "cultura, turismo y educación",
+    tema: "Pilcaniyeu Viejo",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=1524&a=2024",
+    resumen:
+      'De interés histórico, cultural, social, educativo y turístico los sitios donde funcionaron el almacén, el correo, el hotel y el galpón de esquila y enfardado del paraje Pilcaniyeu Viejo.',
+  },
+  {
     numero: "PI1449/2024",
     fecha: "21-10-2024",
     estado: "ingresado",

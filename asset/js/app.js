@@ -13,10 +13,21 @@ document.querySelector(".menu").addEventListener("click", () => {
   } else {
     cuadro.classList.add("hidden");
   }
-  document.querySelector(".nav-links").addEventListener("click", () => {
-    cuadro.classList.toggle("hidden");
-  });
+
+  document.querySelectorAll(".nav-links .nav-item").forEach(item => {
+    item.addEventListener("click", () => {
+      if (cuadro.classList.contains("hidden")) {
+        setTimeout(() => {
+          cuadro.classList.remove("hidden");
+        }, 500);
+      } else {
+        cuadro.classList.add("hidden");
+      }
+    });
+  }) 
+
 });
+
 
 // DESTACADOS
 const destacados_card = document.querySelectorAll(".destacados__card");

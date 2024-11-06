@@ -1,5 +1,23 @@
 const notas = [
   {
+    fecha: "31/10/2024",
+    medio: "Noticias Río Negro",
+    tema: "bloque pro",
+    titulo:
+      "Consultarán a las comunidades originarias antes de dictar medidas que las afectenConsultarán a las comunidades originarias antes de dictar medidas que las afecten",
+    enlace:
+      "https://noticiasrionegro.com.ar/contenido/80639/consultaran-a-las-comunidades-originarias-antes-de-dictar-medidas-que-las-afecte",
+  },
+  {
+    fecha: "02/11/2024",
+    medio: "Informativo Hoy",
+    tema: "municipalización Las Grutas",
+    titulo:
+      "Vecinos municipalizadores de Las Grutas buscan avanzar en la autonomía",
+    enlace:
+      "https://informativohoy.com.ar/vecinos-municipalizadores-de-las-grutas-buscan-avanzar-en-la-autonomia/",
+  },
+  {
     fecha: "10/09/2024",
     medio: "Bariloche Opina",
     tema: "gasoducto patagónico",
