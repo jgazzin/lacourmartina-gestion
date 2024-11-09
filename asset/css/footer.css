@@ -14,7 +14,8 @@ footer{
     margin-top: 2rem;
 }
 
-footer h2{
+footer .header h2,
+footer .header h2>*{
     color: var(--color-complemento);
 }
 
