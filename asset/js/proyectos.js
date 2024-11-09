@@ -1,5 +1,115 @@
 const proyectosPropios = [
   {
+    numero: "PL1526/2024",
+    fecha: "29-10-2024",
+    estado: "ingresado",
+    area: "Administración-Estado",
+    tema: "cargos públicos no heredarios",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=1526&a=2024",
+    resumen:
+      'Se prohíbe la designación preferencial en cargos y empleos públicos a integrantes del grupo familiar primario de los trabajadores activos o activos fallecidos, dentro de todos los organismos que integran la Administración Pública Provincial.',
+  },
+  {
+    numero: "PL1525/2024",
+    fecha: "29-10-2024",
+    estado: "ingresado",
+    area: "cultura, turismo y educación",
+    tema: "Pilcaniyeu Viejo",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=1525&a=2024",
+    resumen:
+      'Declara Sitio Histórico Provincial, en los términos de la ley F nº 3656 de Protección y Conservación del Patrimonio Cultural de la Provincia de Río Negro, el paraje "Pilcaniyeu Viejo", y Monumentos Históricos Provinciales a los edificios del correo y del galpón de esquila y enfardado de lana, ubicados en el predio del Centro Educativo Rural -CER-.',
+  },
+  {
+    numero: "PD1524/2024",
+    fecha: "29-10-2024",
+    estado: "aprobado",
+    area: "cultura, turismo y educación",
+    tema: "Pilcaniyeu Viejo",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=1524&a=2024",
+    resumen:
+      'De interés histórico, cultural, social, educativo y turístico los sitios donde funcionaron el almacén, el correo, el hotel y el galpón de esquila y enfardado del paraje Pilcaniyeu Viejo.',
+  },
+  {
+    numero: "PI1449/2024",
+    fecha: "21-10-2024",
+    estado: "ingresado",
+    area: "Asuntos económicos",
+    tema: "Recaudación Tributaria",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=1449&a=2024",
+    resumen:
+      'Al Poder Ejecutivo, Ministerio de Hacienda y Agencia de Recaudación Tributaria, referido a la recaudación de los ejercicios fiscales 2019, 2020, 2021, 2022 y 2023, ejecutada en conceptos de los Impuestos Sobre los Ingresos Brutos, Automotores, Inmobiliario y Sellos; y el total recaudado en las diferentes jurisdicciones municipales de la provincia.',
+  },
+  {
+    numero: "PL1448/2024",
+    fecha: "18-10-2024",
+    estado: "ingresado",
+    area: "Educación y Cultura",
+    tema: "hallazgo del Helvecia II",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=1448&a=2024",
+    resumen:
+      'Se declara "Sitio Histórico Provincial", "Patrimonio Histórico Provincial y de interés científico cultural, al lugar Lago Nahuel Huapi donde se halla el naufragio del vapor Helvecia II en los términos de la ley F nº 3656 de Protección y Conservación del Patrimonio Cultural de la Provincia de Río Negro.',
+  },
+  {
+    numero: "PD1446/2024",
+    fecha: "18-10-2024",
+    estado: "ingresado",
+    area: "Educación y Cultura",
+    tema: "hallazgo del Helvecia II",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=1446&a=2024",
+    resumen:
+      "De interés histórico, cultural, social, educativo, científico y turístico al sitio donde se produjo el hallazgo del vapor Helvecia II en aguas del lago Nahuel Huapi.",
+  },
+  {
+    numero: "PL1444/2024",
+    fecha: "18-10-2024",
+    estado: "ingresado",
+    area: "Educación y Cultura",
+    tema: "Nuestra historia",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=1444&a=2024",
+    resumen:
+      "Se declara en la Provincia de Río Negro, el año 2025 como '210 Años del Congreso de los Pueblos Libres'. Declara el año 2026 como '210 Años de Nuestra Indepenencia'. Se incorpora durante el año 2025 la leyenda '2025-210 Años del Congreso de los Pueblos Libre' en los medios digitales de los Poderes Ejecutivo y Legislativo.",
+  },
+  {
+    numero: "PC1419/2024",
+    fecha: "16-10-2024",
+    estado: "ingresado",
+    area: "Seguridad  y Justicia",
+    tema: "datos genéticos",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=1419&a=2024",
+    resumen:
+      "Al Poder Ejecutivo, Ministerio de Seguridad y Justicia, que vería con agrado suscriba un convenio con el Registro Nacional de Datos Genéticos, para posibilitar su utilización por parte del fuero y los ministerios públicos provinciales.",
+  },
+  {
+    numero: "PI1389/2024",
+    fecha: "10-10-2024",
+    estado: "ingresado",
+    area: "Salud",
+    tema: "medicina de emergencia",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=1389&a=2024",
+    resumen:
+      "Al Poder Ejecutivo, Ministerio de Salud, referido al Sistema Integral de Atención Rionegrina de Medicina de Emergencias -SIARME-.",
+  },
+  {
+    numero: "PC1208/2024",
+    fecha: "12-09-2024",
+    estado: "ingresado",
+    area: "Asuntos económicos",
+    tema: "eliminación de tasas",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=1208&a=2024",
+    resumen:
+      "Al Poder Ejecutivo, que arbitre los medios necesarios para que el Ministerio de Hacienda, a través de la Agencia de Recaudación Tributaria, derogue todo régimen de percepción de tributos o tasas provinciales que se apliquen y/o trasladen con la facturación realizada por bienes o servicios, y sea ajeno a la naturaleza de los mismos.",
+  },
+  {
     numero: "PC1131/2024",
     fecha: "28-08-2024",
     estado: "aprobado",
@@ -297,19 +407,19 @@ document.addEventListener("DOMContentLoaded", () => {
   imprimirDestacados();
 });
 
-let temaProyectos = document.querySelector("#temas");
-temaProyectos.addEventListener("change", () => {
-  if (temaProyectos.value === "") {
-    imprimirProyectos(proyectosPropios);
-    console.log(proyectosPropios);
-  } else {
-    const proyectosFiltrados = proyectosPropios.filter(
-      (proy) => proy.tema === temaProyectos.value
-    );
-    //console.log(proyectosFiltrados);
-    imprimirProyectos(proyectosFiltrados);
-  }
-});
+// let temaProyectos = document.querySelector("#temas");
+// temaProyectos.addEventListener("change", () => {
+//   if (temaProyectos.value === "") {
+//     imprimirProyectos(proyectosPropios);
+//     console.log(proyectosPropios);
+//   } else {
+//     const proyectosFiltrados = proyectosPropios.filter(
+//       (proy) => proy.tema === temaProyectos.value
+//     );
+//     //console.log(proyectosFiltrados);
+//     imprimirProyectos(proyectosFiltrados);
+//   }
+// });
 
 // FUNCIONES
 const contenedorProyectos = document.querySelector(".proyectos_propios");
@@ -460,18 +570,18 @@ function mostrarMenosProyectos(listado) {
 }
 
 // completa el select del filtro
-const temasProyectos = proyectosPropios.map((proy) => proy.tema);
-function completarTemas() {
-  const temas = [...new Set(temasProyectos)];
-  const select = document.querySelector("#temas");
-  temas.forEach((element) => {
-    const op = document.createElement("option");
-    op.setAttribute("value", element);
-    op.textContent = element.toUpperCase();
-    select.appendChild(op);
-  });
-}
-completarTemas();
+// const temasProyectos = proyectosPropios.map((proy) => proy.tema);
+// function completarTemas() {
+//   const temas = [...new Set(temasProyectos)];
+//   const select = document.querySelector("#temas");
+//   temas.forEach((element) => {
+//     const op = document.createElement("option");
+//     op.setAttribute("value", element);
+//     op.textContent = element.toUpperCase();
+//     select.appendChild(op);
+//   });
+// }
+// completarTemas();
 
 function imprimirDestacados() {
   for (let i = 0; i < destacados.length; i++) {

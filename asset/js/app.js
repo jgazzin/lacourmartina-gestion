@@ -6,6 +6,8 @@ document.querySelector(".date").textContent = añoActual;
 // HERO
 document.querySelector(".menu").addEventListener("click", () => {
   const cuadro = document.querySelector(".cuadro_resumen");
+  console.log('click');
+  
   if (cuadro.classList.contains("hidden")) {
     setTimeout(() => {
       cuadro.classList.remove("hidden");
@@ -13,30 +15,59 @@ document.querySelector(".menu").addEventListener("click", () => {
   } else {
     cuadro.classList.add("hidden");
   }
-  document.querySelector(".nav-links").addEventListener("click", () => {
-    cuadro.classList.toggle("hidden");
-  });
+
+  document.querySelectorAll(".nav-links .nav-item a").forEach(item => {
+    item.addEventListener("click", () => {
+      if (cuadro.classList.contains("hidden")) {
+        setTimeout(() => {
+          cuadro.classList.remove("hidden");
+        }, 500);
+      } else {
+        cuadro.classList.add("hidden");
+      }
+    });
+  }) 
+
 });
 
+// HEADER
+console.log(window.innerWidth);
+
+window.onscroll = function() { 
+  const header = document.querySelector("#inicio"); 
+  if (window.scrollY > 60 && window.innerWidth >= 768) { 
+    document.querySelector('.cuadro_resumen').classList.add("hidden");
+    header.classList.remove("inicio-altura");
+    if(window.innerWidth >= 768){
+    document.querySelector('main').style.marginTop = '210px';
+    }
+  } else { 
+        
+    if(window.innerWidth >= 768){
+      document.querySelector('.cuadro_resumen').classList.remove("hidden"); 
+      header.classList.add("inicio-altura");
+      document.querySelector('main').style.marginTop = 'var(--nav-h)';
+    } 
+  }
+  };
+
+
 // DESTACADOS
-const tarjetas = document.querySelectorAll(".destacados__card");
-tarjetas.forEach((card) => {
-  card.addEventListener("mouseover", () => {
-    card.querySelector(".card__detalles").classList.remove("hidden");
-    card.classList.remove("card__imagen");
-  });
-  card.addEventListener("mouseout", () => {
-    card.querySelector(".card__detalles").classList.add("hidden");
-    card.classList.add("card__imagen");
-  });
-  card.addEventListener("touchstart", () => {
-    card.querySelector(".card__detalles").classList.toggle("hidden");
-    card.classList.toggle("card__imagen");
-  });
-  card.addEventListener("touchend", () => {
-    card.querySelector(".card__detalles").classList.add("hidden");
-    card.classList.add("card__imagen");
-  });
+const destacados_card = document.querySelectorAll(".destacados__card");
+
+destacados_card.forEach(card=> {
+  card.addEventListener("click", () => {
+    card.classList.toggle('card__imagen');
+    card.querySelector('.card__detalles').classList.toggle('hidden');
+
+    destacados_card.forEach(destacado => {
+      if(destacado !== card) {
+        destacado.classList.add('card__imagen');
+        destacado.querySelector('.card__detalles').classList.add('hidden');
+      } 
+    })
+  })
+ 
 });
 
 // ** CONTACTO
@@ -181,3 +212,24 @@ function mostrar(e) {
   icon.classList.toggle("fa-angle-down");
   icon.classList.toggle("fa-angle-up");
 }
+
+// SEARCH
+const select = document.querySelector("#year");
+const year = [];
+
+for (let i = 2023; i <= añoActual; i++) {
+  year.push(i);
+  year.sort((a, b) => b-a);
+  console.log(year);
+  
+}
+
+select.innerHTML = "";
+year.forEach((element) => {
+  const op = document.createElement("option");
+  op.setAttribute("value", element);
+  op.textContent = element;
+  select.appendChild(op);
+
+});
+

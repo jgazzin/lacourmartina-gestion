@@ -1,13 +1,13 @@
 :root {
   --color-ppal:  #F5AC0D;
-  --color-complemento: #69686A;
+  --color-complemento: #191D16;
   --color-destaque: #72D1EC;
   --color-gris: rgb(66, 65, 67);
   --color-negativo: #f3f3f3;
   --color-texto: #191D16;
 
 
-  --nav-h:520px;
+  --nav-h:620px;
   --shadow: 2px 2px 5px rgb(66, 65, 67);
 }
   
@@ -16,6 +16,7 @@
 html {
     font-family: "Nunito", sans-serif;
     color: var(--color-texto);
+    scroll-behavior: smooth;
 }
 h1, h2, h3, h4, p {
   margin: 0;
@@ -133,7 +134,12 @@ input{
 }
 .titulo i{
   color: var(--color-ppal);
-  text-shadow: var(--shadow);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--color-complemento);
+  display: grid;
+  place-items: center;
 }
 
 .headline {

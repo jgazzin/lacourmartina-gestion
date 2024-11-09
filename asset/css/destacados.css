@@ -12,8 +12,8 @@
 .destacados__card {
   display: flex;
   flex-direction: column;
-  align-items: end;
-  justify-content: end;
+  align-items: right;
+  justify-content: flex-end;
   gap: 1rem;
   padding: 2rem;
   text-align: end;
@@ -23,6 +23,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   
+  height: 100%;
   width: 33%;
   flex: 1;
 }
@@ -101,6 +102,8 @@
   font-weight: bold;
   font-size: 1rem;
   color: white;
+
+  align-self: flex-end;
 }
 
 .card__btn:hover {

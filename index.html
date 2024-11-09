@@ -11,10 +11,9 @@
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/asset/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Englebert&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="asset/style.css">
 
     <!-- icons -->
     <script src="https://kit.fontawesome.com/cdd189729f.js" crossorigin="anonymous"></script>
@@ -25,22 +24,20 @@
 </head>
 
 <body>
-    <header id="inicio">
+    <header id="inicio" class="inicio-altura">
         <div class="container">
             <div class="header" id="nav">
                 <div class="logo">
                     <img src="asset/img/isologo-ml-bc.png" alt="">
-
                 </div>
-                <!-- <i class="fa-solid fa-right-to-bracket fa-xl"></i> -->
 
                 <!-- MENU -->
                 <nav class="nav-links">
                     <div class="nav-item">
-                        <a href="#proyectos">Proyectos propios</a>
+                        <a href="#proyectos">Proyectos</a>
                     </div>
                     <div class="nav-item">
-                        <a href="#noticias">Últimas noticias</a>
+                        <a href="#noticias">noticias</a>
                     </div>
                     <div class="nav-item">
                         <a href="#prensa">En medios</a>
@@ -89,7 +86,7 @@
                         <p>prensa</p>
                     </div>
                     <div class="contenido">
-                        <p>88</p>
+                        <p>92</p>
                         <p id="countPrensa"></p>
                     </div>
 
@@ -103,11 +100,12 @@
                 <h3>"</h3>
                 <p>Río Negro necesita un verdadero cambio que permita a sus ciudadanos vivir y trabajar
                     con libertad.</p>
-                <h3>"</h3>
+                <h3  id="main">"</h3>
             </div>
-            <div class="anclas_nav">
+
+            <!-- <div class="anclas_nav">
                 <div class="anclas">
-                    <a href="#proyectos">
+                    <a href="#proyectos" class="button-56">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -115,7 +113,7 @@
                         </svg>
                         <p>Proyectos</p>
                     </a>
-                    <a href="#noticias">
+                    <a href="#noticias" class="button-56">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -124,7 +122,7 @@
 
                         <p>noticias</p>
                     </a>
-                    <a href="#prensa">
+                    <a href="#prensa" class="button-56">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -132,7 +130,7 @@
                         </svg>
                         <p>En medios</p>
                     </a>
-                    <a href="#form">
+                    <a href="#form" class="button-56">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -141,22 +139,36 @@
                         <p>Contacto</p>
                     </a>
                 </div>
-            </div>
+            </div> -->
 
             <div class="titulo">
                 <i class="fa-solid fa-landmark fa-xl"></i>
                 <h3>trabajo legislativo</h3>
             </div>
 
+            <!-- SEARCH CONTAINER -->
             <div class="search_nav">
-                <div class="temas">
-                    <select name="tema" id="temas">
-                        <option value="" selected>todos</option>
-                        <!-- desde js proyectos -->
+                <div class="search__year">
+                    <select name="year" id="year">
                     </select>
+
+                    <div class="search__btn">
+                        <i class="fa-solid fa-angle-down fa-lg"></i>
+                    </div>
                 </div>
-                <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+
+
+   
             </div>
+
+            <!-- <div class="search_nav">
+                <div class="search__year">
+                    <input type="text" id="search">
+                </div>
+                <div class="search__btn">
+                    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                </div>
+            </div> -->
 
         </section>
 
@@ -248,7 +260,7 @@
                     <i class="fa-solid fa-sheet-plastic fa-lg"></i>
                     <h3>Proyectos propios</h3>
                 </div>
-                <a href="#inicio">
+                <a href="#main">
                     <i class="fa-solid fa-circle-up fa-2xl verMas"></i>
                 </a>
             </div>
@@ -276,7 +288,7 @@
                     <i class="fa-solid fa-location-pin fa-lg"></i>
                     <h3>Hitos relevantes</h3>
                 </div>
-                <a href="#inicio">
+                <a href="#main">
                     <i class="fa-solid fa-circle-up fa-2xl verMas"></i></a>
             </div>
 
@@ -310,7 +322,7 @@
                     <i class="fa-solid fa-newspaper fa-lg"></i>
                     <h3>Notas en medios</h3>
                 </div>
-                <a href="#inicio">
+                <a href="#main">
                     <i class="fa-solid fa-circle-up fa-2xl verMas"></i></a>
             </div>
 
@@ -467,7 +479,7 @@
         </div>
 
         <div class="btn-arriba">
-            <a href="#inicio">
+            <a href="#main">
                 <i class="fa-solid fa-angle-up fa-2xl"></i>
             </a>
         </div>
