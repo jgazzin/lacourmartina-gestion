@@ -35,15 +35,15 @@ console.log(window.innerWidth);
 
 window.onscroll = function() { 
   const header = document.querySelector("#inicio"); 
-  if (window.scrollY > 60 && window.innerWidth >= 768) { 
+  if (window.scrollY > 60 && window.innerWidth >= 576) { 
     document.querySelector('.cuadro_resumen').classList.add("hidden");
     header.classList.remove("inicio-altura");
-    if(window.innerWidth >= 768){
+    if(window.innerWidth >= 576){
     document.querySelector('main').style.marginTop = '210px';
     }
   } else { 
         
-    if(window.innerWidth >= 768){
+    if(window.innerWidth >= 576){
       document.querySelector('.cuadro_resumen').classList.remove("hidden"); 
       header.classList.add("inicio-altura");
       document.querySelector('main').style.marginTop = 'var(--nav-h)';
