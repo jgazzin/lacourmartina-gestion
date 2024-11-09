@@ -273,7 +273,7 @@ right: 0;
 }
 
 .cita p {
-  font-size: clamp(20px, 4vw, 40px);
+  font-size: clamp(24px, 4vw, 40px);
   text-align: center;
   letter-spacing: 2px;
   line-height: 1.4;
