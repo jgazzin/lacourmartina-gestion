@@ -66,34 +66,35 @@
         <div class="container cuadro_resumen">
             <div class="medio-container">
                 <div class="bloque">
+                    <div class="blocks">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                     <p>legisladora rio negro</p>
                     <p>Bloque PRO Unión Republicana</p>
                 </div>
 
                 <div class="tabla">
-                    <div class="encabezado">
-                        <p>sesiones</p>
+                    <div class="simple">
                         <p>proyectos propios</p>
-                    </div>
-                    <div class="contenido">
-                        <p>6</p>
                         <p id="countProyectos"></p>
                     </div>
-                </div>
-                <div class="tabla">
-                    <div class="encabezado">
-                        <p>proyectos de bloque</p>
-                        <p>prensa</p>
+                    <div class="doble">
+                        <div>
+                            <p>prensa</p>
+                            <p id="countPrensa"></p>
+                        </div>
+                        <div>
+                            <p>sesiones</p>
+                            <p>6</p>
+                        </div>
                     </div>
-                    <div class="contenido">
-                        <p>92</p>
-                        <p id="countPrensa"></p>
-                    </div>
-
                 </div>
             </div>
         </div>
     </header>
+
     <main>
         <section class="container">
             <div class="cita">
@@ -113,48 +114,6 @@
                 </a>
             </div>
 
-            <!-- SEARCH CONTAINER -->
-            <div class="search_container">
-                <form id="search">
-                    <div class="search search__year">
-                        <select name="year" id="year">
-                        </select>
-    
-                        <div class="search__btn">
-                            <i class="fa-solid fa-angle-down fa-lg"></i>
-                        </div>
-                    </div>
-
-                    <div class="search search__word">
-                        <input type="text" name="word" id="word">
-    
-                        <div class="search__btn">
-                            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-                        </div>
-                    </div>
-
-                </form>
-
-                <p class="search_title">Mes</p>
-                <form id="meses">
-                    <input type="radio" name="meses" id="todos" value="All" checked>
-                    <input type="radio" name="meses" id="01" value="01">
-                    <input type="radio" name="meses" id="02" value="02">
-                    <input type="radio" name="meses" id="03" value="03">
-                    <input type="radio" name="meses" id="04" value="04">
-                    <input type="radio" name="meses" id="05" value="05">
-                    <input type="radio" name="meses" id="06" value="06">
-                    <input type="radio" name="meses" id="07" value="07">
-                    <input type="radio" name="meses" id="08" value="08">
-                    <input type="radio" name="meses" id="09" value="09">
-                    <input type="radio" name="meses" id="10" value="10">
-                    <input type="radio" name="meses" id="11" value="11">
-                    <input type="radio" name="meses" id="12" value="12">
-
-                    <p class="mes_select">All</p>
-                </form>
-
-            </div>
         </section>
 
         <!-- DESTACADOS -->
@@ -238,6 +197,51 @@
             </div>
         </section>
 
+        <section class="container">
+            <!-- SEARCH CONTAINER -->
+            <div class="search_container">
+                <form id="search">
+                    <div class="search search__year">
+                        <select name="year" id="year">
+                        </select>
+
+                        <div class="search__btn">
+                            <i class="fa-solid fa-angle-down fa-lg"></i>
+                        </div>
+                    </div>
+
+                    <div class="search search__word hidden">
+                        <input type="text" name="word" id="word">
+
+                        <div class="search__btn">
+                            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                        </div>
+                    </div>
+
+                </form>
+
+                <p class="search_title">Mes</p>
+                <form id="meses">
+                    <input type="radio" name="meses" id="todos" value="All" checked>
+                    <input type="radio" name="meses" id="01" value="01">
+                    <input type="radio" name="meses" id="02" value="02">
+                    <input type="radio" name="meses" id="03" value="03">
+                    <input type="radio" name="meses" id="04" value="04">
+                    <input type="radio" name="meses" id="05" value="05">
+                    <input type="radio" name="meses" id="06" value="06">
+                    <input type="radio" name="meses" id="07" value="07">
+                    <input type="radio" name="meses" id="08" value="08">
+                    <input type="radio" name="meses" id="09" value="09">
+                    <input type="radio" name="meses" id="10" value="10">
+                    <input type="radio" name="meses" id="11" value="11">
+                    <input type="radio" name="meses" id="12" value="12">
+
+                    <p class="mes_select">All</p>
+                </form>
+
+            </div>
+        </section>
+
         <!-- ** PROYECTOS -->
         <section class="container">
             <div class="headline" id="proyectos">
@@ -252,6 +256,41 @@
 
             <div class="proyectos_propios">
                 <script src="asset/js/proyectos.js"></script>
+            </div>
+        </section>
+
+        <!-- entrevistas -->
+        <section class="notas">
+            <div class="container">
+                <div class="social">
+                    <a href="https://www.facebook.com/lacourmartina">
+                        <i class="fa-brands fa-facebook fa-2xl"></i></a>
+                    <a href="https://www.instagram.com/lacourmartina">
+                        <i class="fa-brands fa-square-instagram fa-2xl"></i></a>
+                    <a href="https://www.x.com/lacourmartina">
+                        <i class="fa-brands fa-twitter fa-2xl"></i></a>
+                </div>
+                <div class="canal">
+                    <a href="https://www.youtube.com/@cpcbariloche" target="_blank">
+                        <img src="asset/img/placa canal.png" alt="Ir a youtube">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ** PRENSA -->
+        <section class="container">
+            <div class="headline" id="prensa">
+                <div class="titulo">
+                    <i class="fa-solid fa-newspaper fa-lg"></i>
+                    <h3>Notas en medios</h3>
+                </div>
+                <a href="#main">
+                    <i class="fa-solid fa-circle-up fa-2xl verMas"></i></a>
+            </div>
+
+            <div class="prensa">
+                <script src="asset/js/prensa.js"></script>
             </div>
         </section>
 
@@ -279,40 +318,6 @@
 
             <div class="hitos">
                 <script src="asset/js/hitos.js"></script>
-            </div>
-        </section>
-
-        <!-- entrevistas -->
-        <section class="notas">
-            <div class="container">
-                <div class="social">
-                    <a href="https://www.facebook.com/lacourmartina">
-                        <i class="fa-brands fa-facebook fa-2xl"></i></a>
-                    <a href="https://www.instagram.com/lacourmartina">
-                        <i class="fa-brands fa-square-instagram fa-2xl"></i></a>
-                    <a href="https://www.x.com/lacourmartina">
-                        <i class="fa-brands fa-twitter fa-2xl"></i></a>
-                </div>
-                <div class="canal">
-                    <a href="https://www.youtube.com/@cpcbariloche" target="_blank">
-                        <img src="asset/img/placa canal.png" alt="Ir a youtube">
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!-- ** PRENSA -->
-        <section class="container">
-            <div class="headline" id="prensa">
-                <div class="titulo">
-                    <i class="fa-solid fa-newspaper fa-lg"></i>
-                    <h3>Notas en medios</h3>
-                </div>
-                <a href="#main">
-                    <i class="fa-solid fa-circle-up fa-2xl verMas"></i></a>
-            </div>
-
-            <div class="prensa">
-                <script src="asset/js/prensa.js"></script>
             </div>
         </section>
 

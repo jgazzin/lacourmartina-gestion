@@ -547,15 +547,6 @@ const notas = [
 document.addEventListener('DOMContentLoaded', ()=>{
     imprimirPrensa(notas)})
 
-// let temaPrensa = document.querySelector('#temas');
-// temaPrensa.addEventListener('change', ()=>{
-//     if(temaProyectos.value===''){
-//         imprimirPrensa(notas)
-//     } else {
-//         const notasFiltradas = notas.filter(note => note.tema === temaPrensa.value)
-//         imprimirPrensa(notasFiltradas)
-//     }
-// })
 
 // FUNCIONES
 const contenedorPrensa = document.querySelector('.prensa')
@@ -563,8 +554,10 @@ const contenedorPrensa = document.querySelector('.prensa')
 function imprimirPrensa(listado) {
     contenedorPrensa.innerHTML= '';
 
+    let mostrar = listado.length > 8 ? 8 : listado.length;
+
     let i=0
-    while (i<8) {
+    while (i<mostrar) {
         const card = document.createElement('div')
         card.classList.add('registro')
         card.innerHTML = `
@@ -581,32 +574,21 @@ function imprimirPrensa(listado) {
             </div>
         </div>
         `;
-        // card.innerHTML= `
-        // <div class="card_left">
-        //     <p>${listado[i].fecha}</p>
-        //     <p class="estado ingresado">${listado[i].medio}</p>
-        // </div>
-        // <div class="card_centro">
-        //     <p class="title">
-        //     <a href="${listado[i].enlace}">
-        //     ${listado[i].titulo}</a></p>
-        // </div>
-        // <div class="card_right">
-        //     <p class="tag">${listado[i].tema}</p>
-        // </div>
-        // `;
+
         i++
         contenedorPrensa.appendChild(card)
     }
 
-    const mostrarMasPrensa = document.createElement('p')
-    mostrarMasPrensa.textContent = 'Mostrar más'
-    mostrarMasPrensa.classList.add('ancor')
-    contenedorPrensa.appendChild(mostrarMasPrensa)
-    mostrarMasPrensa.addEventListener('click', ()=>{
-        mostrarMasPrensa.remove()
-        MasPrensa(listado)
-    })
+    if (listado.length > 8) {
+      const mostrarMasPrensa = document.createElement('p')
+      mostrarMasPrensa.textContent = 'Mostrar más'
+      mostrarMasPrensa.classList.add('ancor')
+      contenedorPrensa.appendChild(mostrarMasPrensa)
+      mostrarMasPrensa.addEventListener('click', ()=>{
+          mostrarMasPrensa.remove()
+          MasPrensa(listado)
+      })
+    }
 
     const countPrensa = listado.length;
     document.querySelector('#countPrensa').textContent = countPrensa;
@@ -667,3 +649,28 @@ function MenosPrensa(listado){
         MasPrensa(listado)
     })
 }
+
+// BUSCADOR
+/* meses */
+const notas_meses = document.querySelectorAll("#meses input[type='radio']");
+notas_meses.forEach(mes => {
+  mes.addEventListener("change", () => {
+    console.log(mes.value);
+    if (mes.value === "All") {
+      imprimirPrensa(notas);
+    } else {
+      const notasFiltradas = notas.filter(
+        (proy) => proy.fecha.split('/')[1] === mes.value
+      );
+      if(notasFiltradas.length === 0){
+        const alert = document.createElement('i')
+        alert.textContent = 'No hay notas este mes';
+        contenedorPrensa.innerHTML = '';
+        contenedorPrensa.appendChild(alert)
+      } else {
+      imprimirPrensa(notasFiltradas);
+      console.log(notasFiltradas); 
+    }
+  }
+  });
+});

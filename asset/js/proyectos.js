@@ -144,7 +144,7 @@ const proyectosPropios = [
   },
   {
     numero: "PL950/2024",
-    fecha: "01/08/2024",
+    fecha: "01-08-2024",
     estado: "ingresado",
     area: "Administración-Estado",
     tema: "Información pública",
@@ -155,7 +155,7 @@ const proyectosPropios = [
   },
   {
     numero: "PL869/2024",
-    fecha: "10/07/2024",
+    fecha: "10-07-2024",
     estado: "ingresado",
     area: "Administración-Estado",
     tema: "Información pública",
@@ -166,7 +166,7 @@ const proyectosPropios = [
   },
   {
     numero: "PL773/24",
-    fecha: "19/06/2024",
+    fecha: "19-06-2024",
     estado: "ingresado",
     area: "Seguridad - Justicia",
     tema: "reiterancia delictiva",
@@ -177,7 +177,7 @@ const proyectosPropios = [
   },
   {
     numero: "PC772/24",
-    fecha: "19/06/2024",
+    fecha: "19-06-2024",
     estado: "ingresado",
     area: "Educación-Cultura-Soberanía",
     tema: "nuestras banderas",
@@ -188,7 +188,7 @@ const proyectosPropios = [
   },
   {
     numero: "PC771/24",
-    fecha: "19/06/2024",
+    fecha: "19-06-2024",
     estado: "ingresado",
     area: "Educación-Cultura-Soberanía",
     tema: "nuestras banderas",
@@ -199,7 +199,7 @@ const proyectosPropios = [
   },
   {
     numero: "PC758/24",
-    fecha: "18/06/2024",
+    fecha: "18-06-2024",
     estado: "ingresado",
     area: "Educación-Obras públicas",
     tema: "escuelas públicas",
@@ -210,7 +210,7 @@ const proyectosPropios = [
   },
   {
     numero: "PC757/24",
-    fecha: "18/06/2024",
+    fecha: "18-06-2024",
     estado: "ingresado",
     area: "Seguridad",
     tema: "fin a sumarios policías",
@@ -221,7 +221,7 @@ const proyectosPropios = [
   },
   {
     numero: "PI753/24",
-    fecha: "18/06/2024",
+    fecha: "18-06-2024",
     estado: "tratado",
     area: "Educación-Obras públicas",
     tema: "escuelas públicas",
@@ -232,7 +232,7 @@ const proyectosPropios = [
   },
   {
     numero: "PI752/24",
-    fecha: "18/06/2024",
+    fecha: "18-06-2024",
     estado: "tratado",
     area: "Educación-Obras públicas",
     tema: "escuelas públicas",
@@ -243,7 +243,7 @@ const proyectosPropios = [
   },
   {
     numero: "PI751/24",
-    fecha: "18/06/2024",
+    fecha: "18-06-2024",
     estado: "ingresado",
     area: "Economía-Finanzas",
     tema: "gasto público",
@@ -254,7 +254,7 @@ const proyectosPropios = [
   },
   {
     numero: "PL695/24",
-    fecha: "06/06/2024",
+    fecha: "06-06-2024",
     estado: "ingresado",
     area: "Cultura-Educación-Seguridad Interior",
     tema: "nuestras banderas",
@@ -265,7 +265,7 @@ const proyectosPropios = [
   },
   {
     numero: "PI451/24",
-    fecha: "23/04/2024",
+    fecha: "23-04-2024",
     estado: "tratado",
     area: "Medio Ambiente",
     tema: "contaminación lago",
@@ -276,7 +276,7 @@ const proyectosPropios = [
   },
   {
     numero: "PI449/24",
-    fecha: "23/04/2024",
+    fecha: "23-04-2024",
     estado: "tratado",
     area: "Educación-Obras públicas",
     tema: "escuela oeste bariloche",
@@ -287,7 +287,7 @@ const proyectosPropios = [
   },
   {
     numero: "PL447/24",
-    fecha: "23/04/2024",
+    fecha: "23-04-2024",
     estado: "ingresado",
     area: "Salud",
     tema: "no más cautivos IPROSS",
@@ -298,7 +298,7 @@ const proyectosPropios = [
   },
   {
     numero: "PC446/24",
-    fecha: "23/04/2024",
+    fecha: "23-04-2024",
     estado: "ingresado",
     area: "Economía - Agro",
     tema: "protección agro",
@@ -309,7 +309,7 @@ const proyectosPropios = [
   },
   {
     numero: "PL357/24",
-    fecha: "05/04/2024",
+    fecha: "05-04-2024",
     estado: "ingresado",
     area: "Administración-Estado",
     tema: "Información pública",
@@ -320,7 +320,7 @@ const proyectosPropios = [
   },
   {
     numero: "PC356/24",
-    fecha: "05/04/2024",
+    fecha: "05-04-2024",
     estado: "ingresado",
     area: "Educación",
     tema: "escuela oeste bariloche",
@@ -331,7 +331,7 @@ const proyectosPropios = [
   },
   {
     numero: "PC244/24",
-    fecha: "12/03/2024",
+    fecha: "12-03-2024",
     estado: "aprobado",
     area: "Seguridad",
     tema: "cuidar a roca",
@@ -342,7 +342,7 @@ const proyectosPropios = [
   },
   {
     numero: "PD230/24",
-    fecha: "08/03/2024",
+    fecha: "08-03-2024",
     estado: "ingresado",
     area: "Seguridad",
     tema: "cuidar a roca",
@@ -353,7 +353,7 @@ const proyectosPropios = [
   },
   {
     numero: "PL211/24",
-    fecha: "06/03/2024",
+    fecha: "06-03-2024",
     estado: "ingresado",
     area: "Justicia",
     tema: "Información pública",
@@ -364,7 +364,7 @@ const proyectosPropios = [
   },
   {
     numero: "PL196/24",
-    fecha: "06/03/2024",
+    fecha: "06-03-2024",
     estado: "ingresado",
     area: "Medio Ambiente",
     tema: "reducción de plásticos",
@@ -374,7 +374,7 @@ const proyectosPropios = [
   },
   {
     numero: "PL115/24",
-    fecha: "19/02/2024",
+    fecha: "19-02-2024",
     estado: "ingresado",
     area: "Economía-Defensa del Consumidor",
     tema: "responsabilidad fiscal",
@@ -385,7 +385,7 @@ const proyectosPropios = [
   },
   {
     numero: "PC72/24",
-    fecha: "07/02/2024",
+    fecha: "07-02-2024",
     estado: "aprobado",
     area: "Relaciones Internacionales",
     tema: "paso cardenal samoré",
@@ -407,28 +407,17 @@ document.addEventListener("DOMContentLoaded", () => {
   imprimirDestacados();
 });
 
-// let temaProyectos = document.querySelector("#temas");
-// temaProyectos.addEventListener("change", () => {
-//   if (temaProyectos.value === "") {
-//     imprimirProyectos(proyectosPropios);
-//     console.log(proyectosPropios);
-//   } else {
-//     const proyectosFiltrados = proyectosPropios.filter(
-//       (proy) => proy.tema === temaProyectos.value
-//     );
-//     //console.log(proyectosFiltrados);
-//     imprimirProyectos(proyectosFiltrados);
-//   }
-// });
+
 
 // FUNCIONES
 const contenedorProyectos = document.querySelector(".proyectos_propios");
 
 function imprimirProyectos(listado) {
   contenedorProyectos.innerHTML = "";
+  let mostrar = listado.length > 8 ? 8 : listado.length;
 
   let i = 0;
-  while (i < 8) {
+  while (i < mostrar) {
     let color = "";
     switch (listado[i].estado) {
       case "tratado":
@@ -472,15 +461,18 @@ function imprimirProyectos(listado) {
     contenedorProyectos.appendChild(card);
   }
 
-  const mostrarMas = document.createElement("p");
-  mostrarMas.textContent = "Mostrar más";
-  mostrarMas.classList.add("ancor");
-  contenedorProyectos.appendChild(mostrarMas);
+  if (listado.length > 8) {
 
-  mostrarMas.addEventListener("click", () => {
-    mostrarMas.remove();
-    mostrarMasProyectos(listado);
-  });
+    const mostrarMas = document.createElement("p");
+    mostrarMas.textContent = "Mostrar más";
+    mostrarMas.classList.add("ancor");
+    contenedorProyectos.appendChild(mostrarMas);
+
+    mostrarMas.addEventListener("click", () => {
+      mostrarMas.remove();
+      mostrarMasProyectos(listado);
+    });
+  }
 
   const countProyectos = listado.length;
   document.querySelector("#countProyectos").textContent = countProyectos;
@@ -585,3 +577,28 @@ function imprimirDestacados() {
       destacados[i].estado;
   }
 }
+
+// BUSCADOR
+/* meses */
+const search_meses = document.querySelectorAll("#meses input[type='radio']");
+search_meses.forEach(mes => {
+  mes.addEventListener("change", () => {
+    console.log(mes.value);
+    if (mes.value === "All") {
+      imprimirProyectos(proyectosPropios);
+    } else {
+      const mesesFiltrados = proyectosPropios.filter(
+        (proy) => proy.fecha.split('-')[1] === mes.value
+      );
+      if(mesesFiltrados.length === 0){
+        const alert = document.createElement('i')
+        alert.textContent = 'No hay proyectos este mes';
+        contenedorProyectos.innerHTML = '';
+        contenedorProyectos.appendChild(alert)
+      } else {
+     imprimirProyectos(mesesFiltrados);
+      console.log(mesesFiltrados); 
+    }
+  }
+  });
+});

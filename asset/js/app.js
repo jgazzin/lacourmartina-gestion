@@ -31,7 +31,6 @@ document.querySelector(".menu").addEventListener("click", () => {
 });
 
 // HEADER
-console.log(window.innerWidth);
 
 window.onscroll = function() { 
   const header = document.querySelector("#inicio"); 
@@ -220,7 +219,6 @@ const year = [];
 for (let i = 2023; i <= añoActual; i++) {
   year.push(i);
   year.sort((a, b) => b-a);
-  console.log(year);
   
 }
 
@@ -239,8 +237,10 @@ const mes_select = document.querySelector(".mes_select");
 
 meses.forEach(mes => {
   mes.addEventListener("change", () => {
-    console.log(mes.value);
     mes_select.textContent = mes.value;
+    
+    sessionStorage.setItem("mes", mes.value);
+
     if(mes.value === "All"){
       mes_select.style.left = "0";
     }
