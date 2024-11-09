@@ -569,20 +569,6 @@ function mostrarMenosProyectos(listado) {
   });
 }
 
-// completa el select del filtro
-// const temasProyectos = proyectosPropios.map((proy) => proy.tema);
-// function completarTemas() {
-//   const temas = [...new Set(temasProyectos)];
-//   const select = document.querySelector("#temas");
-//   temas.forEach((element) => {
-//     const op = document.createElement("option");
-//     op.setAttribute("value", element);
-//     op.textContent = element.toUpperCase();
-//     select.appendChild(op);
-//   });
-// }
-// completarTemas();
-
 function imprimirDestacados() {
   for (let i = 0; i < destacados.length; i++) {
     document.querySelector(`#card_${i + 1} .card__numero`).innerText =

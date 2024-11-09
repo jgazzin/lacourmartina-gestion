@@ -114,29 +114,47 @@
             </div>
 
             <!-- SEARCH CONTAINER -->
-            <div class="search_nav">
-                <div class="search__year">
-                    <select name="year" id="year">
-                    </select>
-
-                    <div class="search__btn">
-                        <i class="fa-solid fa-angle-down fa-lg"></i>
+            <div class="search_container">
+                <form id="search">
+                    <div class="search search__year">
+                        <select name="year" id="year">
+                        </select>
+    
+                        <div class="search__btn">
+                            <i class="fa-solid fa-angle-down fa-lg"></i>
+                        </div>
                     </div>
-                </div>
 
+                    <div class="search search__word">
+                        <input type="text" name="word" id="word">
+    
+                        <div class="search__btn">
+                            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                        </div>
+                    </div>
 
-   
+                </form>
+
+                <p class="search_title">Mes</p>
+                <form id="meses">
+                    <input type="radio" name="meses" id="todos" value="All" checked>
+                    <input type="radio" name="meses" id="01" value="01">
+                    <input type="radio" name="meses" id="02" value="02">
+                    <input type="radio" name="meses" id="03" value="03">
+                    <input type="radio" name="meses" id="04" value="04">
+                    <input type="radio" name="meses" id="05" value="05">
+                    <input type="radio" name="meses" id="06" value="06">
+                    <input type="radio" name="meses" id="07" value="07">
+                    <input type="radio" name="meses" id="08" value="08">
+                    <input type="radio" name="meses" id="09" value="09">
+                    <input type="radio" name="meses" id="10" value="10">
+                    <input type="radio" name="meses" id="11" value="11">
+                    <input type="radio" name="meses" id="12" value="12">
+
+                    <p class="mes_select">All</p>
+                </form>
+
             </div>
-
-            <!-- <div class="search_nav">
-                <div class="search__year">
-                    <input type="text" id="search">
-                </div>
-                <div class="search__btn">
-                    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-                </div>
-            </div> -->
-
         </section>
 
         <!-- DESTACADOS -->

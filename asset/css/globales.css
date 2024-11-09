@@ -136,6 +136,7 @@ input{
   text-transform: uppercase;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 1000;
+  font-size: clamp(18px, 2.5vw, 28px);
 }
 
 .titulo i{

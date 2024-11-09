@@ -213,7 +213,22 @@ main {
 
 
 /* -- SEARCH -- */
-.search_nav {
+.search_container{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#search, #meses{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#search{
+  gap: 1rem;
+}
+
+.search {
   height: 32px;
   border-radius: 16px;
   background-color: var(--color-complemento);
@@ -222,43 +237,134 @@ main {
   position: relative;
 }
 
-.search__btn {
-display: grid;
-place-items: center;
-height: 100%;
-width: 56px;
-border-radius: 16px;
-background-color: var(--color-ppal);
-
-position: absolute;
-top: 0;
-bottom: 0;
-right: 0;
+@media (max-width: 576px) {
+  #search{
+    flex-direction: column;
+    gap: 1rem;
+    
+  }
+  .search{
+    width: 100%;
+  }    
 }
 
 .search__year {
   display: grid;
   place-items: center;
-  width: 100%;
   padding-left: 16px;
   padding-right: 16px;
 }
 
-.search__year select, input{
+.search__word {
+  display: grid;
+  place-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.search select, input{
   background: transparent;
   border: none;
   width: 100%;
   outline: none;
   color: var(--color-negativo);
   padding: 4px 16px;
+  font-size: 18px;
 }
 
 .search__year select { 
-  appearance: none; /* Oculta la flechita predeterminada */ -webkit-appearance: none; /* Para Safari */ 
+  appearance: none; /* Oculta la flechita predeterminada */ 
+  -webkit-appearance: none; /* Para Safari */ 
   -moz-appearance: none; /* Para Firefox */ 
   z-index: 10;
 }
 
+.search__year option { 
+  background-color: #fff; /* Fondo blanco */ 
+  color: #000; /* Color del texto */ 
+} 
+
+.search__year select:focus { 
+  border-color: #4caf50; /* Borde verde al enfocar */ 
+}
+
+.search_title{
+  font-style: italic;
+}
+
+#meses{
+  margin-top: -2rem;
+  position: relative;
+}
+
+#meses::before{
+  content: '';
+  width: 96%;
+  height: 4px;
+  background-color: var(--color-complemento);
+  margin: 0 auto;
+
+  position: absolute;
+  top:50%;
+  left: 0;
+  right: 0;
+  z-index: -10;
+}
+
+/* Cambiar el color de fondo del radio button */
+input[type="radio"] {
+  background-color: #2b2929; /* Color gris claro */
+}
+
+/* Cambiar el tamaño del radio button */
+input[type="radio"] {
+  width: 24px;
+  height: 24px;
+}
+
+/* Cambiar el color del borde del radio button */
+input[type="radio"] {
+  border: 2px solid var(--color-complemento); /* Borde verde */
+}
+
+/* Personalizar el radio button al estar seleccionado */
+input[type="radio"]:checked {
+  background-color: var(--color-ppal); 
+}
+
+.mes_select{
+  color: var(--color-complemento);
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 50%;
+  background-color: var(--color-ppal);
+  font-weight: 700;
+  text-align: center;
+  font-size: 12px;
+
+  position: absolute;
+  top: 34px;
+  left: calc((1 / 11) * 0 * 100%);
+}
+
+.search__btn {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  width: 56px;
+  border-radius: 16px;
+  background-color: var(--color-ppal);
+  
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  }
+
+  .search__btn:last-of-type:hover{
+    box-shadow: var(--shadow);
+  }
 
 /* CITA */
 .cita {

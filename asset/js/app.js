@@ -233,3 +233,17 @@ year.forEach((element) => {
 
 });
 
+/* MESES */
+const meses = document.querySelectorAll("#meses input[type='radio']");
+const mes_select = document.querySelector(".mes_select");
+
+meses.forEach(mes => {
+  mes.addEventListener("change", () => {
+    console.log(mes.value);
+    mes_select.textContent = mes.value;
+    if(mes.value === "All"){
+      mes_select.style.left = "0";
+    }
+    mes_select.style.left = `calc((1 / 12.5) * ${mes.value} * 100%)`;
+  });
+});
