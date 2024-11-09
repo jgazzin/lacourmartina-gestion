@@ -30,7 +30,7 @@
   justify-content: space-between;
   align-items: start;
   padding: 3rem 2rem;
-  color: var(--color-negativo);
+  color: var(--color-complemento);
 }
 .contactForm .form legend {
   font-size: 28px;
@@ -49,7 +49,7 @@
   padding: 6px;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid var(--color-negativo);
+  border-bottom: 1px solid var(--color-complemento);
   width: 100%;
   margin: 16px 0;
 }
@@ -57,7 +57,7 @@
 .contactForm .form textarea:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px transparent inset;
   /* Cambia el fondo a transparente */
-  -webkit-text-fill-color: var(--color-negativo);
+  -webkit-text-fill-color: var(--color-complemento);
   /* Cambia el color del texto si es necesario */
   transition: background-color 5000s ease-in-out 0s;
   /* Evita que el fondo vuelva a aparecer */
@@ -76,7 +76,7 @@
 
 .contactForm .form input,
 .contactForm .form textarea {
-  color: var(--color-negativo);
+  color: var(--color-complemento);
 }
 
 .contactForm .form input:focus,
@@ -84,12 +84,12 @@
   outline: none;
   background-color: transparent;
   font-family: "Nunito", sans-serif;
-  color: var(--color-negativo);
+  color: var(--color-complemento);
 }
 
 .contactForm .form input::placeholder,
 .contactForm .form textarea::placeholder {
-  color: #e9e9e9b4;
+  color: var(--color-gris);
   text-transform: uppercase;
   font-style: italic;
   font-size: 12px;
@@ -98,8 +98,8 @@
   margin: 2rem auto 0;
   max-width: 200px;
   background-color: transparent;
-  border-color: var(--color-negativo);
-  color: var(--color-negativo);
+  border-color: var(--color-complemento);
+  color: var(--color-complemento);
 }
 
 /* eventos */

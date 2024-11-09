@@ -547,17 +547,15 @@ const notas = [
 document.addEventListener('DOMContentLoaded', ()=>{
     imprimirPrensa(notas)})
 
-let temaPrensa = document.querySelector('#temas');
-
-temaPrensa.addEventListener('change', ()=>{
-    if(temaProyectos.value===''){
-        imprimirPrensa(notas)
-    } else {
-        const notasFiltradas = notas.filter(note => note.tema === temaPrensa.value)
-        imprimirPrensa(notasFiltradas)
-    }
-
-})
+// let temaPrensa = document.querySelector('#temas');
+// temaPrensa.addEventListener('change', ()=>{
+//     if(temaProyectos.value===''){
+//         imprimirPrensa(notas)
+//     } else {
+//         const notasFiltradas = notas.filter(note => note.tema === temaPrensa.value)
+//         imprimirPrensa(notasFiltradas)
+//     }
+// })
 
 // FUNCIONES
 const contenedorPrensa = document.querySelector('.prensa')

@@ -407,19 +407,19 @@ document.addEventListener("DOMContentLoaded", () => {
   imprimirDestacados();
 });
 
-let temaProyectos = document.querySelector("#temas");
-temaProyectos.addEventListener("change", () => {
-  if (temaProyectos.value === "") {
-    imprimirProyectos(proyectosPropios);
-    console.log(proyectosPropios);
-  } else {
-    const proyectosFiltrados = proyectosPropios.filter(
-      (proy) => proy.tema === temaProyectos.value
-    );
-    //console.log(proyectosFiltrados);
-    imprimirProyectos(proyectosFiltrados);
-  }
-});
+// let temaProyectos = document.querySelector("#temas");
+// temaProyectos.addEventListener("change", () => {
+//   if (temaProyectos.value === "") {
+//     imprimirProyectos(proyectosPropios);
+//     console.log(proyectosPropios);
+//   } else {
+//     const proyectosFiltrados = proyectosPropios.filter(
+//       (proy) => proy.tema === temaProyectos.value
+//     );
+//     //console.log(proyectosFiltrados);
+//     imprimirProyectos(proyectosFiltrados);
+//   }
+// });
 
 // FUNCIONES
 const contenedorProyectos = document.querySelector(".proyectos_propios");
@@ -570,18 +570,18 @@ function mostrarMenosProyectos(listado) {
 }
 
 // completa el select del filtro
-const temasProyectos = proyectosPropios.map((proy) => proy.tema);
-function completarTemas() {
-  const temas = [...new Set(temasProyectos)];
-  const select = document.querySelector("#temas");
-  temas.forEach((element) => {
-    const op = document.createElement("option");
-    op.setAttribute("value", element);
-    op.textContent = element.toUpperCase();
-    select.appendChild(op);
-  });
-}
-completarTemas();
+// const temasProyectos = proyectosPropios.map((proy) => proy.tema);
+// function completarTemas() {
+//   const temas = [...new Set(temasProyectos)];
+//   const select = document.querySelector("#temas");
+//   temas.forEach((element) => {
+//     const op = document.createElement("option");
+//     op.setAttribute("value", element);
+//     op.textContent = element.toUpperCase();
+//     select.appendChild(op);
+//   });
+// }
+// completarTemas();
 
 function imprimirDestacados() {
   for (let i = 0; i < destacados.length; i++) {

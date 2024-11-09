@@ -6,6 +6,8 @@ document.querySelector(".date").textContent = añoActual;
 // HERO
 document.querySelector(".menu").addEventListener("click", () => {
   const cuadro = document.querySelector(".cuadro_resumen");
+  console.log('click');
+  
   if (cuadro.classList.contains("hidden")) {
     setTimeout(() => {
       cuadro.classList.remove("hidden");
@@ -14,7 +16,7 @@ document.querySelector(".menu").addEventListener("click", () => {
     cuadro.classList.add("hidden");
   }
 
-  document.querySelectorAll(".nav-links .nav-item").forEach(item => {
+  document.querySelectorAll(".nav-links .nav-item a").forEach(item => {
     item.addEventListener("click", () => {
       if (cuadro.classList.contains("hidden")) {
         setTimeout(() => {
@@ -27,6 +29,27 @@ document.querySelector(".menu").addEventListener("click", () => {
   }) 
 
 });
+
+// HEADER
+console.log(window.innerWidth);
+
+window.onscroll = function() { 
+  const header = document.querySelector("#inicio"); 
+  if (window.scrollY > 60 && window.innerWidth >= 768) { 
+    document.querySelector('.cuadro_resumen').classList.add("hidden");
+    header.classList.remove("inicio-altura");
+    if(window.innerWidth >= 768){
+    document.querySelector('main').style.marginTop = '210px';
+    }
+  } else { 
+        
+    if(window.innerWidth >= 768){
+      document.querySelector('.cuadro_resumen').classList.remove("hidden"); 
+      header.classList.add("inicio-altura");
+      document.querySelector('main').style.marginTop = 'var(--nav-h)';
+    } 
+  }
+  };
 
 
 // DESTACADOS
@@ -189,3 +212,24 @@ function mostrar(e) {
   icon.classList.toggle("fa-angle-down");
   icon.classList.toggle("fa-angle-up");
 }
+
+// SEARCH
+const select = document.querySelector("#year");
+const year = [];
+
+for (let i = 2023; i <= añoActual; i++) {
+  year.push(i);
+  year.sort((a, b) => b-a);
+  console.log(year);
+  
+}
+
+select.innerHTML = "";
+year.forEach((element) => {
+  const op = document.createElement("option");
+  op.setAttribute("value", element);
+  op.textContent = element;
+  select.appendChild(op);
+
+});
+
