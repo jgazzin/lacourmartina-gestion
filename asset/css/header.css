@@ -200,7 +200,7 @@ header>*{
   gap: 1rem;
   justify-content: space-between;
   align-items: start;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 .tabla div{
   width: 100%;
@@ -419,6 +419,19 @@ input[type="radio"]:checked {
   position: absolute;
   top: 34px;
   left: calc((1 / 11) * 0 * 100%);
+}
+.mes_all{
+  color: var(--color-negativo);
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 50%;
+  background-color: var(--color-complemento);
+  font-weight: 700;
+  text-align: center;
+  font-size: 12px;
+
+  margin-top: -25px;
 }
 
 .search__btn {

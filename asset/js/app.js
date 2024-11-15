@@ -69,6 +69,7 @@ destacados_card.forEach(card=> {
  
 });
 
+
 // ** CONTACTO
 const form = document.querySelector(".contactForm .form");
 const btn = document.querySelector(".contactForm .form .btn");
@@ -84,6 +85,15 @@ btn.addEventListener("click", (e) => {
   e.preventDefault();
   enviar();
 });
+
+/* btn ig */
+const btnIG = document.querySelector('.btn-ig p');
+document.addEventListener('DOMContentLoaded', ()=>{
+  setInterval(() => {
+    btnIG.classList.toggle('hidden')
+  }, 5000);
+
+})
 
 // funciones
 

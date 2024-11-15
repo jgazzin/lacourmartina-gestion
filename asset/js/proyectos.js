@@ -1,10 +1,21 @@
 const proyectosPropios = [
   {
+    numero: "PD1590/2024",
+    fecha: "13-11-2024",
+    estado: "ingresado",
+    area: "Cultura y educación",
+    tema: "derechos de los niños",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=1590&a=2024",
+    resumen:
+      'De interés social y legislativo la "1º Jornada sobre los Derechos de los Niños en los tres Poderes del Estado", a realizarse el 19 de noviembre de 2024 en la Legislatura de la Provincia del Neuquén y el 22 de noviembre de 2024 en la Cámara de Comercio, Turismo, Industria y Producción de la ciudad de Viedma.',
+  },
+  {
     numero: "PL1526/2024",
     fecha: "29-10-2024",
     estado: "ingresado",
     area: "Administración-Estado",
-    tema: "cargos públicos no heredarios",
+    tema: "cargos públicos no hereditarios",
     enlace:
       "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=1526&a=2024",
     resumen:

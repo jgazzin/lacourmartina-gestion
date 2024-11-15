@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+main{
+  position: relative;
+}
+
 /* cards proyectos */
 .card:last-of-type {
   border: none;
@@ -225,5 +229,61 @@ html {
   }
   .registro .data .tema::after {
     height: 0;
+  }
+}
+
+
+/* BOTON IG */
+.btn-ig{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  position: fixed;
+  bottom: 10%;
+  right: 3%;
+}
+.btn-ig a{
+  padding: 6px;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+}
+
+.btn-ig a:hover{
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 6px silver;
+};
+
+@media (max-width: 768px) {
+    .btn-ig a{
+      box-shadow: 0 0 6px silver;
+    }
+}
+
+.btn-ig p{
+  background-color: #fff;
+  padding: 2px 4px;
+  border-radius: 5px;
+  border: 1px solid silver;
+  box-shadow: 1px 1px 10px orange;
+
+  animation: cortina 4s ease-in-out forwards;
+}
+
+@keyframes cortina {
+  0% {
+    clip-path: polygon(100% 100%, 100% 100%, 100% 0, 100% 0);
+  }
+  10% {
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+  }
+  90% {
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+  }
+  100%{
+    clip-path: polygon(100% 100%, 100% 100%, 100% 0, 100% 0);
   }
 }
