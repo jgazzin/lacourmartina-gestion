@@ -1,5 +1,16 @@
 const proyectosPropios = [
   {
+    numero: "PL1611/2024",
+    fecha: "15-11-2024",
+    estado: "ingresado",
+    area: "Administración-Estado",
+    tema: "RTO - licencias de conducir",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=1611&a=2024",
+    resumen:
+      'Modifica el artículo 2º e incorpora los artículos 21 bis y 21 ter al Capítulo I del Título III de la ley S nº 5263 de Tránsito de la Provincia de Río Negro; Establece la RTO no obligatoria y un sistema simplificado de renovación de licencias de conducir.',
+  },
+  {
     numero: "PD1590/2024",
     fecha: "13-11-2024",
     estado: "ingresado",
@@ -91,7 +102,7 @@ const proyectosPropios = [
     numero: "PC1419/2024",
     fecha: "16-10-2024",
     estado: "ingresado",
-    area: "Seguridad  y Justicia",
+    area: "Seguridad y Justicia",
     tema: "datos genéticos",
     enlace:
       "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=1419&a=2024",

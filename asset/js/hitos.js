@@ -1,4 +1,5 @@
 const hitos = [
+    'Propuse la eliminación de la RTO y la simplificación de la renovación de licencias de conducir',
     'Rechazamos la incorporación de la "perpectiva de género" en la reforma del Código Civil y Comercial.',
     'Se aprobó la adhesión de Río Negro al régimen de Regularización de activos',
     'Nos aprobaron la propuesta de eliminación de retenciones de IIBB en cobros electrónicos',

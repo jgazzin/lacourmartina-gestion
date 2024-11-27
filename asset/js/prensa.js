@@ -1,5 +1,32 @@
 const notas = [
   {
+    fecha: "15/11/2024",
+    medio: "Vivo informado",
+    tema: "RTO - licencias de conducir",
+    titulo:
+    "Proponen la Simplificación de Trámites de Licencias y Eliminación de la RTO",
+    enlace:
+      "https://www.vivoinformado.com.ar/2024/11/proponen-la-simplificacion-de-tramites.html?m=1",
+  },
+  {
+    fecha: "12/11/2024",
+    medio: "Vivo informado",
+    tema: "bloque pro",
+    titulo:
+    "Martina Lacour: ‘Los ciudadanos nos piden soluciones, pero la política frena nuestros proyectos’",
+    enlace:
+      "https://www.vivoinformado.com.ar/2024/11/martina-lacour-los-ciudadanos-nos-piden.html?m=1&fbclid=PAY2xjawGgQW5leHRuA2FlbQIxMAABpqT8k5QF8ZkKko5yfvHYOURaGlGmcHI9vPyAWggSlAsOh7tgGY0e2aBwmw_aem_S2Ma8FzJzYdz75sNKn3U_Q",
+  },
+  {
+    fecha: "11/11/2024",
+    medio: "Con Voz y Voto",
+    tema: "bloque pro",
+    titulo:
+      "Entrevista en Con Voz y Voto sobre proyectos estancados que esperan su tratamiento en la Legislatura de Río Negro.",
+    enlace:
+      "https://www.youtube.com/watch?v=VtqTB5f8buY",
+  },
+  {
     fecha: "31/10/2024",
     medio: "Noticias Río Negro",
     tema: "bloque pro",
