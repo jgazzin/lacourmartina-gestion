@@ -79,7 +79,7 @@ const proyectosPropios = [
   {
     numero: "PD1446/2024",
     fecha: "18-10-2024",
-    estado: "ingresado",
+    estado: "aprobado",
     area: "Educación y Cultura",
     tema: "hallazgo del Helvecia II",
     enlace:
@@ -101,7 +101,7 @@ const proyectosPropios = [
   {
     numero: "PC1419/2024",
     fecha: "16-10-2024",
-    estado: "ingresado",
+    estado: "aprobado",
     area: "Seguridad y Justicia",
     tema: "datos genéticos",
     enlace:
@@ -156,7 +156,7 @@ const proyectosPropios = [
   {
     numero: "PI996/2024",
     fecha: " 08-08-2024",
-    estado: "ingresado",
+    estado: "tratado",
     area: "Asuntos económicos",
     tema: "gasoducto patagónico",
     enlace:
@@ -266,7 +266,7 @@ const proyectosPropios = [
   {
     numero: "PI751/24",
     fecha: "18-06-2024",
-    estado: "ingresado",
+    estado: "tratado",
     area: "Economía-Finanzas",
     tema: "gasto público",
     enlace:
@@ -321,7 +321,7 @@ const proyectosPropios = [
   {
     numero: "PC446/24",
     fecha: "23-04-2024",
-    estado: "ingresado",
+    estado: "aprobado",
     area: "Economía - Agro",
     tema: "protección agro",
     enlace:
@@ -429,7 +429,26 @@ document.addEventListener("DOMContentLoaded", () => {
   imprimirDestacados();
 });
 
+// estado de proyectos
+const $estado = document.querySelector(".proyectos_estado");
 
+const aprobados = proyectosPropios.filter(
+  (proy) => proy.estado === "aprobado"
+);
+const rechazados = proyectosPropios.filter(
+  (proy) => proy.estado === "rechazado"
+);
+const tratados = proyectosPropios.filter(
+  (proy) => proy.estado === "tratado"
+);
+const pendientes = proyectosPropios.filter(
+  (proy) => proy.estado === "ingresado"
+);
+
+$estado.querySelector(".aprobados .num").textContent = aprobados.length;
+$estado.querySelector(".rechazados .num").textContent = rechazados.length;
+$estado.querySelector(".tratados .num").textContent = tratados.length;
+$estado.querySelector(".pendientes .num").textContent = pendientes.length;
 
 // FUNCIONES
 const contenedorProyectos = document.querySelector(".proyectos_propios");
