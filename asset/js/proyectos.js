@@ -427,9 +427,11 @@ const destacados = proyectosPropios.filter(
 document.addEventListener("DOMContentLoaded", () => {
   imprimirProyectos(proyectosPropios);
   imprimirDestacados();
+  imprimirDestacados()
 });
 
 // estado de proyectos
+function imprimirEstado() { 
 const $estado = document.querySelector(".proyectos_estado");
 
 const aprobados = proyectosPropios.filter(
@@ -449,6 +451,7 @@ $estado.querySelector(".aprobados .num").textContent = aprobados.length;
 $estado.querySelector(".rechazados .num").textContent = rechazados.length;
 $estado.querySelector(".tratados .num").textContent = tratados.length;
 $estado.querySelector(".pendientes .num").textContent = pendientes.length;
+}
 
 // FUNCIONES
 const contenedorProyectos = document.querySelector(".proyectos_propios");
