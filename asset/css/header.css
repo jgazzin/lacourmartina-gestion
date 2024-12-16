@@ -23,7 +23,7 @@
 
 .inicio-altura{
   height: 100vh;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   background-position: right;
   margin-bottom: 1rem;
 }
@@ -202,6 +202,7 @@ header>*{
   align-items: start;
   margin-bottom: 4rem;
 }
+
 .tabla div{
   width: 100%;
   font-family: 'Roboto Condensed', sans-serif;
@@ -209,20 +210,33 @@ header>*{
 .tabla .doble {
   display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: 8px;
 }
-.tabla div p:first-of-type{
+.tabla div p:first-child{
   font-size: 16px;
   text-transform: uppercase;
   color: var(--color-ppal);
 }
-.tabla div p:first-of-type::after{
+.sb {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.linea::after {
   content: '';
   width: 100%;
   height: 2px;
   background-color: var(--color-ppal); 
   display: block;
   margin-top: 4px;
+}
+.borde {
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--color-ppal);
+}
+.bold {
+  font-weight: bold;
 }
 
 .tabla div p:last-of-type{
@@ -240,11 +254,9 @@ header>*{
   .tabla {
     flex-direction: column;
     margin-bottom: 1rem;
+    gap: 0;
   }
-  .tabla .doble{
-    flex-direction: row;
-    gap: 1rem;
-  } 
+
 }
 
 
