@@ -1,4 +1,5 @@
 const hitos = [
+    'Rechazamos el endeudamiento de la provincia en el Presupuesto 2025, pone en peligro el equilibrio fiscal y no está claro el destino de fondos.',
     'Propuse la eliminación de la RTO y la simplificación de la renovación de licencias de conducir',
     'Rechazamos la incorporación de la "perpectiva de género" en la reforma del Código Civil y Comercial.',
     'Se aprobó la adhesión de Río Negro al régimen de Regularización de activos',

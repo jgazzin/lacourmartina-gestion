@@ -1,5 +1,23 @@
 const notas = [
   {
+    fecha: "18/12/2024",
+    medio: "Diario Río Negro",
+    tema: "Presupuesto 2025",
+    titulo:
+    "La aprobación del Presupuesto en Río Negro y la advertencia por la deuda proyectada",
+    enlace:
+    "https://www.rionegro.com.ar/politica/la-aprobacion-del-presupuesto-en-rio-negro-y-la-advertencia-por-la-deuda-proyectada-3932598/",
+  },
+  {
+    fecha: "17/12/2024",
+    medio: "Bariloche Digital",
+    tema: "Presupuesto 2025",
+    titulo:
+    "UN SÓLO VOTO NEGATIVO TUVO LA APROBACIÓN DEL PROYECTO DE PRESUPUESTO 2025 DE RIO NEGRO",
+    enlace:
+      "https://barilochedigital.com/un-solo-voto-negativo-tuvo-la-aprobacion-del-proyecto-de-presupuesto-2025-de-rio-negro/",
+  },
+  {
     fecha: "15/11/2024",
     medio: "Vivo informado",
     tema: "RTO - licencias de conducir",
