@@ -226,7 +226,7 @@ function mostrar(e) {
 const select = document.querySelector("#year");
 const year = [];
 
-for (let i = 2023; i <= añoActual; i++) {
+for (let i = 2024; i <= añoActual; i++) {
   year.push(i);
   year.sort((a, b) => b-a);
   

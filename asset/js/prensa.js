@@ -1,5 +1,23 @@
 const notas = [
   {
+    fecha: "03/04/2025",
+    medio: "Agencia País",
+    tema: "Cautivos IPROSS",
+    titulo:
+    "Los afiliados al IPROSS podrán elegir cambiar de obra social",
+    enlace:
+    "https://agenciapais.com/2025/04/03/los-afiliados-al-ipross-podran-elegir-cambiar-de-obra-social/",
+  },
+  {
+    fecha: "04/04/2025",
+    medio: "Ambito financiero",
+    tema: "Transparencia fiscal",
+    titulo:
+    "Las 7 razones y excusas de las provincias que no adhieren a la Transparencia Fiscal al Consumidor",
+    enlace:
+    "https://www.ambito.com/opiniones/las-7-razones-y-excusas-las-provincias-que-no-adhieren-la-transparencia-fiscal-al-consumidor-n6131082",
+  },
+  {
     fecha: "18/12/2024",
     medio: "Diario Río Negro",
     tema: "Presupuesto 2025",

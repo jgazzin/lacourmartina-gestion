@@ -1,5 +1,115 @@
 const proyectosPropios = [
   {
+    numero: "PL370/2025",
+    fecha: "07-04-2025",
+    estado: "ingresado",
+    area: "administración-Estado",
+    tema: "Ficha limpia para todos",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=312&a=2025",
+    resumen:
+      'Sustituye el artículo 1º de la ley B nº 4780 de prohibiciones e inhabilidades para el ejercicio de cargos públicos y modifica el artículo 4º de la ley L nº 3487 -Estatuto General y Básico para el personal de la Administración Pública, para que el alcance de las leyes de Ficha Limpia abarquen a toda la administración pública, no solo los cargos electos.',
+  },
+  {
+    numero: "PL312/2025",
+    fecha: "26-03-2025",
+    estado: "ingresado",
+    area: "Desarrollo humano",
+    tema: "Protección social",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=312&a=2025",
+    resumen:
+      'Crea la Agencia para la Protección Social.',
+  },
+  {
+    numero: "PL311/2025",
+    fecha: "26-03-2025",
+    estado: "ingresado",
+    area: "Salud",
+    tema: "Enfermedad renal",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=311&a=2025",
+    resumen:
+      'Establece un sistema de otorgamiento de turnos preferenciales en los hospitales rionegrinos para pacientes con enfermedad renal crónica terminal.',
+  },
+  {
+    numero: "PI310/2025",
+    fecha: "26-03-2025",
+    estado: "ingresado",
+    area: "Economía-hacienda",
+    tema: "Ingresos brutos",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=310&a=2025",
+    resumen:
+      'Al Poder Ejecutivo, Ministerio de Economía, Agencia de Recaudación Tributaria, referido a la recaudación del Impuesto sobre los Ingresos Brutos para las principales actividades financieras entre los años 2021, 2022, 2023 y 2024.',
+  },
+  {
+    numero: "PD309/2025",
+    fecha: "26-03-2025",
+    estado: "ingresado",
+    area: "Salud",
+    tema: "Enfermedad renal",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=309&a=2025",
+    resumen:
+      'Su beneplácito por la próxima firma del convenio entre el Instituto Nacional Central Único Coordinador de Ablación e Implante -INCUCAI- y el Ministerio de Salud de la Provincia de Río Negro para la implementación de los Consultorios de Enfermedad Renal Crónica Avanzada -CERCA-en la provincia.',
+  },
+  {
+    numero: "PI306/2025",
+    fecha: "26-03-2025",
+    estado: "ingresado",
+    area: "Administración-Estado",
+    tema: "Información pública",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=306&a=2025",
+    resumen:
+      'Al Poder Ejecutivo, Secretaría Legal y Técnica, Secretaría de Estado General de la Gobernación, referido a los motivos por los cuales se demoró la publicación en el Boletín Oficial de los decretos nº 336/2024, 456/2024 y 633/2024, que modificaron créditos presupuestarios.',
+  },
+  {
+    numero: "PC80/2025",
+    fecha: "07-02-2025",
+    estado: "ingresado",
+    area: "Seguridad",
+    tema: "Comisarías",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=80&a=2025",
+    resumen:
+      'Al Poder Ejecutivo, Ministerio de Seguridad y Justicia, solicita la urgente implementación de medidas administrativas, operativas y presupuestarias necesarias para la Subcomisaría nº 55, y los Destacamentos nº 138 y 140 de la ciudad de San Carlos de Bariloche.',
+  },
+  {
+    numero: "PC46/2025",
+    fecha: "31-01-2025",
+    estado: "ingresado",
+    area: "Seguridad",
+    tema: "Incendios",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=46&a=2025",
+    resumen:
+      'A la Secretaría de Estado de Energía y Ambiente, se clausuren todos los accesos al Área Natural Protegida Río Azul-Lago Escondido -ANPRALE-, que está bajo su órbita, y se prohíba el ingreso de turistas, manifestantes y personas ajenas al operativo de combate del fuego, iniciado el día 30 de enero de 2025.',
+  },
+  {
+    numero: "PC19/2025",
+    fecha: "21-01-2025",
+    estado: "ingresado",
+    area: "Asuntos económicos",
+    tema: "Ayuda a frutícolas",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=19&a=2025",
+    resumen:
+      'Al Gobernador de la Provincia de Río Negro, Alberto Weretilneck, que de forma urgente active los programas presupuestarios de ayuda al pequeño y mediano productor frutícola de la provincia y solicite al Gobierno Nacional la intervención y ayuda para la producción rionegrina.',
+  },
+  {
+    numero: "PC9/2025",
+    fecha: "13-01-2025",
+    estado: "ingresado",
+    area: "Seguridad y Justicia",
+    tema: "Comisaría en Bariloche",
+    enlace:
+      "https://web.legisrn.gov.ar/legislativa/proyectos/ver?c=P&n=9&a=2025",
+    resumen:
+      'Al Poder Ejecutivo, Ministerio de Seguridad y Justicia, que consideren indispensable elevar a la Subcomisaría 80 de la ciudad de San Carlos de Bariloche al rango de Comisaría.',
+  },
+  {
     numero: "PL1611/2024",
     fecha: "15-11-2024",
     estado: "ingresado",
@@ -187,7 +297,7 @@ const proyectosPropios = [
       'Sustituye los artículos 2º y 18 de la ley A nº 2938 -Procedimiento Administrativo de Río Negro. En concordancia con la Ley Bases, adecua el procedimiento adminstrativo, evitando la sobregarga burocrática, e implementa el "silencio positivo", que permite obtener resultados efectivos de los trámites frente a la pasividad del Estado.',
   },
   {
-    numero: "PL773/24",
+    numero: "PL773/2024",
     fecha: "19-06-2024",
     estado: "ingresado",
     area: "Seguridad - Justicia",
@@ -198,7 +308,7 @@ const proyectosPropios = [
       'Incorpora los conceptos de "reiterancia delictiva" y "peligrosidad procesal" a la ley P nº 5020 -Código Procesal Penal, ',
   },
   {
-    numero: "PC772/24",
+    numero: "PC772/2024",
     fecha: "19-06-2024",
     estado: "ingresado",
     area: "Educación-Cultura-Soberanía",
@@ -209,7 +319,7 @@ const proyectosPropios = [
       "Su enérgico repudio a la realización de cualquier acto de Promesa de Lealtad a una bandera distinta de la Bandera Nacional en las escuelas",
   },
   {
-    numero: "PC771/24",
+    numero: "PC771/2024",
     fecha: "19-06-2024",
     estado: "ingresado",
     area: "Educación-Cultura-Soberanía",
@@ -220,7 +330,7 @@ const proyectosPropios = [
       "Al Poder Ejecutivo, Ministerio de Educación y Derechos Humanos, que prohíba la celebración de cualquier acto de promesa a banderas distintas de la Bandera Argentina",
   },
   {
-    numero: "PC758/24",
+    numero: "PC758/2024",
     fecha: "18-06-2024",
     estado: "ingresado",
     area: "Educación-Obras públicas",
@@ -231,7 +341,7 @@ const proyectosPropios = [
       "Al Poder Ejecutivo y al Ministerio de Educación y Derechos Humanos, que realicen con urgencia las tareas de mantenimiento necesarias para poner en funcionamiento las calderas de la Escuela Secundaria Río Negro -ESRN- nº 46 de San Carlos de Bariloche; y al Ministerio de Obras y Servicios Públicos, que inicie las obras de ampliación y refacción de los sanitarios de ese establecimiento",
   },
   {
-    numero: "PC757/24",
+    numero: "PC757/2024",
     fecha: "18-06-2024",
     estado: "ingresado",
     area: "Seguridad",
@@ -242,7 +352,7 @@ const proyectosPropios = [
       "Al Poder Ejecutivo, al Ministerio de Seguridad y Justicia y a la Policía de Río Negro, que concluya los sumarios administrativos iniciados a efectivos policiales en noviembre y diciembre de 2023",
   },
   {
-    numero: "PI753/24",
+    numero: "PI753/2024",
     fecha: "18-06-2024",
     estado: "tratado",
     area: "Educación-Obras públicas",
@@ -253,7 +363,7 @@ const proyectosPropios = [
       "Al Poder Ejecutivo, Ministerio de Educación y Derechos Humanos, referido a la reparación de la caldera de la Escuela Secundaria Río Negro -ESRN- nº 46 de la ciudad de San Carlos de Bariloche",
   },
   {
-    numero: "PI752/24",
+    numero: "PI752/2024",
     fecha: "18-06-2024",
     estado: "tratado",
     area: "Educación-Obras públicas",
@@ -264,7 +374,7 @@ const proyectosPropios = [
       "Al Poder Ejecutivo, Ministerio de Obras y Servicios Públicos, referido a la licitación para la refacción y ampliación de los sanitarios de la Escuela Secundaria Río Negro -ESRN- nº 46 de la ciudad de San Carlos de Bariloche",
   },
   {
-    numero: "PI751/24",
+    numero: "PI751/2024",
     fecha: "18-06-2024",
     estado: "tratado",
     area: "Economía-Finanzas",
@@ -275,7 +385,7 @@ const proyectosPropios = [
       "Al Poder Ejecutivo, referido a los bienes muebles de la provincia, compras efectuadas durante el período 2020-2024 y contrataciones realizadas, entre otros",
   },
   {
-    numero: "PL695/24",
+    numero: "PL695/2024",
     fecha: "06-06-2024",
     estado: "ingresado",
     area: "Cultura-Educación-Seguridad Interior",
@@ -286,7 +396,7 @@ const proyectosPropios = [
       '"Nuestras Banderas". Establece que las únicas y exclusivas banderas que están autorizadas a ser exhibidas y flamear en todos los edificios públicos de la Provincia de Río Negro son las banderas nacional y provincial, y la bandera municipal en caso de existir',
   },
   {
-    numero: "PI451/24",
+    numero: "PI451/2024",
     fecha: "23-04-2024",
     estado: "tratado",
     area: "Medio Ambiente",
@@ -297,7 +407,7 @@ const proyectosPropios = [
       "Al Poder Ejecutivo, Secretaría de Energía y Ambiente, Departamento Provincial de Aguas -DPA-, referido a la periodicidad con la que monitorean la calidad del agua del lago Nahuel Huapi y resultados físico-químicos y bacteriológicos del espejo de agua, avance de Plan Director Cloacal, ruidos y olores molestos, astreintes judiciales",
   },
   {
-    numero: "PI449/24",
+    numero: "PI449/2024",
     fecha: "23-04-2024",
     estado: "tratado",
     area: "Educación-Obras públicas",
@@ -308,7 +418,7 @@ const proyectosPropios = [
       "Al Poder Ejecutivo, Ministerio de Educación y Derechos Humanos, referido a los fondos de la partida asignada en el Presupuesto 2023 destinada a la creación de una Escuela Secundaria Río Negro -ESRN- en el predio de la Escuela Primaria nº 48 de la ciudad de San Carlos de Bariloche",
   },
   {
-    numero: "PL447/24",
+    numero: "PL447/2024",
     fecha: "23-04-2024",
     estado: "ingresado",
     area: "Salud",
@@ -319,7 +429,7 @@ const proyectosPropios = [
       "Libre elección de Obras Sociales para empleados públicos. Modifica la ley K nº 2753 -Instituto Provincial del Seguro de Salud -IProSS",
   },
   {
-    numero: "PC446/24",
+    numero: "PC446/2024",
     fecha: "23-04-2024",
     estado: "aprobado",
     area: "Economía - Agro",
@@ -330,7 +440,7 @@ const proyectosPropios = [
       "Al Poder Ejecutivo, que vería con agrado se dirija a los Poderes Ejecutivo y Legislativo Nacional a fin de solicitarles la adhesión de la República Argentina al Convenio Internacional para la Protección de las Obtenciones Vegetales -UPOV- Acta 1991",
   },
   {
-    numero: "PL357/24",
+    numero: "PL357/2024",
     fecha: "05-04-2024",
     estado: "ingresado",
     area: "Administración-Estado",
@@ -341,7 +451,7 @@ const proyectosPropios = [
       'Incorpora el artículo 99 "Título IX-Acceso Público Permanente" y modifica el inciso c- del artículo 85 de la ley H nº 3186 de Administración Financiera y Control Interno del Sector Público Provincial',
   },
   {
-    numero: "PC356/24",
+    numero: "PC356/2024",
     fecha: "05-04-2024",
     estado: "ingresado",
     area: "Educación",
@@ -352,7 +462,7 @@ const proyectosPropios = [
       "Al Ministerio de Educación y Derechos Humanos, la necesidad de asignar un Código Único Escolar -CUE- para la escuela secundaria cuya construcción está prevista en el km. 20 de la Avenida Ezequiel Bustillo de la ciudad de San Carlos de Bariloche",
   },
   {
-    numero: "PC244/24",
+    numero: "PC244/2024",
     fecha: "12-03-2024",
     estado: "aprobado",
     area: "Seguridad",
@@ -363,7 +473,7 @@ const proyectosPropios = [
       "Al Ministerio de Seguridad y Justicia, la necesidad de realizar las gestiones necesarias con la Municipalidad de la ciudad de San Carlos de Bariloche y su Centro de Monitoreo, para la protección del monumento de Julio Argentino Roca ubicado en el Centro Cívico de esa ciudad",
   },
   {
-    numero: "PD230/24",
+    numero: "PD230/2024",
     fecha: "08-03-2024",
     estado: "ingresado",
     area: "Seguridad",
@@ -374,7 +484,7 @@ const proyectosPropios = [
       "Su enérgico repudio a los hechos de vandalismo ocurridos el 7 de marzo de 2024 sobre el monumento de Julio Argentino Roca en el Centro Cívico de la ciudad de San Carlos de Bariloche",
   },
   {
-    numero: "PL211/24",
+    numero: "PL211/2024",
     fecha: "06-03-2024",
     estado: "ingresado",
     area: "Justicia",
@@ -385,7 +495,7 @@ const proyectosPropios = [
       "Garantiza a los ciudadanos que acudan a las Comisarías de la Policía de la Provincia de Río Negro, el debido acceso a la información atinente a sus derechos y garantías",
   },
   {
-    numero: "PL196/24",
+    numero: "PL196/2024",
     fecha: "06-03-2024",
     estado: "ingresado",
     area: "Medio Ambiente",
@@ -395,7 +505,7 @@ const proyectosPropios = [
     resumen: "Ley de Reducción de Plásticos de único uso",
   },
   {
-    numero: "PL115/24",
+    numero: "PL115/2024",
     fecha: "19-02-2024",
     estado: "ingresado",
     area: "Economía-Defensa del Consumidor",
@@ -406,7 +516,7 @@ const proyectosPropios = [
       "Transparencia Fiscal al Consumidor. Establece la obligatoriedad de indicar dentro de las facturas o tickets de compra que recibe el consumidor, los impuestos provinciales incluidos en ellos. En el caso excepcional de imposibilidad de desglose, se indicará el porcentaje aproximado de incidencia sobre el precio final",
   },
   {
-    numero: "PC72/24",
+    numero: "PC72/2024",
     fecha: "07-02-2024",
     estado: "aprobado",
     area: "Relaciones Internacionales",
